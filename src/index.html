@@ -43,6 +43,10 @@ ul,ol{padding:0;list-style:none}
 .tab{background:none;border:0;padding:12px 16px;border-radius:10px;font-weight:500;font-size:15px;color:var(--ink-2);white-space:nowrap;display:flex;gap:8px;align-items:center;min-height:44px}
 .tab:hover{background:var(--line-2);color:var(--ink)}
 .tab[aria-current=page]{background:var(--ink);color:#fff}
+.tab small{font-weight:400;font-size:12.5px;opacity:.75}
+.tab.opt{border:1px dashed var(--line);margin-left:10px}
+.tab.opt:hover{border-color:var(--ink)}
+.tab.opt[aria-current=page]{border-style:solid;border-color:var(--ink)}
 .badge{min-width:22px;height:22px;padding:0 6px;border-radius:11px;background:var(--accent);color:#fff;font-size:12.5px;font-weight:700;display:inline-grid;place-items:center}
 .tab[aria-current=page] .badge{background:#fff;color:var(--ink)}
 @media(max-width:760px){.top-in{gap:0}.tabs{margin-left:-8px;width:calc(100% + 16px);padding-bottom:8px}.brand b{font-size:14px}}
@@ -306,7 +310,7 @@ details.int .in{padding:2px 18px 18px;display:grid;gap:16px}
 </head>
 <body>
 <header class="top"><div class="wrap top-in">
-  <button class="brand" data-go="inicio" aria-label="Ir al inicio"><img src="__LOGO_PRISA__" alt="Prisa Media"><b>Guía de formatos</b></button>
+  <button class="brand" data-go="radio" aria-label="Ir a formatos de radio"><img src="__LOGO_PRISA__" alt="Prisa Media"><b>Guía de formatos</b></button>
   <nav class="tabs" id="tabs" aria-label="Secciones"></nav>
 </div></header>
 <main id="main" tabindex="-1"><div class="wrap" id="view"></div></main>
@@ -345,7 +349,7 @@ const I = {
 
 /* ---------- estado ---------- */
 const S = {
-  view: "inicio",
+  view: "radio",
   aud: { edad: new Set(), nse: new Set(), perf: new Set(), atajo: null, hot: null },
   radio: { em: null, modo: "formato", tipo: null, fmt: null, fr: null, prog: null },
   dig: { em: null, cat: null, fmt: null },
@@ -460,9 +464,9 @@ function vAudiencia() {
     else { msg = `Te recomendamos ${nombres(r.rows.filter(q => q.fit > 0).slice(0, 3).map(q => q.e.nombre))}`; sub = r.combo.length > 1 || r.pct < 100 ? `Para cubrir el ${r.pct}% de tu público combina ${nombres(r.combo.map(q => q.e.nombre))}.` : `${r.combo[0].e.nombre} cubre el ${r.pct}% de tu público.`; }
     res = `<div class="res-head"><div class="sum"><b>${msg}</b><span>${sub}</span></div></div><ol class="res">${list}</ol>`;
   }
-  return `<div class="head"><h2>¿A quién quieres llegar?</h2><p class="lead">Marca edad y nivel socioeconómico en el mapa de afinidad, o usa un atajo. Los bloques de color son el público de cada emisora.</p></div>
+  return `<div class="head"><h2>Recomendar emisora <span class="tag" style="vertical-align:middle;margin-left:6px">Opcional</span></h2><p class="lead">Si quieres segmentar, indica a quién quieres llegar y te sugerimos la emisora. Si ya sabes dónde pautar, ve directo a <button class="link" data-go="radio">Radio</button> o <button class="link" data-go="digital">Digital</button>.</p></div>
   <div class="aud"><div>
-    <div class="atajos"><h3>Atajos de audiencia</h3><div class="chips">${atajos}</div></div>
+    <div class="atajos"><h3>¿A quién quieres llegar?</h3><div class="chips">${atajos}</div></div>
     <div class="mapbox"><h3>Mapa de afinidad</h3>
       <div class="mapa"><div class="yax" role="group" aria-label="Nivel socioeconómico">${yax}</div>
         <div class="area">${rects}${labs}<div class="cells">${veil.join("")}</div></div></div>
@@ -503,8 +507,8 @@ function fichaRadio(fmt, emId, frId, o = {}) {
 function vRadio() {
   const R = S.radio, e = R.em ? EM[R.em] : null;
   const ems = D.emisoras.map(x => `<button class="em" ${sw(x)} data-a="em" data-v="${x.id}" data-fk="em-${x.id}" aria-pressed="${R.em === x.id}" aria-label="${esc(x.nombre)}"><img src="${logo(x.logoBlanco)}" alt=""></button>`).join("");
-  const head = `<div class="head"><h2>Formatos de radio</h2><p class="lead">Elige la emisora y llega a la ficha con la duración, el número de palabras, la franja y lo que debes entregar.</p></div>`;
-  const top = `<div class="step"><h3><i>1</i> Emisora</h3><div class="ems" role="group" aria-label="Emisora">${ems}</div><p class="em-cap">${e ? `<b>${esc(e.nombre)}</b> · ${esc(e.formato)}` : "&nbsp;"}</p></div>`;
+  const head = `<div class="head"><h2>Formatos de radio</h2><p class="lead">Elige la emisora, el formato y la franja, y mira la duración, el número de palabras y lo que debes entregar.</p></div>`;
+  const top = `<div class="step"><h3><i>1</i> Emisora</h3><div class="ems" role="group" aria-label="Emisora">${ems}</div><p class="em-cap">${e ? `<b>${esc(e.nombre)}</b> · ${esc(e.formato)}` : `¿No sabes qué emisora elegir? <button class="link" data-go="audiencia" style="padding:0">Te recomendamos una según tu público</button>`}</p></div>`;
   const modo = `<div class="seg" role="group" aria-label="Cómo quieres explorar"><button data-a="modo" data-v="formato" aria-pressed="${R.modo === "formato"}" data-fk="m-f">Por formato</button><button data-a="modo" data-v="programa" aria-pressed="${R.modo === "programa"}" data-fk="m-p">Por programa</button></div>`;
   if (!e) return `${head}<div class="work"><div class="steps">${top}<p class="hint">Primero elige la emisora.</p></div><div class="ficha vacia sticky"><strong>Aquí verás la ficha técnica</strong><p>Duración, palabras, franja de pauta y especificaciones del formato que elijas.</p></div></div>`;
   const fam = e.familia;
@@ -608,24 +612,13 @@ function vPlan() {
     ${dig.length ? `<section class="pl-sec"><h3>Digital</h3><div class="pl">${dig.map(row).join("")}</div></section>` : ""}`;
 }
 
-/* ---------- inicio ---------- */
-function vInicio() {
-  const tiles = D.emisoras.map(e => `<button class="tile" ${sw(e)} data-a="to-radio" data-v="${e.id}" aria-label="Ver formatos de ${esc(e.nombre)}"><img src="${logo(e.logoBlanco)}" alt=""><span><b>${e.metricas.am}</b><small>oyentes AM/FM · ${esc(e.rango)}</small></span></button>`).join("");
-  return `<section class="hero"><div><h1>Elige tu formato y conoce qué debes entregar</h1><p class="lead">Consulta duraciones, palabras, franjas de pauta y medidas de las piezas de radio y digital de Prisa Media. Si quieres segmentar, te recomendamos la emisora para tu público.</p></div>
-  <div class="paths"><button class="path main" data-go="audiencia"><strong>Quiero llegar a una audiencia</strong><span>Indica edad y nivel socioeconómico y te recomendamos la emisora.</span>${I.arrow}</button>
-  <button class="path" data-go="radio"><strong>Ya sé la emisora y el programa</strong><span>Ve directo a los formatos de radio y sus especificaciones.</span>${I.arrow}</button>
-  <button class="path" data-go="digital"><strong>Necesito medidas de piezas digitales</strong><span>Web, mobile, streaming, redes sociales y contenidos.</span>${I.arrow}</button></div></section>
-  <section class="estrip"><h2>Cinco emisoras, un público para cada marca</h2><p class="lead" style="margin-top:8px">Toca una emisora para ver sus formatos.</p><div class="tiles">${tiles}</div></section>
-  <div class="foot"><span>Fuentes: especificaciones de formatos Prisa Media · audiencias TGI Choices 2026 y TGI R2 2024.</span><span>Guía de consulta para planificación; las condiciones comerciales las confirma tu ejecutivo.</span></div>`;
-}
-
 /* ---------- render ---------- */
-const TABS = [["inicio", "Inicio"], ["audiencia", "Audiencia"], ["radio", "Radio"], ["digital", "Digital"], ["plan", "Mi plan"]];
+const TABS = [["radio", "Radio"], ["digital", "Digital"], ["plan", "Mi plan"], ["audiencia", "Recomendar emisora"]];
 function render(opts = {}) {
   const act = document.activeElement, fk = act && act.dataset ? act.dataset.fk : null;
-  $("#tabs").innerHTML = TABS.map(([id, n]) => `<button class="tab" data-go="${id}" ${S.view === id ? 'aria-current="page"' : ""}>${n}${id === "plan" && S.plan.length ? `<span class="badge" aria-label="${S.plan.length} formatos">${S.plan.length}</span>` : ""}</button>`).join("");
-  const v = { inicio: vInicio, audiencia: vAudiencia, radio: vRadio, digital: vDigital, plan: vPlan }[S.view]();
-  const view = $("#view"); const y = window.scrollY; view.innerHTML = v;
+  $("#tabs").innerHTML = TABS.map(([id, n]) => `<button class="tab${id === "audiencia" ? " opt" : ""}" data-go="${id}" ${S.view === id ? 'aria-current="page"' : ""}>${n}${id === "audiencia" ? "<small>opcional</small>" : ""}${id === "plan" && S.plan.length ? `<span class="badge" aria-label="${S.plan.length} formatos">${S.plan.length}</span>` : ""}</button>`).join("");
+  const v = { audiencia: vAudiencia, radio: vRadio, digital: vDigital, plan: vPlan }[S.view]();
+  const view = $("#view"); const y = window.scrollY; view.innerHTML = v + `<div class="foot no-print"><span>Fuentes: especificaciones de formatos Prisa Media · audiencias TGI Choices 2026 y TGI R2 2024.</span><span>Guía de consulta para planificación; las condiciones comerciales las confirma tu ejecutivo.</span></div>`;
   if (!opts.top) window.scrollTo(0, y);
   if (fk) { const el = view.querySelector(`[data-fk="${CSS.escape(fk)}"]`); if (el) el.focus({ preventScroll: true }); }
   const ficha = $("#ficha"); if (ficha && opts.reveal && window.innerWidth <= 1020) ficha.scrollIntoView({ behavior: "smooth", block: "start" });

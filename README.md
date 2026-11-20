@@ -1,6 +1,6 @@
 # Guía de formatos Prisa Media
 
-Herramienta de consulta para anunciantes: eligen emisora, tipo de formato, duración o # de palabras y franja de pauta, y ven las especificaciones que deben tener en cuenta. En digital consultan medidas, pesos y archivos. Si quieren segmentar, indican edad y nivel socioeconómico (mapa de afinidad) y la guía recomienda la emisora.
+Herramienta de consulta para anunciantes. Lo principal son los **formatos**: eligen emisora, tipo de formato, duración o # de palabras y franja de pauta, y ven las especificaciones. En digital consultan medidas, pesos y archivos. De forma **opcional**, si quieren segmentar, indican edad y nivel socioeconómico (mapa de afinidad) y la guía recomienda la emisora.
 
 Hay dos versiones con el mismo contenido, los mismos nombres y los mismos colores:
 
@@ -13,7 +13,7 @@ Hay dos versiones con el mismo contenido, los mismos nombres y los mismos colore
 
 **HTML:** abre `index.html` en el navegador, o publícalo con GitHub Pages (Settings → Pages → Deploy from a branch → raíz del repositorio).
 
-**Excel:** abre el archivo y empieza por la hoja *Inicio*. Las celdas con borde negro son listas desplegables. Las hojas de consulta (*Audiencia, Radio, Digital, Mi plan*) están protegidas sin contraseña para no borrar fórmulas: *Revisar → Desproteger hoja*.
+**Excel:** abre el archivo; hay cuatro hojas: *Radio*, *Digital*, *Mi plan* y *Recomendar* (opcional). Las celdas con borde negro son listas desplegables. Las hojas de consulta están protegidas sin contraseña para no borrar fórmulas (*Revisar → Desproteger hoja*). Las hojas de datos (*Datos_…*, *Listas*) están ocultas: clic derecho sobre una pestaña → *Mostrar*.
 
 Ambas permiten armar un **plan** con varias selecciones y guardarlo en PDF.
 
