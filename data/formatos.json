@@ -1,0 +1,3149 @@
+{
+ "meta": {
+  "titulo": "Guía de formatos Prisa Media",
+  "fuentes": [
+   "FORMATOS PRISA MEDIA – Grupo Nutresa (especificaciones de radio y digital)",
+   "AUDIENCIAS PRISA MEDIA (mapa de afinidad TGI R2 2024; perfiles TGI Choices 2026)"
+  ]
+ },
+ "bandasEdad": [
+  {
+   "id": "alpha",
+   "label": "12 a 17",
+   "gen": "Alpha",
+   "min": 12,
+   "max": 17
+  },
+  {
+   "id": "genz",
+   "label": "18 a 24",
+   "gen": "Gen Z",
+   "min": 18,
+   "max": 24
+  },
+  {
+   "id": "mill",
+   "label": "25 a 34",
+   "gen": "Millennials",
+   "min": 25,
+   "max": 34
+  },
+  {
+   "id": "genx",
+   "label": "35 a 44",
+   "gen": "Gen X",
+   "min": 35,
+   "max": 44
+  },
+  {
+   "id": "boom",
+   "label": "45 y más",
+   "gen": "Baby Boomers",
+   "min": 45,
+   "max": 99
+  }
+ ],
+ "nse": [
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "atajos": [
+  {
+   "id": "total",
+   "label": "Total personas",
+   "ayuda": "Todas las edades y niveles",
+   "edad": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "nse": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "id": "jovenes",
+   "label": "Jóvenes 12 a 24",
+   "ayuda": "Alpha y Gen Z, todos los NSE",
+   "edad": [
+    0,
+    1
+   ],
+   "nse": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "id": "adultos-jov",
+   "label": "Adultos 25 a 44",
+   "ayuda": "Millennials y Gen X",
+   "edad": [
+    2,
+    3
+   ],
+   "nse": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "id": "adultos35",
+   "label": "Adultos 35+",
+   "ayuda": "Gen X y Baby Boomers",
+   "edad": [
+    3,
+    4
+   ],
+   "nse": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "id": "adultos-alto",
+   "label": "Adultos en estratos medio-alto",
+   "ayuda": "25 años en adelante, NSE 4 a 6",
+   "edad": [
+    2,
+    3,
+    4
+   ],
+   "nse": [
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "id": "medio-bajo",
+   "label": "Estratos medio-bajo",
+   "ayuda": "Todas las edades, NSE 2 y 3",
+   "edad": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "nse": [
+    2,
+    3
+   ]
+  }
+ ],
+ "perfiles": [
+  {
+   "id": "trabajadores",
+   "label": "Trabajadores",
+   "grupo": "Trabajo y estudio"
+  },
+  {
+   "id": "profesionales",
+   "label": "Profesionales",
+   "grupo": "Trabajo y estudio"
+  },
+  {
+   "id": "directivos",
+   "label": "Directivos",
+   "grupo": "Trabajo y estudio"
+  },
+  {
+   "id": "emprendedores",
+   "label": "Emprendedores",
+   "grupo": "Trabajo y estudio"
+  },
+  {
+   "id": "tenderos",
+   "label": "Tenderos / ventas",
+   "grupo": "Trabajo y estudio"
+  },
+  {
+   "id": "estudiantes",
+   "label": "Estudiantes",
+   "grupo": "Trabajo y estudio"
+  },
+  {
+   "id": "pensionados",
+   "label": "Pensionados",
+   "grupo": "Trabajo y estudio"
+  },
+  {
+   "id": "familia",
+   "label": "Padres y jefes de familia",
+   "grupo": "Hogar y familia"
+  },
+  {
+   "id": "dueno-casa",
+   "label": "Dueños de casa",
+   "grupo": "Hogar y familia"
+  },
+  {
+   "id": "mascotas",
+   "label": "Dueños de mascotas",
+   "grupo": "Hogar y familia"
+  },
+  {
+   "id": "mujeres",
+   "label": "Mujeres",
+   "grupo": "Hogar y familia"
+  },
+  {
+   "id": "decisor",
+   "label": "Decisores de compra",
+   "grupo": "Consumo"
+  },
+  {
+   "id": "compras",
+   "label": "Compradores / ir de compras",
+   "grupo": "Consumo"
+  },
+  {
+   "id": "gastronomia",
+   "label": "Gastronomía",
+   "grupo": "Consumo"
+  },
+  {
+   "id": "bienestar",
+   "label": "Bienestar",
+   "grupo": "Consumo"
+  },
+  {
+   "id": "conductores",
+   "label": "Conductores y dueños de vehículo",
+   "grupo": "Movilidad"
+  },
+  {
+   "id": "moteros",
+   "label": "Moteros",
+   "grupo": "Movilidad"
+  },
+  {
+   "id": "viajeros",
+   "label": "Viajeros",
+   "grupo": "Movilidad"
+  },
+  {
+   "id": "deporte",
+   "label": "Fans del deporte",
+   "grupo": "Ocio y entretenimiento"
+  },
+  {
+   "id": "deportistas",
+   "label": "Deportistas",
+   "grupo": "Ocio y entretenimiento"
+  },
+  {
+   "id": "music",
+   "label": "Amantes de la música",
+   "grupo": "Ocio y entretenimiento"
+  },
+  {
+   "id": "conciertos",
+   "label": "Conciertos",
+   "grupo": "Ocio y entretenimiento"
+  },
+  {
+   "id": "farandula",
+   "label": "Farándula",
+   "grupo": "Ocio y entretenimiento"
+  },
+  {
+   "id": "entretenimiento",
+   "label": "Entretenimiento",
+   "grupo": "Ocio y entretenimiento"
+  },
+  {
+   "id": "apostadores",
+   "label": "Apostadores",
+   "grupo": "Ocio y entretenimiento"
+  },
+  {
+   "id": "conectados",
+   "label": "Conectados",
+   "grupo": "Digital y generaciones"
+  },
+  {
+   "id": "gamers",
+   "label": "Gamers",
+   "grupo": "Digital y generaciones"
+  },
+  {
+   "id": "geek",
+   "label": "Geek",
+   "grupo": "Digital y generaciones"
+  },
+  {
+   "id": "genz",
+   "label": "Generación Z",
+   "grupo": "Digital y generaciones"
+  },
+  {
+   "id": "millennials",
+   "label": "Millennials",
+   "grupo": "Digital y generaciones"
+  }
+ ],
+ "emisoras": [
+  {
+   "id": "caracol",
+   "nombre": "Caracol Radio",
+   "familia": "hablada",
+   "formato": "Radio hablada",
+   "color": "#D92027",
+   "tinta": "#FFFFFF",
+   "logo": "caracol",
+   "logoBlanco": "caracol-w",
+   "bandas": [
+    3,
+    4
+   ],
+   "nse": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "rango": "+35 años · NSE 2 al 6",
+   "slogan": "Juntos, más compañía.",
+   "metricas": {
+    "am": "2,3 M",
+    "stream": "1,7 M",
+    "web": "853 K",
+    "redes": "9,8 M",
+    "video": "202 M"
+   },
+   "valores": {
+    "am": 2300000,
+    "stream": 1700000,
+    "web": 853000,
+    "redes": 9800000,
+    "video": 202000000
+   },
+   "perfiles": [
+    {
+     "id": "mascotas",
+     "label": "Dueños de mascotas",
+     "pct": 84
+    },
+    {
+     "id": "deporte",
+     "label": "Fans del deporte",
+     "pct": 83
+    },
+    {
+     "id": "trabajadores",
+     "label": "Trabajadores",
+     "pct": 74
+    },
+    {
+     "id": "familia",
+     "label": "Jefe de familia",
+     "pct": 64
+    },
+    {
+     "id": "dueno-casa",
+     "label": "Dueño de casa",
+     "pct": 55
+    },
+    {
+     "id": "profesionales",
+     "label": "Profesionales",
+     "pct": 39
+    },
+    {
+     "id": "compras",
+     "label": "Compras",
+     "pct": 30
+    },
+    {
+     "id": "deportistas",
+     "label": "Deportistas",
+     "pct": 26
+    },
+    {
+     "id": "directivos",
+     "label": "Directivos",
+     "pct": 18
+    },
+    {
+     "id": "pensionados",
+     "label": "Pensionados",
+     "pct": 5
+    }
+   ]
+  },
+  {
+   "id": "tropicana",
+   "nombre": "Tropicana",
+   "familia": "musical",
+   "formato": "Radio musical",
+   "color": "#0B6FC2",
+   "tinta": "#FFFFFF",
+   "logo": "tropicana",
+   "logoBlanco": "tropicana-w",
+   "bandas": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "nse": [
+    2,
+    3
+   ],
+   "rango": "12 a 44 años · NSE 2 a 3",
+   "slogan": "",
+   "metricas": {
+    "am": "2,3 M",
+    "stream": "1,7 M",
+    "web": "853 K",
+    "redes": "9,8 M",
+    "video": "83 M"
+   },
+   "valores": {
+    "am": 2300000,
+    "stream": 1700000,
+    "web": 853000,
+    "redes": 9800000,
+    "video": 83000000
+   },
+   "perfiles": [
+    {
+     "id": "trabajadores",
+     "label": "Trabajadores",
+     "pct": 85
+    },
+    {
+     "id": "mascotas",
+     "label": "Dueños de mascotas",
+     "pct": 71
+    },
+    {
+     "id": "decisor",
+     "label": "Decisor de compra",
+     "pct": 68
+    },
+    {
+     "id": "familia",
+     "label": "Padres de familia",
+     "pct": 61
+    },
+    {
+     "id": "profesionales",
+     "label": "Profesionales",
+     "pct": 46
+    },
+    {
+     "id": "conductores",
+     "label": "Conductores",
+     "pct": 43
+    },
+    {
+     "id": "moteros",
+     "label": "Moteros",
+     "pct": 28
+    },
+    {
+     "id": "emprendedores",
+     "label": "Emprendedor",
+     "pct": 26
+    },
+    {
+     "id": "genz",
+     "label": "Generación Z",
+     "pct": 23
+    },
+    {
+     "id": "tenderos",
+     "label": "Tenderos / ventas",
+     "pct": 18
+    }
+   ]
+  },
+  {
+   "id": "besame",
+   "nombre": "Bésame",
+   "familia": "musical",
+   "formato": "Radio musical",
+   "color": "#C8274F",
+   "tinta": "#FFFFFF",
+   "logo": "besame",
+   "logoBlanco": "besame-w",
+   "bandas": [
+    3,
+    4
+   ],
+   "nse": [
+    2,
+    3,
+    4
+   ],
+   "rango": "+35 años · NSE 2 al 4",
+   "slogan": "Te enamora",
+   "metricas": {
+    "am": "2,4 M",
+    "stream": "1,8 M",
+    "web": "239 K",
+    "redes": "2,8 M",
+    "video": "43 M"
+   },
+   "valores": {
+    "am": 2400000,
+    "stream": 1800000,
+    "web": 239000,
+    "redes": 2800000,
+    "video": 43000000
+   },
+   "perfiles": [
+    {
+     "id": "music",
+     "label": "Music lovers",
+     "pct": 77
+    },
+    {
+     "id": "trabajadores",
+     "label": "Trabajadores",
+     "pct": 74
+    },
+    {
+     "id": "mujeres",
+     "label": "Mujeres",
+     "pct": 61
+    },
+    {
+     "id": "farandula",
+     "label": "Farándula",
+     "pct": 47
+    },
+    {
+     "id": "familia",
+     "label": "Padres",
+     "pct": 45
+    },
+    {
+     "id": "bienestar",
+     "label": "Bienestar",
+     "pct": 39
+    },
+    {
+     "id": "compras",
+     "label": "Ir de compras",
+     "pct": 32
+    },
+    {
+     "id": "gastronomia",
+     "label": "Gastronomía",
+     "pct": 32
+    },
+    {
+     "id": "emprendedores",
+     "label": "Emprendedor",
+     "pct": 21
+    }
+   ]
+  },
+  {
+   "id": "radioacktiva",
+   "nombre": "Radioacktiva",
+   "familia": "musical",
+   "formato": "Radio musical",
+   "color": "#5E3FB0",
+   "tinta": "#FFFFFF",
+   "logo": "radioacktiva",
+   "logoBlanco": "radioacktiva-w",
+   "bandas": [
+    2,
+    3
+   ],
+   "nse": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "rango": "25 a 44 años · NSE 3 al 6",
+   "slogan": "",
+   "metricas": {
+    "am": "304 K",
+    "stream": "483 K",
+    "web": "334 K",
+    "redes": "3,5 M",
+    "video": "29 M"
+   },
+   "valores": {
+    "am": 304000,
+    "stream": 483000,
+    "web": 334000,
+    "redes": 3500000,
+    "video": 29000000
+   },
+   "perfiles": [
+    {
+     "id": "music",
+     "label": "Music lovers",
+     "pct": 94
+    },
+    {
+     "id": "trabajadores",
+     "label": "Trabajadores",
+     "pct": 81
+    },
+    {
+     "id": "deporte",
+     "label": "Fans del deporte",
+     "pct": 71
+    },
+    {
+     "id": "conductores",
+     "label": "Dueños de vehículo",
+     "pct": 58
+    },
+    {
+     "id": "millennials",
+     "label": "Millennials",
+     "pct": 57
+    },
+    {
+     "id": "viajeros",
+     "label": "Viajeros",
+     "pct": 47
+    },
+    {
+     "id": "apostadores",
+     "label": "Apostadores",
+     "pct": 23
+    },
+    {
+     "id": "conciertos",
+     "label": "Conciertos",
+     "pct": 11
+    }
+   ]
+  },
+  {
+   "id": "los40",
+   "nombre": "Los40",
+   "familia": "musical",
+   "formato": "Radio musical",
+   "color": "#111111",
+   "tinta": "#FFFFFF",
+   "logo": "los40",
+   "logoBlanco": "los40",
+   "bandas": [
+    0,
+    1,
+    2
+   ],
+   "nse": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "rango": "12 a 34 años · NSE 3 a 6",
+   "slogan": "",
+   "metricas": {
+    "am": "409 K",
+    "stream": "315 K",
+    "web": "374 K",
+    "redes": "8,1 M",
+    "video": "160 M"
+   },
+   "valores": {
+    "am": 409000,
+    "stream": 315000,
+    "web": 374000,
+    "redes": 8100000,
+    "video": 160000000
+   },
+   "perfiles": [
+    {
+     "id": "conectados",
+     "label": "Conectados",
+     "pct": 98
+    },
+    {
+     "id": "entretenimiento",
+     "label": "Entretenimiento",
+     "pct": 65
+    },
+    {
+     "id": "viajeros",
+     "label": "Viajeros",
+     "pct": 59
+    },
+    {
+     "id": "estudiantes",
+     "label": "Estudiantes",
+     "pct": 44
+    },
+    {
+     "id": "geek",
+     "label": "Geek",
+     "pct": 43
+    },
+    {
+     "id": "gamers",
+     "label": "Gamers",
+     "pct": 42
+    },
+    {
+     "id": "compras",
+     "label": "Compras",
+     "pct": 32
+    },
+    {
+     "id": "genz",
+     "label": "Genz",
+     "pct": 24
+    },
+    {
+     "id": "conciertos",
+     "label": "Conciertos",
+     "pct": 23
+    }
+   ]
+  }
+ ],
+ "metricas": [
+  {
+   "id": "am",
+   "linea1": "Oyentes",
+   "linea2": "AM/FM"
+  },
+  {
+   "id": "stream",
+   "linea1": "Oyentes",
+   "linea2": "Streaming"
+  },
+  {
+   "id": "web",
+   "linea1": "Visitantes",
+   "linea2": "Web + App"
+  },
+  {
+   "id": "redes",
+   "linea1": "Seguidores",
+   "linea2": "Redes sociales"
+  },
+  {
+   "id": "video",
+   "linea1": "Reproducciones",
+   "linea2": "de video"
+  }
+ ],
+ "franjas": {
+  "musical": [
+   {
+    "id": "morning",
+    "nombre": "Morning",
+    "horario": "Lunes a viernes, de 6:00 a. m. a 10:00 a. m."
+   },
+   {
+    "id": "musical",
+    "nombre": "Programación musical",
+    "horario": "Lunes a domingo, de 10:00 a. m. a 8:00 p. m."
+   }
+  ],
+  "hablada": [
+   {
+    "id": "6am-w",
+    "nombre": "6AM – W",
+    "horario": "Lunes a viernes, de 5:00 a. m. a 12:00 m."
+   },
+   {
+    "id": "noticiero",
+    "nombre": "Noticiero ½ día",
+    "horario": "Lunes a viernes, de 12:00 m. a 1:00 p. m."
+   },
+   {
+    "id": "pulso",
+    "nombre": "El Pulso del Fútbol",
+    "horario": "Lunes a viernes, de 1:00 a 2:00 p. m."
+   },
+   {
+    "id": "dos-puntos",
+    "nombre": "Dos Puntos",
+    "horario": "Lunes a viernes, de 2:00 a 4:00 p. m."
+   },
+   {
+    "id": "luciernaga",
+    "nombre": "La Luciérnaga",
+    "horario": "Lunes a viernes, de 4:00 a 7:00 p. m."
+   },
+   {
+    "id": "hora20",
+    "nombre": "Hora 20",
+    "horario": "Lunes a viernes, de 7:00 a 8:00 p. m."
+   },
+   {
+    "id": "polemica",
+    "nombre": "La Polémica",
+    "horario": "Lunes a viernes, de 8:00 a 9:00 p. m."
+   },
+   {
+    "id": "as-mundial",
+    "nombre": "AS Mundial",
+    "horario": "Lunes a viernes, de 9:00 a 10:00 p. m."
+   },
+   {
+    "id": "de-pelicula",
+    "nombre": "De Película",
+    "horario": "Fin de semana, de 4:00 a 5:00 a. m."
+   },
+   {
+    "id": "al-campo",
+    "nombre": "Al Campo",
+    "horario": "Fin de semana, de 5:00 a 6:00 p. m."
+   },
+   {
+    "id": "planeta-caracol",
+    "nombre": "Planeta Caracol",
+    "horario": "Fin de semana, de 6:00 a 7:00 p. m."
+   },
+   {
+    "id": "noticieros-fds",
+    "nombre": "Noticieros fin de semana",
+    "horario": "Sábados y domingos"
+   },
+   {
+    "id": "a-vivir",
+    "nombre": "A Vivir Que Son Dos Días",
+    "horario": "Sábados y domingos, de 8:00 a 11:00 a. m."
+   },
+   {
+    "id": "noche-fantastica",
+    "nombre": "Noche Fantástica",
+    "horario": "Viernes y sábados, de 10:00 p. m. a 4:00 a. m."
+   },
+   {
+    "id": "caracol-fds",
+    "nombre": "Caracol Fin de Semana",
+    "horario": "Sábado o domingo (no aplica en la franja de 12:00 m. a 1:00 p. m.)"
+   }
+  ]
+ },
+ "radio": [
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Formato de entrega",
+     "d": "Archivos en MP3."
+    },
+    {
+     "t": "Ubicación",
+     "d": "Se emiten dentro del break comercial, compartiendo los espacios comerciales de cada hora con otras marcas."
+    }
+   ],
+   "consejo": "Duración ideal para reforzar la recordación de marca, jingles y mensajes de posicionamiento.",
+   "protegido": false,
+   "franjaTexto": "Su ejecución puede realizarse en los siguientes espacios:",
+   "descripcion": "N/A. El material debe entregarse previamente grabado y ajustado a la duración exacta establecida para el formato.",
+   "duracion": "5\"",
+   "familia": "musical",
+   "tipo": "Grabados",
+   "nombre": "Cuña hasta de 5\"",
+   "franjas": [
+    "morning",
+    "musical"
+   ],
+   "id": "musical-grabados-1"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Formato de entrega",
+     "d": "Archivos en MP3."
+    },
+    {
+     "t": "Ubicación",
+     "d": "Se emiten dentro del break comercial, compartiendo los espacios comerciales de cada hora con otras marcas."
+    }
+   ],
+   "consejo": "Duración ideal para reforzar la recordación de marca, jingles y mensajes de posicionamiento.",
+   "protegido": false,
+   "franjaTexto": "Su ejecución puede realizarse en los siguientes espacios:",
+   "descripcion": "N/A. El material debe entregarse previamente grabado y ajustado a la duración exacta establecida para el formato.",
+   "duracion": "10\"",
+   "familia": "musical",
+   "tipo": "Grabados",
+   "nombre": "Cuña de 10\"",
+   "franjas": [
+    "morning",
+    "musical"
+   ],
+   "id": "musical-grabados-2"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Formato de entrega",
+     "d": "Archivos en MP3."
+    },
+    {
+     "t": "Ubicación",
+     "d": "Se emiten dentro del break comercial, compartiendo los espacios comerciales de cada hora con otras marcas."
+    }
+   ],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": "Su ejecución puede realizarse en los siguientes espacios:",
+   "descripcion": "N/A. El material debe entregarse previamente grabado y ajustado a la duración exacta establecida para el formato.",
+   "duracion": "15\"",
+   "familia": "musical",
+   "tipo": "Grabados",
+   "nombre": "Cuña de 15\"",
+   "franjas": [
+    "morning",
+    "musical"
+   ],
+   "id": "musical-grabados-3"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Formato de entrega",
+     "d": "Archivos en MP3."
+    },
+    {
+     "t": "Ubicación",
+     "d": "Se emiten dentro del break comercial, compartiendo los espacios comerciales de cada hora con otras marcas."
+    }
+   ],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": "Su ejecución puede realizarse en los siguientes espacios:",
+   "descripcion": "N/A. El material debe entregarse previamente grabado y ajustado a la duración exacta establecida para el formato.",
+   "duracion": "20\"",
+   "familia": "musical",
+   "tipo": "Grabados",
+   "nombre": "Cuña de 20\"",
+   "franjas": [
+    "morning",
+    "musical"
+   ],
+   "id": "musical-grabados-4"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Formato de entrega",
+     "d": "Archivos en MP3."
+    },
+    {
+     "t": "Ubicación",
+     "d": "Se emiten dentro del break comercial, compartiendo los espacios comerciales de cada hora con otras marcas."
+    }
+   ],
+   "consejo": "Las cuñas de 30 segundos permiten desarrollar mensajes con mayor dinamismo y contenido.",
+   "protegido": false,
+   "franjaTexto": "Su ejecución puede realizarse en los siguientes espacios:",
+   "descripcion": "N/A. El material debe entregarse previamente grabado y ajustado a la duración exacta establecida para el formato.",
+   "duracion": "30\"",
+   "familia": "musical",
+   "tipo": "Grabados",
+   "nombre": "Cuña de 30\"",
+   "franjas": [
+    "morning",
+    "musical"
+   ],
+   "id": "musical-grabados-5"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Formato de entrega",
+     "d": "Archivos en MP3."
+    },
+    {
+     "t": "Ubicación",
+     "d": "Se emiten dentro del break comercial, compartiendo los espacios comerciales de cada hora con otras marcas."
+    }
+   ],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": "Su ejecución puede realizarse en los siguientes espacios:",
+   "descripcion": "N/A. El material debe entregarse previamente grabado y ajustado a la duración exacta establecida para el formato.",
+   "duracion": "35\"",
+   "familia": "musical",
+   "tipo": "Grabados",
+   "nombre": "Cuña de 35\"",
+   "franjas": [
+    "morning",
+    "musical"
+   ],
+   "id": "musical-grabados-6"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Formato de entrega",
+     "d": "Archivos en MP3."
+    },
+    {
+     "t": "Ubicación",
+     "d": "Se emiten dentro del break comercial, compartiendo los espacios comerciales de cada hora con otras marcas."
+    }
+   ],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": "Su ejecución puede realizarse en los siguientes espacios:",
+   "descripcion": "N/A. El material debe entregarse previamente grabado y ajustado a la duración exacta establecida para el formato.",
+   "duracion": "40\"",
+   "familia": "musical",
+   "tipo": "Grabados",
+   "nombre": "Cuña de 40\"",
+   "franjas": [
+    "morning",
+    "musical"
+   ],
+   "id": "musical-grabados-7"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Formato de entrega",
+     "d": "Archivos en MP3."
+    },
+    {
+     "t": "Ubicación",
+     "d": "Se emiten dentro del break comercial, compartiendo los espacios comerciales de cada hora con otras marcas."
+    }
+   ],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": "Su ejecución puede realizarse en los siguientes espacios:",
+   "descripcion": "N/A. El material debe entregarse previamente grabado y ajustado a la duración exacta establecida para el formato.",
+   "duracion": "45\"",
+   "familia": "musical",
+   "tipo": "Grabados",
+   "nombre": "Cuña de 45\"",
+   "franjas": [
+    "morning",
+    "musical"
+   ],
+   "id": "musical-grabados-8"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Formato de entrega",
+     "d": "Archivos en MP3."
+    },
+    {
+     "t": "Ubicación",
+     "d": "Se emiten dentro del break comercial, compartiendo los espacios comerciales de cada hora con otras marcas."
+    }
+   ],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": "Su ejecución puede realizarse en los siguientes espacios:",
+   "descripcion": "N/A. El material debe entregarse previamente grabado y ajustado a la duración exacta establecida para el formato.",
+   "duracion": "60\"",
+   "familia": "musical",
+   "tipo": "Grabados",
+   "nombre": "Cuña de 60\"",
+   "franjas": [
+    "morning",
+    "musical"
+   ],
+   "id": "musical-grabados-9"
+  },
+  {
+   "palabras": 17,
+   "maxPalabras": 17,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Texto",
+     "d": "Se entrega un texto ajustado a la cantidad de palabras correspondiente a la duración contratada."
+    },
+    {
+     "t": "Interpretación",
+     "d": "Son interpretadas por el locutor de turno, quien desarrolla el mensaje de acuerdo con el material y las indicaciones entregadas."
+    },
+    {
+     "t": "Ubicación",
+     "d": "Se emiten dentro del break comercial, compartiendo los espacios comerciales de cada hora con otras marcas."
+    }
+   ],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": "Su ejecución puede realizarse en los siguientes espacios:",
+   "descripcion": "17 palabras como máximo para la duración contratada.",
+   "duracion": "5\"",
+   "familia": "musical",
+   "tipo": "Leídos",
+   "nombre": "Mención leída de 5\"",
+   "franjas": [
+    "morning",
+    "musical"
+   ],
+   "id": "musical-leidos-10"
+  },
+  {
+   "palabras": 32,
+   "maxPalabras": 32,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Texto",
+     "d": "Se entrega un texto ajustado a la cantidad de palabras correspondiente a la duración contratada."
+    },
+    {
+     "t": "Interpretación",
+     "d": "Son interpretadas por el locutor de turno, quien desarrolla el mensaje de acuerdo con el material y las indicaciones entregadas."
+    },
+    {
+     "t": "Ubicación",
+     "d": "Se emiten dentro del break comercial, compartiendo los espacios comerciales de cada hora con otras marcas."
+    }
+   ],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": "Su ejecución puede realizarse en los siguientes espacios:",
+   "descripcion": "32 palabras como máximo para la duración contratada.",
+   "duracion": "10\"",
+   "familia": "musical",
+   "tipo": "Leídos",
+   "nombre": "Mención leída de 10\"",
+   "franjas": [
+    "morning",
+    "musical"
+   ],
+   "id": "musical-leidos-11"
+  },
+  {
+   "palabras": 46,
+   "maxPalabras": 46,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Texto",
+     "d": "Se entrega un texto ajustado a la cantidad de palabras correspondiente a la duración contratada."
+    },
+    {
+     "t": "Interpretación",
+     "d": "Son interpretadas por el locutor de turno, quien desarrolla el mensaje de acuerdo con el material y las indicaciones entregadas."
+    },
+    {
+     "t": "Ubicación",
+     "d": "Se emiten dentro del break comercial, compartiendo los espacios comerciales de cada hora con otras marcas."
+    }
+   ],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": "Su ejecución puede realizarse en los siguientes espacios:",
+   "descripcion": "46 palabras como máximo para la duración contratada.",
+   "duracion": "15\"",
+   "familia": "musical",
+   "tipo": "Leídos",
+   "nombre": "Mención leída de 15\"",
+   "franjas": [
+    "morning",
+    "musical"
+   ],
+   "id": "musical-leidos-12"
+  },
+  {
+   "palabras": 64,
+   "maxPalabras": 64,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Texto",
+     "d": "Se entrega un texto ajustado a la cantidad de palabras correspondiente a la duración contratada."
+    },
+    {
+     "t": "Interpretación",
+     "d": "Son interpretadas por el locutor de turno, quien desarrolla el mensaje de acuerdo con el material y las indicaciones entregadas."
+    },
+    {
+     "t": "Ubicación",
+     "d": "Se emiten dentro del break comercial, compartiendo los espacios comerciales de cada hora con otras marcas."
+    }
+   ],
+   "consejo": "Las menciones de 20 y 30 segundos permiten desarrollar mensajes con mayor dinamismo y contenido.",
+   "protegido": false,
+   "franjaTexto": "Su ejecución puede realizarse en los siguientes espacios:",
+   "descripcion": "64 palabras como máximo para la duración contratada.",
+   "duracion": "20\"",
+   "familia": "musical",
+   "tipo": "Leídos",
+   "nombre": "Mención leída de 20\"",
+   "franjas": [
+    "morning",
+    "musical"
+   ],
+   "id": "musical-leidos-13"
+  },
+  {
+   "palabras": 95,
+   "maxPalabras": 95,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Texto",
+     "d": "Se entrega un texto ajustado a la cantidad de palabras correspondiente a la duración contratada."
+    },
+    {
+     "t": "Interpretación",
+     "d": "Son interpretadas por el locutor de turno, quien desarrolla el mensaje de acuerdo con el material y las indicaciones entregadas."
+    },
+    {
+     "t": "Ubicación",
+     "d": "Se emiten dentro del break comercial, compartiendo los espacios comerciales de cada hora con otras marcas."
+    }
+   ],
+   "consejo": "Las menciones de 20 y 30 segundos permiten desarrollar mensajes con mayor dinamismo y contenido.",
+   "protegido": false,
+   "franjaTexto": "Su ejecución puede realizarse en los siguientes espacios:",
+   "descripcion": "95 palabras como máximo para la duración contratada.",
+   "duracion": "30\"",
+   "familia": "musical",
+   "tipo": "Leídos",
+   "nombre": "Mención leída de 30\"",
+   "franjas": [
+    "morning",
+    "musical"
+   ],
+   "id": "musical-leidos-14"
+  },
+  {
+   "palabras": 115,
+   "maxPalabras": 115,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Texto",
+     "d": "Se entrega un texto ajustado a la cantidad de palabras correspondiente a la duración contratada."
+    },
+    {
+     "t": "Interpretación",
+     "d": "Son interpretadas por el locutor de turno, quien desarrolla el mensaje de acuerdo con el material y las indicaciones entregadas."
+    },
+    {
+     "t": "Ubicación",
+     "d": "Se emiten dentro del break comercial, compartiendo los espacios comerciales de cada hora con otras marcas."
+    }
+   ],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": "Su ejecución puede realizarse en los siguientes espacios:",
+   "descripcion": "115 palabras como máximo para la duración contratada.",
+   "duracion": "40\"",
+   "familia": "musical",
+   "tipo": "Leídos",
+   "nombre": "Mención leída de 40\"",
+   "franjas": [
+    "morning",
+    "musical"
+   ],
+   "id": "musical-leidos-15"
+  },
+  {
+   "palabras": 180,
+   "maxPalabras": 180,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Texto",
+     "d": "Se entrega un texto ajustado a la cantidad de palabras correspondiente a la duración contratada."
+    },
+    {
+     "t": "Interpretación",
+     "d": "Son interpretadas por el locutor de turno, quien desarrolla el mensaje de acuerdo con el material y las indicaciones entregadas."
+    },
+    {
+     "t": "Ubicación",
+     "d": "Se emiten dentro del break comercial, compartiendo los espacios comerciales de cada hora con otras marcas."
+    }
+   ],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": "Su ejecución puede realizarse en los siguientes espacios:",
+   "descripcion": "180 palabras como máximo para la duración contratada.",
+   "duracion": "60\"",
+   "familia": "musical",
+   "tipo": "Leídos",
+   "nombre": "Mención leída de 60\"",
+   "franjas": [
+    "morning",
+    "musical"
+   ],
+   "id": "musical-leidos-16"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": 98,
+   "componentes": [
+    "Presentación de la franja: de 5 a 10 segundos (texto).",
+    "Desarrollo del contenido: texto de máximo 98 palabras o presentación en formato de bullets.",
+    "Cierre: cuña grabada o texto leído de máximo 30 segundos."
+   ],
+   "specs": [
+    {
+     "t": "Formato protegido",
+     "d": "Espacio exclusivo dentro del Morning, en el que los locutores de la mesa de trabajo generan conversación, interacción y participación alrededor de un tema alineado con los objetivos y el mensaje de la campaña."
+    }
+   ],
+   "consejo": null,
+   "protegido": true,
+   "franjaTexto": "Este formato se realiza exclusivamente en el Morning Show de cada emisora, de lunes a viernes, entre las 6:00 a. m. y las 10:00 a. m.",
+   "descripcion": "Estructura del formato en tres partes.",
+   "duracion": "60\"",
+   "familia": "musical",
+   "tipo": "Secciones",
+   "nombre": "Sección de 60\"",
+   "franjas": [
+    "morning"
+   ],
+   "id": "musical-secciones-17"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": 64,
+   "componentes": [
+    "Opción 1: material completamente grabado, con una duración máxima de 30 segundos.",
+    "Opción 2: combinación de contenido leído y grabado, sin superar los 30 segundos en total. Se recomienda distribuirlo así: 20 segundos de texto leído (aproximadamente 64 palabras) + 10 segundos de material grabado para cerrar el formato.",
+    "Importante: la duración total de la pieza no debe superar los 30 segundos."
+   ],
+   "specs": [
+    {
+     "t": "Formato protegido",
+     "d": "Espacio exclusivo dentro de la programación musical: suena entre canción y canción. El locutor o los locutores del horario correspondiente realizan la mención de manera individual o conjunta, según la dinámica y las características del espacio."
+    }
+   ],
+   "consejo": null,
+   "protegido": true,
+   "franjaTexto": "Este formato se realiza exclusivamente en la programación musical de cada emisora, de lunes a domingo, entre las 10:00 a. m. y las 9:00 p. m.",
+   "descripcion": "Dos opciones de armado; la pieza completa no puede superar los 30 segundos.",
+   "duracion": "30\"",
+   "familia": "musical",
+   "tipo": "Individual",
+   "nombre": "Individual de 30\"",
+   "franjas": [
+    "musical"
+   ],
+   "franjaHorarios": {
+    "musical": "Lunes a domingo, de 10:00 a. m. a 9:00 p. m."
+   },
+   "id": "musical-individual-18"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": 300,
+   "componentes": [
+    "Presencia de un talento de la emisora musical durante 2 horas (de acuerdo con disponibilidad) en el sitio definido por el anunciante.",
+    "Total 6 salidas de hasta 2 minutos: 4 salidas comerciales hechas por el talento + 2 entrevistas presenciales (la entrevista es opcional).",
+    "10 promociones en la programación musical de la emisora seleccionada, convocando dos días antes del remoto."
+   ],
+   "specs": [
+    {
+     "t": "Formato protegido",
+     "d": "Exclusivo para la marca durante la activación."
+    },
+    {
+     "t": "Palabras de las promociones",
+     "d": "Promoción de máximo 20 segundos: 54 palabras. La marca se vincula dentro del texto, como menciones leídas por el talento de la emisora."
+    },
+    {
+     "t": "Palabras de las salidas del remoto",
+     "d": "Cada transmisión tiene una interacción de máximo 2 minutos, equivalente a un promedio de 300 palabras. Ten presente que el locutor también hace preámbulos y estos aumentan la duración: para mayor efectividad, el material no debe sobrepasar 300 o 360 palabras."
+    }
+   ],
+   "consejo": null,
+   "protegido": true,
+   "franjaTexto": "Se realiza de lunes a domingo, a partir de las 10:00 a. m., mediante una reserva de 2 horas de actividad en el lugar indicado por el cliente.",
+   "descripcion": "Un talento de la emisora musical acompaña al anunciante en el sitio que defina durante 2 horas.",
+   "duracion": "2 horas",
+   "familia": "musical",
+   "tipo": "Remotos",
+   "nombre": "Remoto de 2 horas",
+   "franjas": [
+    "musical"
+   ],
+   "franjaHorarios": {
+    "musical": "Lunes a domingo, desde las 10:00 a. m. (reserva de 2 horas)"
+   },
+   "id": "musical-remotos-19"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Formato de entrega",
+     "d": "Archivos en MP3."
+    }
+   ],
+   "consejo": "Duración ideal para reforzar la recordación de marca, jingles y mensajes de posicionamiento.",
+   "protegido": false,
+   "franjaTexto": "Se realiza dentro de los programas de Caracol Radio, de acuerdo con la programación y los horarios establecidos en la parrilla de cada emisora.",
+   "descripcion": "N/A. El material debe entregarse previamente grabado y ajustado a la duración exacta establecida para el formato.",
+   "duracion": "5\"",
+   "familia": "hablada",
+   "tipo": "Grabados",
+   "nombre": "Cuña hasta de 5\"",
+   "franjas": [
+    "6am-w",
+    "noticiero",
+    "pulso",
+    "dos-puntos",
+    "luciernaga",
+    "hora20",
+    "polemica",
+    "as-mundial",
+    "de-pelicula",
+    "al-campo",
+    "planeta-caracol",
+    "noticieros-fds",
+    "a-vivir",
+    "noche-fantastica",
+    "caracol-fds"
+   ],
+   "id": "hablada-grabados-20"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Formato de entrega",
+     "d": "Archivos en MP3."
+    }
+   ],
+   "consejo": "Duración ideal para reforzar la recordación de marca, jingles y mensajes de posicionamiento.",
+   "protegido": false,
+   "franjaTexto": "Se realiza dentro de los programas de Caracol Radio, de acuerdo con la programación y los horarios establecidos en la parrilla de cada emisora.",
+   "descripcion": "N/A. El material debe entregarse previamente grabado y ajustado a la duración exacta establecida para el formato.",
+   "duracion": "10\"",
+   "familia": "hablada",
+   "tipo": "Grabados",
+   "nombre": "Cuña de 10\"",
+   "franjas": [
+    "6am-w",
+    "noticiero",
+    "pulso",
+    "dos-puntos",
+    "luciernaga",
+    "hora20",
+    "polemica",
+    "as-mundial",
+    "de-pelicula",
+    "al-campo",
+    "planeta-caracol",
+    "noticieros-fds",
+    "a-vivir",
+    "noche-fantastica",
+    "caracol-fds"
+   ],
+   "id": "hablada-grabados-21"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Formato de entrega",
+     "d": "Archivos en MP3."
+    }
+   ],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": "Se realiza dentro de los programas de Caracol Radio, de acuerdo con la programación y los horarios establecidos en la parrilla de cada emisora.",
+   "descripcion": "N/A. El material debe entregarse previamente grabado y ajustado a la duración exacta establecida para el formato.",
+   "duracion": "15\"",
+   "familia": "hablada",
+   "tipo": "Grabados",
+   "nombre": "Cuña de 15\"",
+   "franjas": [
+    "6am-w",
+    "noticiero",
+    "pulso",
+    "dos-puntos",
+    "luciernaga",
+    "hora20",
+    "polemica",
+    "as-mundial",
+    "de-pelicula",
+    "al-campo",
+    "planeta-caracol",
+    "noticieros-fds",
+    "a-vivir",
+    "noche-fantastica",
+    "caracol-fds"
+   ],
+   "id": "hablada-grabados-22"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Formato de entrega",
+     "d": "Archivos en MP3."
+    }
+   ],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": "Se realiza dentro de los programas de Caracol Radio, de acuerdo con la programación y los horarios establecidos en la parrilla de cada emisora.",
+   "descripcion": "N/A. El material debe entregarse previamente grabado y ajustado a la duración exacta establecida para el formato.",
+   "duracion": "20\"",
+   "familia": "hablada",
+   "tipo": "Grabados",
+   "nombre": "Cuña de 20\"",
+   "franjas": [
+    "6am-w",
+    "noticiero",
+    "pulso",
+    "dos-puntos",
+    "luciernaga",
+    "hora20",
+    "polemica",
+    "as-mundial",
+    "de-pelicula",
+    "al-campo",
+    "planeta-caracol",
+    "noticieros-fds",
+    "a-vivir",
+    "noche-fantastica",
+    "caracol-fds"
+   ],
+   "id": "hablada-grabados-23"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Formato de entrega",
+     "d": "Archivos en MP3."
+    }
+   ],
+   "consejo": "Las cuñas de 30 segundos permiten desarrollar mensajes con mayor dinamismo y contenido.",
+   "protegido": false,
+   "franjaTexto": "Se realiza dentro de los programas de Caracol Radio, de acuerdo con la programación y los horarios establecidos en la parrilla de cada emisora.",
+   "descripcion": "N/A. El material debe entregarse previamente grabado y ajustado a la duración exacta establecida para el formato.",
+   "duracion": "30\"",
+   "familia": "hablada",
+   "tipo": "Grabados",
+   "nombre": "Cuña de 30\"",
+   "franjas": [
+    "6am-w",
+    "noticiero",
+    "pulso",
+    "dos-puntos",
+    "luciernaga",
+    "hora20",
+    "polemica",
+    "as-mundial",
+    "de-pelicula",
+    "al-campo",
+    "planeta-caracol",
+    "noticieros-fds",
+    "a-vivir",
+    "noche-fantastica",
+    "caracol-fds"
+   ],
+   "id": "hablada-grabados-24"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Formato de entrega",
+     "d": "Archivos en MP3."
+    }
+   ],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": "Se realiza dentro de los programas de Caracol Radio, de acuerdo con la programación y los horarios establecidos en la parrilla de cada emisora.",
+   "descripcion": "N/A. El material debe entregarse previamente grabado y ajustado a la duración exacta establecida para el formato.",
+   "duracion": "35\"",
+   "familia": "hablada",
+   "tipo": "Grabados",
+   "nombre": "Cuña de 35\"",
+   "franjas": [
+    "6am-w",
+    "noticiero",
+    "pulso",
+    "dos-puntos",
+    "luciernaga",
+    "hora20",
+    "polemica",
+    "as-mundial",
+    "de-pelicula",
+    "al-campo",
+    "planeta-caracol",
+    "noticieros-fds",
+    "a-vivir",
+    "noche-fantastica",
+    "caracol-fds"
+   ],
+   "id": "hablada-grabados-25"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Formato de entrega",
+     "d": "Archivos en MP3."
+    }
+   ],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": "Se realiza dentro de los programas de Caracol Radio, de acuerdo con la programación y los horarios establecidos en la parrilla de cada emisora.",
+   "descripcion": "N/A. El material debe entregarse previamente grabado y ajustado a la duración exacta establecida para el formato.",
+   "duracion": "40\"",
+   "familia": "hablada",
+   "tipo": "Grabados",
+   "nombre": "Cuña de 40\"",
+   "franjas": [
+    "6am-w",
+    "noticiero",
+    "pulso",
+    "dos-puntos",
+    "luciernaga",
+    "hora20",
+    "polemica",
+    "as-mundial",
+    "de-pelicula",
+    "al-campo",
+    "planeta-caracol",
+    "noticieros-fds",
+    "a-vivir",
+    "noche-fantastica",
+    "caracol-fds"
+   ],
+   "id": "hablada-grabados-26"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Formato de entrega",
+     "d": "Archivos en MP3."
+    }
+   ],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": "Se realiza dentro de los programas de Caracol Radio, de acuerdo con la programación y los horarios establecidos en la parrilla de cada emisora.",
+   "descripcion": "N/A. El material debe entregarse previamente grabado y ajustado a la duración exacta establecida para el formato.",
+   "duracion": "45\"",
+   "familia": "hablada",
+   "tipo": "Grabados",
+   "nombre": "Cuña de 45\"",
+   "franjas": [
+    "6am-w",
+    "noticiero",
+    "pulso",
+    "dos-puntos",
+    "luciernaga",
+    "hora20",
+    "polemica",
+    "as-mundial",
+    "de-pelicula",
+    "al-campo",
+    "planeta-caracol",
+    "noticieros-fds",
+    "a-vivir",
+    "noche-fantastica",
+    "caracol-fds"
+   ],
+   "id": "hablada-grabados-27"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Formato de entrega",
+     "d": "Archivos en MP3."
+    }
+   ],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": "Se realiza dentro de los programas de Caracol Radio, de acuerdo con la programación y los horarios establecidos en la parrilla de cada emisora.",
+   "descripcion": "N/A. El material debe entregarse previamente grabado y ajustado a la duración exacta establecida para el formato.",
+   "duracion": "60\"",
+   "familia": "hablada",
+   "tipo": "Grabados",
+   "nombre": "Cuña de 60\"",
+   "franjas": [
+    "6am-w",
+    "noticiero",
+    "pulso",
+    "dos-puntos",
+    "luciernaga",
+    "hora20",
+    "polemica",
+    "as-mundial",
+    "de-pelicula",
+    "al-campo",
+    "planeta-caracol",
+    "noticieros-fds",
+    "a-vivir",
+    "noche-fantastica",
+    "caracol-fds"
+   ],
+   "id": "hablada-grabados-28"
+  },
+  {
+   "palabras": 17,
+   "maxPalabras": 17,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Texto",
+     "d": "Se entrega un texto ajustado a la cantidad de palabras correspondiente a la duración contratada."
+    },
+    {
+     "t": "Interpretación",
+     "d": "Son interpretadas por el locutor de turno, quien desarrolla el mensaje de acuerdo con el material y las indicaciones entregadas."
+    },
+    {
+     "t": "Ubicación",
+     "d": "Se emiten dentro del break comercial, compartiendo los espacios comerciales de cada hora con otras marcas."
+    }
+   ],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": "Modalidad de producción: este formato no se realiza en vivo desde la emisora. Se produce previamente mediante una grabación en voz en off, utilizando una voz autorizada por la emisora.",
+   "descripcion": "17 palabras como máximo para la duración contratada.",
+   "duracion": "5\"",
+   "familia": "hablada",
+   "tipo": "Leídos",
+   "nombre": "Mención leída de 5\"",
+   "franjas": [
+    "6am-w",
+    "noticiero",
+    "pulso",
+    "dos-puntos",
+    "luciernaga",
+    "hora20",
+    "polemica",
+    "as-mundial",
+    "de-pelicula",
+    "al-campo",
+    "planeta-caracol",
+    "noticieros-fds",
+    "a-vivir",
+    "noche-fantastica",
+    "caracol-fds"
+   ],
+   "id": "hablada-leidos-29"
+  },
+  {
+   "palabras": 32,
+   "maxPalabras": 32,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Texto",
+     "d": "Se entrega un texto ajustado a la cantidad de palabras correspondiente a la duración contratada."
+    },
+    {
+     "t": "Interpretación",
+     "d": "Son interpretadas por el locutor de turno, quien desarrolla el mensaje de acuerdo con el material y las indicaciones entregadas."
+    },
+    {
+     "t": "Ubicación",
+     "d": "Se emiten dentro del break comercial, compartiendo los espacios comerciales de cada hora con otras marcas."
+    }
+   ],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": "Modalidad de producción: este formato no se realiza en vivo desde la emisora. Se produce previamente mediante una grabación en voz en off, utilizando una voz autorizada por la emisora.",
+   "descripcion": "32 palabras como máximo para la duración contratada.",
+   "duracion": "10\"",
+   "familia": "hablada",
+   "tipo": "Leídos",
+   "nombre": "Mención leída de 10\"",
+   "franjas": [
+    "6am-w",
+    "noticiero",
+    "pulso",
+    "dos-puntos",
+    "luciernaga",
+    "hora20",
+    "polemica",
+    "as-mundial",
+    "de-pelicula",
+    "al-campo",
+    "planeta-caracol",
+    "noticieros-fds",
+    "a-vivir",
+    "noche-fantastica",
+    "caracol-fds"
+   ],
+   "id": "hablada-leidos-30"
+  },
+  {
+   "palabras": 46,
+   "maxPalabras": 46,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Texto",
+     "d": "Se entrega un texto ajustado a la cantidad de palabras correspondiente a la duración contratada."
+    },
+    {
+     "t": "Interpretación",
+     "d": "Son interpretadas por el locutor de turno, quien desarrolla el mensaje de acuerdo con el material y las indicaciones entregadas."
+    },
+    {
+     "t": "Ubicación",
+     "d": "Se emiten dentro del break comercial, compartiendo los espacios comerciales de cada hora con otras marcas."
+    }
+   ],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": "Modalidad de producción: este formato no se realiza en vivo desde la emisora. Se produce previamente mediante una grabación en voz en off, utilizando una voz autorizada por la emisora.",
+   "descripcion": "46 palabras como máximo para la duración contratada.",
+   "duracion": "15\"",
+   "familia": "hablada",
+   "tipo": "Leídos",
+   "nombre": "Mención leída de 15\"",
+   "franjas": [
+    "6am-w",
+    "noticiero",
+    "pulso",
+    "dos-puntos",
+    "luciernaga",
+    "hora20",
+    "polemica",
+    "as-mundial",
+    "de-pelicula",
+    "al-campo",
+    "planeta-caracol",
+    "noticieros-fds",
+    "a-vivir",
+    "noche-fantastica",
+    "caracol-fds"
+   ],
+   "id": "hablada-leidos-31"
+  },
+  {
+   "palabras": 64,
+   "maxPalabras": 64,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Texto",
+     "d": "Se entrega un texto ajustado a la cantidad de palabras correspondiente a la duración contratada."
+    },
+    {
+     "t": "Interpretación",
+     "d": "Son interpretadas por el locutor de turno, quien desarrolla el mensaje de acuerdo con el material y las indicaciones entregadas."
+    },
+    {
+     "t": "Ubicación",
+     "d": "Se emiten dentro del break comercial, compartiendo los espacios comerciales de cada hora con otras marcas."
+    }
+   ],
+   "consejo": "Las menciones de 20 y 30 segundos permiten desarrollar mensajes con mayor dinamismo y contenido.",
+   "protegido": false,
+   "franjaTexto": "Modalidad de producción: este formato no se realiza en vivo desde la emisora. Se produce previamente mediante una grabación en voz en off, utilizando una voz autorizada por la emisora.",
+   "descripcion": "64 palabras como máximo para la duración contratada.",
+   "duracion": "20\"",
+   "familia": "hablada",
+   "tipo": "Leídos",
+   "nombre": "Mención leída de 20\"",
+   "franjas": [
+    "6am-w",
+    "noticiero",
+    "pulso",
+    "dos-puntos",
+    "luciernaga",
+    "hora20",
+    "polemica",
+    "as-mundial",
+    "de-pelicula",
+    "al-campo",
+    "planeta-caracol",
+    "noticieros-fds",
+    "a-vivir",
+    "noche-fantastica",
+    "caracol-fds"
+   ],
+   "id": "hablada-leidos-32"
+  },
+  {
+   "palabras": 95,
+   "maxPalabras": 95,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Texto",
+     "d": "Se entrega un texto ajustado a la cantidad de palabras correspondiente a la duración contratada."
+    },
+    {
+     "t": "Interpretación",
+     "d": "Son interpretadas por el locutor de turno, quien desarrolla el mensaje de acuerdo con el material y las indicaciones entregadas."
+    },
+    {
+     "t": "Ubicación",
+     "d": "Se emiten dentro del break comercial, compartiendo los espacios comerciales de cada hora con otras marcas."
+    }
+   ],
+   "consejo": "Las menciones de 20 y 30 segundos permiten desarrollar mensajes con mayor dinamismo y contenido.",
+   "protegido": false,
+   "franjaTexto": "Modalidad de producción: este formato no se realiza en vivo desde la emisora. Se produce previamente mediante una grabación en voz en off, utilizando una voz autorizada por la emisora.",
+   "descripcion": "95 palabras como máximo para la duración contratada.",
+   "duracion": "30\"",
+   "familia": "hablada",
+   "tipo": "Leídos",
+   "nombre": "Mención leída de 30\"",
+   "franjas": [
+    "6am-w",
+    "noticiero",
+    "pulso",
+    "dos-puntos",
+    "luciernaga",
+    "hora20",
+    "polemica",
+    "as-mundial",
+    "de-pelicula",
+    "al-campo",
+    "planeta-caracol",
+    "noticieros-fds",
+    "a-vivir",
+    "noche-fantastica",
+    "caracol-fds"
+   ],
+   "id": "hablada-leidos-33"
+  },
+  {
+   "palabras": 115,
+   "maxPalabras": 115,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Texto",
+     "d": "Se entrega un texto ajustado a la cantidad de palabras correspondiente a la duración contratada."
+    },
+    {
+     "t": "Interpretación",
+     "d": "Son interpretadas por el locutor de turno, quien desarrolla el mensaje de acuerdo con el material y las indicaciones entregadas."
+    },
+    {
+     "t": "Ubicación",
+     "d": "Se emiten dentro del break comercial, compartiendo los espacios comerciales de cada hora con otras marcas."
+    }
+   ],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": "Modalidad de producción: este formato no se realiza en vivo desde la emisora. Se produce previamente mediante una grabación en voz en off, utilizando una voz autorizada por la emisora.",
+   "descripcion": "115 palabras como máximo para la duración contratada.",
+   "duracion": "40\"",
+   "familia": "hablada",
+   "tipo": "Leídos",
+   "nombre": "Mención leída de 40\"",
+   "franjas": [
+    "6am-w",
+    "noticiero",
+    "pulso",
+    "dos-puntos",
+    "luciernaga",
+    "hora20",
+    "polemica",
+    "as-mundial",
+    "de-pelicula",
+    "al-campo",
+    "planeta-caracol",
+    "noticieros-fds",
+    "a-vivir",
+    "noche-fantastica",
+    "caracol-fds"
+   ],
+   "id": "hablada-leidos-34"
+  },
+  {
+   "palabras": 180,
+   "maxPalabras": 180,
+   "componentes": [],
+   "specs": [
+    {
+     "t": "Texto",
+     "d": "Se entrega un texto ajustado a la cantidad de palabras correspondiente a la duración contratada."
+    },
+    {
+     "t": "Interpretación",
+     "d": "Son interpretadas por el locutor de turno, quien desarrolla el mensaje de acuerdo con el material y las indicaciones entregadas."
+    },
+    {
+     "t": "Ubicación",
+     "d": "Se emiten dentro del break comercial, compartiendo los espacios comerciales de cada hora con otras marcas."
+    }
+   ],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": "Modalidad de producción: este formato no se realiza en vivo desde la emisora. Se produce previamente mediante una grabación en voz en off, utilizando una voz autorizada por la emisora.",
+   "descripcion": "180 palabras como máximo para la duración contratada.",
+   "duracion": "60\"",
+   "familia": "hablada",
+   "tipo": "Leídos",
+   "nombre": "Mención leída de 60\"",
+   "franjas": [
+    "6am-w",
+    "noticiero",
+    "pulso",
+    "dos-puntos",
+    "luciernaga",
+    "hora20",
+    "polemica",
+    "as-mundial",
+    "de-pelicula",
+    "al-campo",
+    "planeta-caracol",
+    "noticieros-fds",
+    "a-vivir",
+    "noche-fantastica",
+    "caracol-fds"
+   ],
+   "id": "hablada-leidos-35"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [
+    "Presentación de la franja: de 5 a 10 segundos (grabado por una voz de Caracol).",
+    "Cierre: cuña grabada o texto leído de máximo 30 segundos."
+   ],
+   "specs": [
+    {
+     "t": "Presentación de marca",
+     "d": "Apertura del espacio con una mención que identifica y presenta la marca."
+    },
+    {
+     "t": "Desarrollo del contenido",
+     "d": "El noticiero o programa desarrolla su propio contenido informativo y editorial, de acuerdo con su línea temática. Este contenido es de manejo exclusivo de la emisora y no puede ser intervenido ni modificado por el cliente."
+    },
+    {
+     "t": "Cierre comercial",
+     "d": "Finaliza con la emisión de una cuña grabada de 30 segundos de la marca."
+    }
+   ],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": "Formato de patrocinio de una noticia o sección dentro de los programas de Caracol Radio, cuyo enfoque temático se alinea con el concepto de la campaña. Cada programa cuenta con una franja destinada a este tipo de espacios. Importante: el contenido editorial no puede ser intervenido por el cliente. Los programas La Luciérnaga (de lunes a viernes) y A Vivir Que Son Dos Días (sábados y domingos) ofrecen mayores posibilidades de integración y participación de marca.",
+   "descripcion": "Patrocinio de una noticia o sección dentro de los programas de Caracol Radio.",
+   "duracion": "60\"",
+   "familia": "hablada",
+   "tipo": "Secciones",
+   "nombre": "Sección de 60\"",
+   "franjas": [
+    "6am-w",
+    "noticiero",
+    "pulso",
+    "dos-puntos",
+    "luciernaga",
+    "hora20",
+    "polemica",
+    "as-mundial",
+    "de-pelicula",
+    "al-campo",
+    "planeta-caracol",
+    "noticieros-fds",
+    "a-vivir",
+    "noche-fantastica",
+    "caracol-fds"
+   ],
+   "id": "hablada-secciones-36"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [
+    "Presentación diaria del programa pregrabada con duración de 15\" durante 5 días.",
+    "Despedida diaria del programa pregrabada con duración de 15\" durante 5 días.",
+    "1 sección diaria durante 5 días. Cada sección incluye presentación de 10\" + cierre de sección con cuña hasta de 30\".",
+    "1 cuña diaria de hasta 30\" durante 5 días.",
+    "1 Momento CRC de hasta 60\"."
+   ],
+   "specs": [],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": null,
+   "descripcion": "Programa nacional de 5:00 a. m. a 12:00 m.",
+   "duracion": "Una semana (5 días continuos), lunes a viernes",
+   "familia": "hablada",
+   "tipo": "Patrocinios",
+   "nombre": "Patrocinio programa nacional 6AM – W",
+   "franjas": [
+    "6am-w"
+   ],
+   "id": "hablada-patrocinios-37"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [
+    "Presentación diaria del programa pregrabada con duración de 15\" durante 5 días.",
+    "Despedida diaria del programa pregrabada con duración de 15\" durante 5 días.",
+    "1 cuña diaria de hasta 30\" durante 5 días."
+   ],
+   "specs": [],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": null,
+   "descripcion": "Elige uno de los cinco programas en la franja de pauta.",
+   "duracion": "Una semana (5 días continuos), lunes a viernes",
+   "familia": "hablada",
+   "tipo": "Patrocinios",
+   "nombre": "Patrocinio de programas nacionales: Noticiero ½ día, Pulso del Fútbol, Hora 20, La Polémica o AS Mundial",
+   "franjas": [
+    "noticiero",
+    "pulso",
+    "hora20",
+    "polemica",
+    "as-mundial"
+   ],
+   "id": "hablada-patrocinios-38"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [
+    "Presentación diaria del programa pregrabada con duración de 15\" durante 5 días.",
+    "Despedida diaria del programa pregrabada con duración de 15\" durante 5 días.",
+    "1 sección diaria durante 5 días. Cada sección incluye presentación de 10\" + cierre de sección con cuña hasta de 30\".",
+    "1 Momento CRC de hasta 60\"."
+   ],
+   "specs": [],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": null,
+   "descripcion": "Programa nacional de 2:00 a 4:00 p. m.",
+   "duracion": "Una semana (5 días continuos), lunes a viernes",
+   "familia": "hablada",
+   "tipo": "Patrocinios",
+   "nombre": "Patrocinio programa nacional Dos Puntos",
+   "franjas": [
+    "dos-puntos"
+   ],
+   "id": "hablada-patrocinios-39"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [
+    "Presentación diaria del programa pregrabada con duración de 15\" durante 5 días.",
+    "Despedida diaria del programa pregrabada con duración de 15\" durante 5 días.",
+    "1 sección diaria durante 5 días. Cada sección incluye presentación de 10\" + cierre de sección con cuña hasta de 30\".",
+    "1 Momento CRC de hasta 60\"."
+   ],
+   "specs": [],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": null,
+   "descripcion": "Programa nacional de 4:00 a 7:00 p. m.",
+   "duracion": "Una semana (5 días continuos), lunes a viernes",
+   "familia": "hablada",
+   "tipo": "Patrocinios",
+   "nombre": "Patrocinio programa nacional La Luciérnaga",
+   "franjas": [
+    "luciernaga"
+   ],
+   "id": "hablada-patrocinios-40"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [
+    "Presentación diaria del programa con duración de 15\" durante 8 días (sábados y domingos del mes).",
+    "Despedida diaria del programa, grabada por la W, con duración de 15\" durante 8 días (sábados y domingos del mes).",
+    "1 sección diaria durante 8 días (sábados y domingos del mes). Cada sección incluye presentación de 10\" + cierre de sección con cuña hasta de 30\"."
+   ],
+   "specs": [],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": null,
+   "descripcion": "Elige uno de los programas en la franja de pauta.",
+   "duracion": "Mes completo (8 días: 4 sábados y 4 domingos continuos)",
+   "familia": "hablada",
+   "tipo": "Patrocinios",
+   "nombre": "Patrocinio de programas nacionales de fin de semana: De Película, Al Campo, Planeta Caracol o Noticieros FDS",
+   "franjas": [
+    "de-pelicula",
+    "al-campo",
+    "planeta-caracol",
+    "noticieros-fds"
+   ],
+   "id": "hablada-patrocinios-41"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [
+    "Presentación diaria del programa con duración de 15\" durante 8 días (sábados y domingos del mes).",
+    "Despedida diaria del programa, grabada por la W, con duración de 15\" durante 8 días (sábados y domingos del mes).",
+    "1 sección diaria durante 8 días (sábados y domingos del mes). Cada sección incluye presentación de 10\" + cierre de sección con cuña hasta de 30\".",
+    "2 formatos de Momentos CRC de hasta 60\"."
+   ],
+   "specs": [],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": null,
+   "descripcion": "Programa nacional de 8:00 a 11:00 a. m.",
+   "duracion": "Mes completo (8 días: 4 sábados y 4 domingos continuos)",
+   "familia": "hablada",
+   "tipo": "Patrocinios",
+   "nombre": "Patrocinio programa nacional A Vivir Que Son Dos Días",
+   "franjas": [
+    "a-vivir"
+   ],
+   "id": "hablada-patrocinios-42"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [
+    "Presentación diaria del programa pregrabada con duración de 15\" durante 5 días.",
+    "Despedida diaria del programa pregrabada con duración de 15\" durante 5 días.",
+    "5 cuñas diarias de hasta 30\" durante 5 días."
+   ],
+   "specs": [],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": null,
+   "descripcion": "Programa nacional de fin de semana en horario nocturno.",
+   "duracion": "Viernes y sábados, de 10:00 p. m. a 4:00 a. m.",
+   "familia": "hablada",
+   "tipo": "Patrocinios",
+   "nombre": "Patrocinio programa nacional Noche Fantástica",
+   "franjas": [
+    "noche-fantastica"
+   ],
+   "id": "hablada-patrocinios-43"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [
+    "Presencia de un talento Caracol durante 5 horas (7:00 a. m. a 12:00 m.) en el sitio definido por el anunciante, o desde cabina.",
+    "5 salidas comerciales de hasta 1 minuto hechas por el talento el día de la vitrina + 1 entrevista presencial de hasta 2 minutos.",
+    "3 promociones en cada uno de los siguientes programas: 6AM – W, Noticiero ½ día, El Pulso del Fútbol, Dos Puntos y La Luciérnaga.",
+    "5 contenidos de hasta 30\" en cada programa: 6AM – W, Dos Puntos y La Luciérnaga.",
+    "2 Instagram Stories de convocatoria que se publican antes de la actividad, elaborados por nuestro equipo digital."
+   ],
+   "specs": [],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": null,
+   "descripcion": "Un talento Caracol acompaña a la marca durante 5 horas en el sitio que defina el anunciante, o desde cabina.",
+   "duracion": "Lunes a viernes, 7:00 a. m. a 12:00 m. (5 horas)",
+   "familia": "hablada",
+   "tipo": "Vitrinas y esquinas",
+   "nombre": "Vitrina nacional 6AM – W",
+   "franjas": [
+    "6am-w"
+   ],
+   "id": "hablada-vitrinas-44"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [
+    "Desde la cabina de Caracol, nuestro talento genera contenido exclusivo de la marca en 6AM – W.",
+    "3 salidas comerciales de hasta 1 minuto hechas por el talento Caracol el día de la vitrina Plus.",
+    "1 entrevista digital a un vocero de la marca de hasta 10 minutos, desarrollada desde los estudios digitales de Prisa Media o vía Zoom, y posteriormente amplificada en las redes sociales de la emisora.",
+    "3 promociones en cada uno de los siguientes programas: 6AM – W, Noticiero ½ día, El Pulso del Fútbol, Dos Puntos y La Luciérnaga."
+   ],
+   "specs": [],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": null,
+   "descripcion": "Contenido exclusivo de la marca generado por el talento Caracol desde la cabina de 6AM – W.",
+   "duracion": "Lunes a viernes, 7:00 a. m. a 12:00 m.",
+   "familia": "hablada",
+   "tipo": "Vitrinas y esquinas",
+   "nombre": "Vitrina nacional «Plus» 6AM – W",
+   "franjas": [
+    "6am-w"
+   ],
+   "id": "hablada-vitrinas-45"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [
+    "Presencia de un talento Caracol durante las 2 horas del programa en el sitio definido por el anunciante, o desde cabina.",
+    "Total 4 salidas al aire de hasta 1 minuto: 3 salidas hechas por el talento + 1 entrevista.",
+    "2 promociones en 6AM – W.",
+    "3 promociones en cada uno de los siguientes programas: El Pulso del Fútbol, Dos Puntos, La Luciérnaga y Hora 20."
+   ],
+   "specs": [],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": null,
+   "descripcion": "Un talento Caracol durante las 2 horas del programa, en el sitio del anunciante o desde cabina.",
+   "duracion": "Lunes a viernes, 2:00 a 4:00 p. m. (2 horas)",
+   "familia": "hablada",
+   "tipo": "Vitrinas y esquinas",
+   "nombre": "Esquina Caracol nacional Dos Puntos",
+   "franjas": [
+    "dos-puntos"
+   ],
+   "id": "hablada-vitrinas-46"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [
+    "Presencia de un talento Caracol durante 3 horas (4:00 p. m. a 7:00 p. m.) en el sitio definido por el anunciante, o desde cabina.",
+    "Total 6 salidas de hasta 1 minuto: 4 salidas comerciales hechas por el talento + 2 entrevistas presenciales.",
+    "3 promociones en cada uno de los siguientes programas: 6AM – W, Dos Puntos, La Luciérnaga y Hora 20."
+   ],
+   "specs": [],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": null,
+   "descripcion": "Un talento Caracol durante 3 horas en el sitio del anunciante o desde cabina.",
+   "duracion": "Lunes a viernes, 4:00 a 7:00 p. m. (3 horas)",
+   "familia": "hablada",
+   "tipo": "Vitrinas y esquinas",
+   "nombre": "Esquina nacional La Luciérnaga",
+   "franjas": [
+    "luciernaga"
+   ],
+   "id": "hablada-vitrinas-47"
+  },
+  {
+   "palabras": null,
+   "maxPalabras": null,
+   "componentes": [
+    "Presencia de un talento Caracol durante 2 horas en el sitio del anunciante o desde cabina, programadas en Caracol Fin de Semana.",
+    "Total 4 salidas al aire de hasta 1 minuto: 3 salidas hechas por el talento + 1 entrevista.",
+    "2 promociones en 6AM – W, Dos Puntos, La Luciérnaga, Noche Fantástica y A Vivir Que Son Dos Días."
+   ],
+   "specs": [],
+   "consejo": null,
+   "protegido": false,
+   "franjaTexto": null,
+   "descripcion": "No aplica en la franja de 12:00 m. a 1:00 p. m.",
+   "duracion": "Sábado o domingo (2 horas)",
+   "familia": "hablada",
+   "tipo": "Vitrinas y esquinas",
+   "nombre": "Esquina nacional Caracol Fin de Semana",
+   "franjas": [
+    "caracol-fds"
+   ],
+   "id": "hablada-vitrinas-48"
+  }
+ ],
+ "digital": [
+  {
+   "id": "d1",
+   "categoria": "Display web · Tradicionales",
+   "nombre": "Robapágina",
+   "piezas": [
+    {
+     "pieza": "Robapágina",
+     "medida": "300 × 250 px",
+     "expande": "",
+     "peso": "100 KB",
+     "archivo": "HTML5 · JPG · GIF · PNG",
+     "obs": ""
+    }
+   ],
+   "notas": [],
+   "emisoras": [],
+   "aplica": "Todas las emisoras",
+   "enlaces": [],
+   "pasos": [],
+   "texto": null
+  },
+  {
+   "id": "d2",
+   "categoria": "Display web · Tradicionales",
+   "nombre": "Robapágina doble",
+   "piezas": [
+    {
+     "pieza": "Robapágina doble",
+     "medida": "300 × 600 px",
+     "expande": "",
+     "peso": "100 KB",
+     "archivo": "HTML5 · JPG · GIF · PNG",
+     "obs": ""
+    }
+   ],
+   "notas": [],
+   "emisoras": [],
+   "aplica": "Todas las emisoras",
+   "enlaces": [],
+   "pasos": [],
+   "texto": null
+  },
+  {
+   "id": "d3",
+   "categoria": "Display web · Tradicionales",
+   "nombre": "Top Banner",
+   "piezas": [
+    {
+     "pieza": "Top Banner",
+     "medida": "728 × 90 px",
+     "expande": "",
+     "peso": "100 KB",
+     "archivo": "HTML5 · JPG · GIF · PNG",
+     "obs": "No aplica para el primer scroll de la página."
+    }
+   ],
+   "notas": [],
+   "emisoras": [],
+   "aplica": "Todas las emisoras",
+   "enlaces": [],
+   "pasos": [],
+   "texto": null
+  },
+  {
+   "id": "d4",
+   "categoria": "Display web · Tradicionales",
+   "nombre": "Gigabanner",
+   "piezas": [
+    {
+     "pieza": "Gigabanner",
+     "medida": "980 × 90 px",
+     "expande": "",
+     "peso": "100 KB",
+     "archivo": "HTML5 · JPG · GIF · PNG",
+     "obs": ""
+    }
+   ],
+   "notas": [],
+   "emisoras": [],
+   "aplica": "Todas las emisoras",
+   "enlaces": [],
+   "pasos": [],
+   "texto": null
+  },
+  {
+   "id": "d5",
+   "categoria": "Display web · Grandes formatos",
+   "nombre": "Billboard",
+   "piezas": [
+    {
+     "pieza": "Billboard",
+     "medida": "980 × 250 px",
+     "expande": "",
+     "peso": "100 KB",
+     "archivo": "HTML5 · JPG · GIF · PNG",
+     "obs": ""
+    }
+   ],
+   "notas": [],
+   "emisoras": [],
+   "aplica": "Todas las emisoras",
+   "enlaces": [],
+   "pasos": [],
+   "texto": null
+  },
+  {
+   "id": "d6",
+   "categoria": "Display web · Grandes formatos",
+   "nombre": "Sync ad con expander",
+   "piezas": [
+    {
+     "pieza": "Sync ad 1 (inicial + expandida)",
+     "medida": "300 × 250 px",
+     "expande": "600 × 300 px",
+     "peso": "100 KB entre las dos piezas",
+     "archivo": "HTML5 · JPG · GIF · PNG",
+     "obs": "Aplica para internas."
+    },
+    {
+     "pieza": "Sync ad 2 (inicial + expandida)",
+     "medida": "728 × 90 px",
+     "expande": "728 × 300 px",
+     "peso": "100 KB entre las dos piezas",
+     "archivo": "HTML5 · JPG · GIF · PNG",
+     "obs": ""
+    }
+   ],
+   "notas": [
+    "Se compone de 4 piezas: dos tamaños iniciales y sus dos versiones expandidas."
+   ],
+   "emisoras": [],
+   "aplica": "Todas las emisoras",
+   "enlaces": [],
+   "pasos": [],
+   "texto": null
+  },
+  {
+   "id": "d7",
+   "categoria": "Display web · Grandes formatos",
+   "nombre": "Toma de internas Caracol",
+   "piezas": [
+    {
+     "pieza": "Billboard (1 pieza)",
+     "medida": "980 × 250 px",
+     "expande": "",
+     "peso": "100 KB",
+     "archivo": "HTML5 · JPG · GIF · PNG",
+     "obs": ""
+    },
+    {
+     "pieza": "Laterales (2 piezas)",
+     "medida": "120 × 600 px",
+     "expande": "",
+     "peso": "100 KB",
+     "archivo": "JPG · PNG",
+     "obs": ""
+    }
+   ],
+   "notas": [
+    "Toma de páginas internas. Se compone de 1 Billboard y 2 laterales."
+   ],
+   "emisoras": [
+    "caracol"
+   ],
+   "aplica": "Caracol Radio",
+   "enlaces": [],
+   "pasos": [],
+   "texto": null
+  },
+  {
+   "id": "d8",
+   "categoria": "Brand Day",
+   "nombre": "Brand Day Caracol Radio",
+   "piezas": [
+    {
+     "pieza": "Backing Caracol Desktop",
+     "medida": "Skin U invertida",
+     "expande": "",
+     "peso": "100 KB",
+     "archivo": "JPG · GIF",
+     "obs": "Recomendamos al anunciante tener en cuenta el demo de la pieza para que se ajuste a las medidas del portal (en caso de no tener el demo, por favor pídaselo a su ejecutivo)."
+    },
+    {
+     "pieza": "Laterales Desktop (apoyo en internas)",
+     "medida": "120 × 600 px",
+     "expande": "",
+     "peso": "100 KB",
+     "archivo": "JPG · GIF",
+     "obs": ""
+    },
+    {
+     "pieza": "Banner mobile",
+     "medida": "320 × 100 px",
+     "expande": "",
+     "peso": "100 KB",
+     "archivo": "JPG · HTML5 · GIF",
+     "obs": ""
+    },
+    {
+     "pieza": "Roba página mobile",
+     "medida": "320 × 100 px ó 300 × 250 px",
+     "expande": "",
+     "peso": "100 KB",
+     "archivo": "JPG · HTML5 · GIF",
+     "obs": ""
+    }
+   ],
+   "notas": [
+    "Recomendamos al anunciante tener en cuenta el demo de la pieza para que se ajuste a las medidas del portal (en caso de no tener el demo, por favor pídaselo a su ejecutivo)."
+   ],
+   "emisoras": [
+    "caracol"
+   ],
+   "aplica": "Caracol Radio",
+   "enlaces": [],
+   "pasos": [],
+   "texto": null
+  },
+  {
+   "id": "d9",
+   "categoria": "Brand Day",
+   "nombre": "Brand Day W Radio y Radioacktiva",
+   "piezas": [
+    {
+     "pieza": "Lateral derecho",
+     "medida": "422 × 900 px",
+     "expande": "",
+     "peso": "100 KB",
+     "archivo": "JPG · GIF",
+     "obs": "Recomendamos al anunciante tener en cuenta el demo de la pieza para que se ajuste a las medidas del portal (en caso de no tener el demo, por favor pídaselo a su ejecutivo)."
+    },
+    {
+     "pieza": "Lateral izquierdo",
+     "medida": "421 × 900 px",
+     "expande": "",
+     "peso": "100 KB",
+     "archivo": "JPG · GIF",
+     "obs": ""
+    },
+    {
+     "pieza": "Banner superior",
+     "medida": "980 × 250 px",
+     "expande": "",
+     "peso": "100 KB",
+     "archivo": "JPG · GIF",
+     "obs": ""
+    },
+    {
+     "pieza": "Laterales Desktop (apoyo en internas)",
+     "medida": "120 × 600 px",
+     "expande": "",
+     "peso": "100 KB",
+     "archivo": "JPG · GIF",
+     "obs": ""
+    },
+    {
+     "pieza": "Banner mobile",
+     "medida": "320 × 100 px",
+     "expande": "",
+     "peso": "100 KB",
+     "archivo": "JPG · HTML5 · GIF",
+     "obs": ""
+    },
+    {
+     "pieza": "Roba página mobile",
+     "medida": "320 × 100 px ó 300 × 250 px",
+     "expande": "",
+     "peso": "100 KB",
+     "archivo": "JPG · HTML5 · GIF",
+     "obs": ""
+    }
+   ],
+   "notas": [
+    "Recomendamos al anunciante tener en cuenta el demo de la pieza para que se ajuste a las medidas del portal (en caso de no tener el demo, por favor pídaselo a su ejecutivo)."
+   ],
+   "emisoras": [
+    "radioacktiva"
+   ],
+   "aplica": "W Radio y Radioacktiva",
+   "enlaces": [],
+   "pasos": [],
+   "texto": null
+  },
+  {
+   "id": "d10",
+   "categoria": "Brand Day",
+   "nombre": "Brand Day Tropicana · Bésame · Oxígeno · Los40",
+   "piezas": [
+    {
+     "pieza": "Backing musicales Desktop",
+     "medida": "Skin U invertida",
+     "expande": "",
+     "peso": "100 KB",
+     "archivo": "JPG · GIF",
+     "obs": "Recomendamos al anunciante tener en cuenta el demo de la pieza para que se ajuste a las medidas del portal (en caso de no tener el demo, por favor pídaselo a su ejecutivo)."
+    },
+    {
+     "pieza": "Laterales Desktop (apoyo en internas)",
+     "medida": "120 × 600 px",
+     "expande": "",
+     "peso": "100 KB",
+     "archivo": "JPG · GIF",
+     "obs": ""
+    },
+    {
+     "pieza": "Banner mobile",
+     "medida": "320 × 100 px",
+     "expande": "",
+     "peso": "100 KB",
+     "archivo": "JPG · HTML5 · GIF",
+     "obs": ""
+    },
+    {
+     "pieza": "Roba página mobile",
+     "medida": "320 × 100 px ó 300 × 250 px",
+     "expande": "",
+     "peso": "100 KB",
+     "archivo": "JPG · HTML5 · GIF",
+     "obs": ""
+    }
+   ],
+   "notas": [
+    "Recomendamos al anunciante tener en cuenta el demo de la pieza para que se ajuste a las medidas del portal (en caso de no tener el demo, por favor pídaselo a su ejecutivo)."
+   ],
+   "emisoras": [
+    "tropicana",
+    "besame",
+    "los40"
+   ],
+   "aplica": "Tropicana, Bésame, Oxígeno y Los40",
+   "enlaces": [],
+   "pasos": [],
+   "texto": null
+  },
+  {
+   "id": "d11",
+   "categoria": "Audio y video en streaming",
+   "nombre": "Preroll de audio en el player de streaming",
+   "piezas": [
+    {
+     "pieza": "Preroll de audio 30\"",
+     "medida": "30\"",
+     "expande": "",
+     "peso": "2 MB",
+     "archivo": "MP3",
+     "obs": "Debe llevar la pata de inicio."
+    },
+    {
+     "pieza": "Preroll de audio 20\"",
+     "medida": "20\"",
+     "expande": "",
+     "peso": "2 MB",
+     "archivo": "MP3",
+     "obs": "Debe llevar la pata de inicio."
+    },
+    {
+     "pieza": "Preroll de audio 15\"",
+     "medida": "15\"",
+     "expande": "",
+     "peso": "2 MB",
+     "archivo": "MP3",
+     "obs": "Debe llevar la pata de inicio."
+    }
+   ],
+   "notas": [],
+   "emisoras": [],
+   "aplica": "Todas las emisoras",
+   "enlaces": [],
+   "pasos": [],
+   "texto": null
+  },
+  {
+   "id": "d12",
+   "categoria": "Audio y video en streaming",
+   "nombre": "Preroll de video en el player de streaming",
+   "piezas": [
+    {
+     "pieza": "Preroll de video 30\"",
+     "medida": "30\"",
+     "expande": "",
+     "peso": "2 MB",
+     "archivo": "MP4",
+     "obs": ""
+    },
+    {
+     "pieza": "Preroll de video 20\"",
+     "medida": "20\"",
+     "expande": "",
+     "peso": "2 MB",
+     "archivo": "MP4",
+     "obs": ""
+    },
+    {
+     "pieza": "Preroll de video 15\"",
+     "medida": "15\"",
+     "expande": "",
+     "peso": "2 MB",
+     "archivo": "MP4",
+     "obs": ""
+    }
+   ],
+   "notas": [],
+   "emisoras": [],
+   "aplica": "Todas las emisoras",
+   "enlaces": [],
+   "pasos": [],
+   "texto": null
+  },
+  {
+   "id": "d13",
+   "categoria": "Mobile",
+   "nombre": "Banner inferior mobile",
+   "piezas": [
+    {
+     "pieza": "Banner inferior",
+     "medida": "320 × 50 px",
+     "expande": "",
+     "peso": "40 KB",
+     "archivo": "HTML5 · JPG · GIF",
+     "obs": ""
+    }
+   ],
+   "notas": [],
+   "emisoras": [],
+   "aplica": "Todas las emisoras",
+   "enlaces": [],
+   "pasos": [],
+   "texto": null
+  },
+  {
+   "id": "d14",
+   "categoria": "Mobile",
+   "nombre": "Robapágina doble mobile",
+   "piezas": [
+    {
+     "pieza": "Robapágina doble",
+     "medida": "300 × 600 px",
+     "expande": "",
+     "peso": "40 KB",
+     "archivo": "HTML5 · JPG · GIF",
+     "obs": ""
+    }
+   ],
+   "notas": [],
+   "emisoras": [],
+   "aplica": "Todas las emisoras",
+   "enlaces": [],
+   "pasos": [],
+   "texto": null
+  },
+  {
+   "id": "d15",
+   "categoria": "Mobile",
+   "nombre": "Robapágina mobile",
+   "piezas": [
+    {
+     "pieza": "Robapágina",
+     "medida": "300 × 250 px",
+     "expande": "",
+     "peso": "40 KB",
+     "archivo": "HTML5 · JPG · GIF",
+     "obs": ""
+    }
+   ],
+   "notas": [],
+   "emisoras": [],
+   "aplica": "Todas las emisoras",
+   "enlaces": [],
+   "pasos": [],
+   "texto": null
+  },
+  {
+   "id": "d16",
+   "categoria": "Mobile",
+   "nombre": "Banner mobile grande",
+   "piezas": [
+    {
+     "pieza": "Banner mobile grande",
+     "medida": "320 × 100 px",
+     "expande": "",
+     "peso": "40 KB",
+     "archivo": "HTML5 · JPG · GIF",
+     "obs": ""
+    }
+   ],
+   "notas": [],
+   "emisoras": [],
+   "aplica": "Todas las emisoras",
+   "enlaces": [],
+   "pasos": [],
+   "texto": null
+  },
+  {
+   "id": "d17",
+   "categoria": "Redes sociales",
+   "nombre": "Facebook",
+   "piezas": [
+    {
+     "pieza": "Post",
+     "medida": "900 × 900 px",
+     "expande": "",
+     "peso": "",
+     "archivo": "Imagen",
+     "obs": ""
+    },
+    {
+     "pieza": "Post video",
+     "medida": "900 × 900 px",
+     "expande": "",
+     "peso": "",
+     "archivo": "MP4",
+     "obs": "Máximo 5 minutos."
+    },
+    {
+     "pieza": "Historia",
+     "medida": "750 × 1334 px",
+     "expande": "",
+     "peso": "",
+     "archivo": "Imagen",
+     "obs": ""
+    },
+    {
+     "pieza": "Historia video",
+     "medida": "750 × 1334 px",
+     "expande": "",
+     "peso": "",
+     "archivo": "MP4",
+     "obs": "Máximo 15 segundos."
+    }
+   ],
+   "notas": [
+    "El post no puede tener URL que direccione al portal del anunciante.",
+    "Una marca solo puede tener 1 publicación diaria en el fanpage de la emisora."
+   ],
+   "emisoras": [],
+   "aplica": "Todas las emisoras",
+   "enlaces": [],
+   "pasos": [],
+   "texto": "240 caracteres con espacios. Debe incluir el hashtag #Aliados y la @ oficial del cliente."
+  },
+  {
+   "id": "d18",
+   "categoria": "Redes sociales",
+   "nombre": "Twitter (X)",
+   "piezas": [
+    {
+     "pieza": "Tweet",
+     "medida": "900 × 900 px",
+     "expande": "",
+     "peso": "",
+     "archivo": "Imagen",
+     "obs": ""
+    },
+    {
+     "pieza": "Tweet video",
+     "medida": "900 × 900 px",
+     "expande": "",
+     "peso": "",
+     "archivo": "MP4",
+     "obs": "Máximo 2 minutos."
+    }
+   ],
+   "notas": [
+    "El post no puede tener URL que direccione al portal del anunciante.",
+    "Una marca solo puede tener 1 publicación diaria en el fanpage de la emisora."
+   ],
+   "emisoras": [],
+   "aplica": "Todas las emisoras",
+   "enlaces": [],
+   "pasos": [],
+   "texto": "140 caracteres con espacios. Debe incluir el hashtag #AliadosW o #AliadosCaracol."
+  },
+  {
+   "id": "d19",
+   "categoria": "Redes sociales",
+   "nombre": "Instagram",
+   "piezas": [
+    {
+     "pieza": "Post",
+     "medida": "900 × 900 px",
+     "expande": "",
+     "peso": "",
+     "archivo": "Imagen",
+     "obs": ""
+    },
+    {
+     "pieza": "Post video",
+     "medida": "1080 × 1350 px",
+     "expande": "",
+     "peso": "",
+     "archivo": "MP4",
+     "obs": "Máximo 1 minuto."
+    },
+    {
+     "pieza": "Historia",
+     "medida": "750 × 1334 px",
+     "expande": "",
+     "peso": "",
+     "archivo": "Imagen",
+     "obs": ""
+    },
+    {
+     "pieza": "Historia video",
+     "medida": "1080 × 1350 px",
+     "expande": "",
+     "peso": "",
+     "archivo": "MP4",
+     "obs": "Máximo 15 segundos."
+    },
+    {
+     "pieza": "IGTV",
+     "medida": "Video 750 × 1334 px + imagen 900 × 900 px",
+     "expande": "",
+     "peso": "",
+     "archivo": "MP4 + imagen",
+     "obs": ""
+    }
+   ],
+   "notas": [
+    "El post no puede tener URL que direccione al portal del anunciante.",
+    "Una marca solo puede tener 1 publicación diaria en el fanpage de la emisora."
+   ],
+   "emisoras": [],
+   "aplica": "Todas las emisoras",
+   "enlaces": [],
+   "pasos": [],
+   "texto": "240 caracteres con espacios. Debe incluir el hashtag #AliadosW o #AliadosCaracol."
+  },
+  {
+   "id": "d20",
+   "categoria": "Contenidos en Facebook",
+   "nombre": "Contenido patrocinado",
+   "piezas": [
+    {
+     "pieza": "Imagen para emisoras habladas",
+     "medida": "1080 × 750 px",
+     "expande": "",
+     "peso": "",
+     "archivo": "Imagen",
+     "obs": ""
+    },
+    {
+     "pieza": "Imagen para emisoras musicales",
+     "medida": "720 × 300 px",
+     "expande": "",
+     "peso": "",
+     "archivo": "Imagen",
+     "obs": ""
+    }
+   ],
+   "notas": [
+    "Diligenciar el formato brief desarrollando el tema del que va a tratar el contenido.",
+    "Tiempo de desarrollo: 3 días hábiles.",
+    "Procura que las imágenes no tengan textos: los cortes automáticos de la plataforma pueden dejarlas cortadas."
+   ],
+   "emisoras": [],
+   "aplica": "Todas las emisoras",
+   "enlaces": [],
+   "pasos": [],
+   "texto": null
+  },
+  {
+   "id": "d21",
+   "categoria": "Contenidos en Facebook",
+   "nombre": "Video TXT",
+   "piezas": [],
+   "notas": [
+    "Diligenciar el formato brief desarrollando el tema del que va a tratar el contenido.",
+    "Logo en vectores + manual de marca.",
+    "Recursos gráficos de la marca (fotos o videos).",
+    "Tiempo de desarrollo: 6 días hábiles."
+   ],
+   "emisoras": [],
+   "aplica": "Todas las emisoras",
+   "enlaces": [],
+   "pasos": [],
+   "texto": null
+  },
+  {
+   "id": "d22",
+   "categoria": "Contenidos en Facebook",
+   "nombre": "Infografía",
+   "piezas": [],
+   "notas": [
+    "Diligenciar el formato brief desarrollando el tema del que va a tratar el contenido.",
+    "Logo en vectores + manual de marca.",
+    "Recursos gráficos de la marca.",
+    "Tiempo de desarrollo: 6 días hábiles.",
+    "Si es el cliente quien desarrolla la infografía, debe medir 1100 px de ancho."
+   ],
+   "emisoras": [],
+   "aplica": "Todas las emisoras",
+   "enlaces": [],
+   "pasos": [],
+   "texto": null
+  },
+  {
+   "id": "d23",
+   "categoria": "Contenidos en Facebook",
+   "nombre": "Agrupador de contenidos",
+   "piezas": [],
+   "notas": [
+    "Nombre del agrupador.",
+    "Descripción de dos renglones de la temática del agrupador."
+   ],
+   "emisoras": [],
+   "aplica": "Todas las emisoras",
+   "enlaces": [
+    {
+     "t": "Caracol Radio",
+     "u": "https://www.facebook.com/caracolradio"
+    },
+    {
+     "t": "W Radio",
+     "u": "https://www.facebook.com/WRadioCo"
+    },
+    {
+     "t": "Tropicana",
+     "u": "https://www.facebook.com/TropicanaColombia"
+    },
+    {
+     "t": "Bésame",
+     "u": "https://www.facebook.com/BesameRadioColombia"
+    },
+    {
+     "t": "Los40",
+     "u": "https://www.facebook.com/LOS40Colombia"
+    },
+    {
+     "t": "Radioacktiva",
+     "u": "https://www.facebook.com/radioacktiva"
+    }
+   ],
+   "pasos": [],
+   "texto": null
+  },
+  {
+   "id": "d24",
+   "categoria": "Contenidos en Facebook",
+   "nombre": "Retransmisiones en vivo por Facebook",
+   "piezas": [],
+   "notas": [],
+   "emisoras": [],
+   "aplica": "Todas las emisoras",
+   "enlaces": [],
+   "pasos": [
+    "Enviar la solicitud de crossposting al fan page de la emisora en la cual se va a retransmitir.",
+    "Compartir el link de la invitación con Brand Estudio.",
+    "Al lanzar su live, el cliente debe seleccionar en configuraciones «retransmitir en nuestro Fan Page» para que salga automáticamente."
+   ],
+   "texto": null
+  }
+ ]
+}
