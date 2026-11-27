@@ -9,6 +9,8 @@ Hay dos versiones con el mismo contenido, los mismos nombres y los mismos colore
 | `index.html` | Plataforma web de un solo archivo (funciona sin internet). |
 | `Guia_Formatos_PrisaMedia.xlsx` | Excel con listas desplegables en cascada y fórmulas (sin macros). |
 
+Cada formato incluye además una **recomendación estratégica**: cuándo mencionar la marca (inicio, inicio y cierre, o cierre), cómo plantear el mensaje, el llamado a la acción y qué evitar. Son pautas generales de planificación de medios, no hacen parte del archivo de especificaciones; se editan en `build/datos.py` (`_estrategia_radio` y `_estrategia_digital`).
+
 ## Cómo usarlas
 
 **HTML:** abre `index.html` en el navegador, o publícalo con GitHub Pages (Settings → Pages → Deploy from a branch → raíz del repositorio).

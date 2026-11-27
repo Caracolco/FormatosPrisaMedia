@@ -498,6 +498,171 @@ def _digital():
     return d
 
 
+# --------------------------------------------------------------------------
+# RECOMENDACIONES ESTRATÉGICAS (criterio de planificación de medios)
+# No vienen del archivo de especificaciones: son pautas generales de buenas
+# prácticas ATL/digital. Cada ítem es {t: rótulo, d: texto}. Ajustar con el equipo comercial.
+# --------------------------------------------------------------------------
+def _e(marca=None, mensaje=None, cta=None, evita=None, extra=None):
+    out = []
+    if marca: out.append({"t": "Mención de la marca", "d": marca})
+    if mensaje: out.append({"t": "Mensaje", "d": mensaje})
+    if cta: out.append({"t": "Llamado a la acción", "d": cta})
+    if extra: out.append({"t": extra[0], "d": extra[1]})
+    if evita: out.append({"t": "Evita", "d": evita})
+    return out
+
+
+_CUNA = {
+    '5"': _e("Nombra la marca al inicio y repítela al cierre: en 5 segundos la marca es el mensaje.",
+             "Una sola idea (marca + beneficio o frase de posicionamiento). Úsala para mantener la recordación, no para explicar.",
+             evita="Precios, direcciones o teléfonos: no alcanzan a retenerse."),
+    '10"': _e("Al inicio (primeros 2 segundos) y al cierre: dos menciones en total.",
+              "Un beneficio y, si cabe, un llamado muy corto. Ideal para jingle o frase de posicionamiento.",
+              evita="Meter dos ideas en una sola pieza."),
+    '15"': _e("Al inicio, para ganar atención, y al cierre, para fijar el recuerdo.",
+              "Una idea central con su beneficio.", "Uno simple y fácil de recordar, por ejemplo «búscalo en…».",
+              "Datos largos como URL o teléfonos."),
+    '20"': _e("Al inicio, como gancho, y al final junto al llamado a la acción.",
+              "Beneficio principal, una razón para creerlo y cierre con la marca.", "Al final, junto a la marca.",
+              "Saturar con más de un beneficio."),
+    '30"': _e("Al inicio (primeros 3 a 5 segundos) y al cierre. Si la pieza es narrativa, una mención intermedia refuerza el recuerdo.",
+              "Gancho, desarrollo de un solo beneficio y cierre. Es la duración con más espacio para contar una historia o un lanzamiento.",
+              "Claro y único, en el cierre.", "Dejar la marca solo al final: si el oyente se distrae, no la recibe."),
+    '35"': _e("Al inicio, a la mitad y al cierre (tres menciones).",
+              "Permite apoyarse en un ejemplo o testimonio. Mantén una sola promesa central.",
+              "En el cierre.", "Alargar el texto sin ritmo: genera fatiga. Rota 2 o 3 versiones durante la campaña."),
+    '60"': _e("Al inicio, una vez durante el desarrollo y en el cierre.",
+              "Estructura de gancho, historia o diálogo y cierre. Recomendado para lanzamientos, servicios o productos que requieren explicación.",
+              "En el cierre, con la marca.", "Repetir la misma versión muchas veces: alterna versiones para evitar el desgaste."),
+}
+_CUNA['40"'] = _CUNA['45"'] = _CUNA['35"']
+
+_LEIDA = {
+    "corta": _e("Que el locutor la diga en la primera frase y la repita al cierre.",
+                "Un solo dato clave en lenguaje conversacional: el locutor pone la voz y tú pones la idea.",
+                evita="Redactar como aviso publicitario: se nota que es un texto leído.",
+                extra=("Brief al locutor", "Comparte la pronunciación de la marca y las 2 o 3 ideas que no pueden faltar.")),
+    "media": _e("Al inicio y al cierre. En 30\" puedes añadir una mención intermedia.",
+                "Beneficio, razón para creer y llamado a la acción; escribe como se habla, con frases cortas.",
+                "Una sola acción, en el cierre.", "Pasarte del número de palabras: el locutor acelera y pierde claridad.",
+                extra=("Brief al locutor", "Comparte la pronunciación de la marca y las 2 o 3 ideas que no pueden faltar.")),
+    "larga": _e("Al inicio, a la mitad y al cierre.",
+                "Cuenta una situación cotidiana o un caso: el locutor aporta credibilidad personal.",
+                evita="Listas de datos o precios: se olvidan al escucharlos.",
+                extra=("Brief al locutor", "Comparte la pronunciación de la marca y las 2 o 3 ideas que no pueden faltar.")),
+}
+
+
+def _estrategia_radio(f):
+    t, n = f["tipo"], f["nombre"]
+    if t == "Grabados":
+        return _CUNA[f["duracion"]]
+    if t == "Leídos":
+        return _LEIDA["corta" if f["duracion"] in ('5"', '10"', '15"') else "media" if f["duracion"] in ('20"', '30"') else "larga"]
+    if t == "Secciones" and f["familia"] == "musical":
+        return _e("En la presentación de la franja (apertura) y en el cierre.",
+                  "El tema debe interesar al oyente por sí solo (consejo, dato útil, tendencia) y la marca aparece como quien lo hace posible.",
+                  "Resérvalo para el cierre de 30\", no para el desarrollo.",
+                  "Convertir la sección en un anuncio largo: pierde credibilidad con la mesa de locutores.")
+    if t == "Secciones":
+        return _e("En la presentación grabada y de nuevo en la cuña de cierre.",
+                  "Elige un tema afín al concepto de campaña. El contenido editorial es de la emisora: tú aportas el ángulo, no el texto.",
+                  "En la cuña de cierre de 30\".",
+                  "Intentar intervenir el contenido editorial: no es posible y afectaría la credibilidad.",
+                  extra=("Más integración", "La Luciérnaga y A Vivir Que Son Dos Días ofrecen más posibilidades de participación de marca."))
+    if t == "Individual":
+        return _e("El locutor la nombra al inicio y la repite al cierre.",
+                  "Conversacional y específico para ese horario; sirve para posicionamiento, ofertas o recordatorios.",
+                  "Uno solo, simple y al final.",
+                  "Un texto sin ritmo: entra entre canción y canción y debe sonar con la energía de la emisora.")
+    if t == "Remotos":
+        return _e("En la primera frase de cada salida y en las promociones, siempre junto al lugar de la activación.",
+                  "Antes: convoca con lugar, hora y beneficio (las 10 promociones, desde dos días antes). Durante: salidas que inviten a pasar por el punto.",
+                  "«Ven hoy a…» con un incentivo claro: dinámica, premio o descuento.",
+                  "Superar 300 a 360 palabras por salida o llegar sin una dinámica para el público presente.")
+    if t == "Patrocinios":
+        return _e("En la presentación y en la despedida diaria: la marca abre y cierra el programa. Asocia el nombre al programa, no solo a un producto.",
+                  "Elige un programa afín a tu público (puedes apoyarte en Recomendar emisora) y una idea que se pueda ir contando durante el periodo.",
+                  "En la cuña o el momento diario de la marca, no en la presentación.",
+                  "Repetir la misma cuña todos los días: cambia el mensaje o su orden a lo largo de la semana.")
+    if t == "Vitrinas y esquinas":
+        return _e("El talento la menciona al comenzar cada salida y al despedirla.",
+                  "Aprovecha el contacto con la gente: demostración, entrevista a un vocero, historias reales de clientes.",
+                  "Convoca a la activación en las promociones previas: lugar, hora y beneficio.",
+                  "Salidas sin tema nuevo: prepara puntos de conversación distintos para cada una.")
+    return []
+
+
+def _estrategia_digital(f):
+    c, n = f["categoria"], f["nombre"]
+    if c.startswith("Display web"):
+        if n in ("Top Banner", "Gigabanner", "Billboard"):
+            msg = "Formato horizontal: ideal para mensajes cortos (3 a 5 palabras) con el logo siempre a la vista."
+        elif n == "Robapágina doble":
+            msg = "Formato vertical: da espacio para producto y beneficio. Muy bueno para lanzamientos."
+        elif n == "Robapágina":
+            msg = "Formato versátil: sirve para marca y para respuesta. Imagen sencilla y un botón claro."
+        elif n.startswith("Sync"):
+            msg = "La pieza inicial debe funcionar sola; usa la versión expandida para el detalle o la promoción."
+        else:
+            msg = "Presencia dominante en páginas internas: usa un solo concepto creativo en las tres piezas."
+        return _e("Logo visible desde el primer segundo y en el último cuadro de la animación.", msg,
+                  "Un botón o frase con verbo claro (Conoce, Descubre, Compra).",
+                  "Texto pequeño o varias ideas. Cuida el peso máximo optimizando las imágenes.")
+    if c == "Brand Day":
+        return _e("Domina el portal ese día: mismo logo y mismo concepto en todas las piezas (desktop y mobile).",
+                  "Una sola oferta o noticia; úsalo para lanzamientos o fechas clave.",
+                  "Sincronízalo con pauta de radio el mismo día para reforzar el mensaje.",
+                  "Diseños distintos entre piezas. Revisa el demo para que no se corten elementos del skin.")
+    if c == "Audio y video en streaming":
+        if "audio" in n:
+            return _e("Dila en los primeros 3 segundos (la «pata» de inicio) y de nuevo al cierre.",
+                      "Cercano y directo: el oyente de streaming está atento y normalmente con audífonos. En 15\" una idea; en 30\", una mini historia.",
+                      "Uno solo, simple y fácil de recordar.",
+                      "Copiar la cuña de radio sin adaptarla: el contexto es más íntimo.")
+        return _e("Logo y gancho en los primeros 5 segundos; refuérzalos al final.",
+                  "Cuenta la idea de forma visual y agrega subtítulos: muchos usuarios ven video sin sonido. 15\" para recordación, 30\" para contar una historia.",
+                  "Cierra con logo y llamado visibles.",
+                  "Dejar el mensaje clave para el final.")
+    if c == "Mobile":
+        return _e("Logo grande y legible desde el primer momento.",
+                  "Pantalla pequeña: máximo 5 palabras y una imagen simple.",
+                  "Un botón visible y fácil de tocar.",
+                  "Texto largo o detalles finos que no se leen en el celular.")
+    if c == "Redes sociales":
+        if n == "Twitter (X)":
+            return _e("Nómbrala en la primera frase; en 140 caracteres no hay espacio para esperar.",
+                      "Frase corta con gancho, el hashtag obligatorio y la @ del cliente.",
+                      "No se permite URL al portal del anunciante: invita a interactuar o a seguir la @.",
+                      "Publicar más de una vez al día: la regla es 1 publicación por marca.")
+        return _e("Nómbrala en la primera línea del texto, que es la que más se ve.",
+                  "Texto breve con un solo mensaje, hashtag obligatorio y la @ del cliente. En video, lo importante en los primeros 3 segundos y con subtítulos; en historias, formato vertical.",
+                  "No se permite URL al portal del anunciante: invita a comentar, compartir o seguir la @.",
+                  "Publicar más de una vez al día: la regla es 1 publicación por marca.")
+    if n == "Contenido patrocinado":
+        return _e("En el título o el primer párrafo, como quien hace posible el contenido.",
+                  "Aporta valor primero: un tema que interese a la audiencia y en el que tu marca sea parte de la solución, no un aviso.",
+                  "Al final del contenido, no al principio.",
+                  "Imágenes con texto: los cortes automáticos de la plataforma pueden dejarlas cortadas.")
+    if n == "Video TXT":
+        return _e("Al inicio y al cierre del video, con el logo en vectores.",
+                  "Guion corto y texto grande y legible: se ve sin audio.",
+                  "Una sola acción, al final.",
+                  "Frases largas en pantalla o demasiados mensajes.")
+    if n == "Infografía":
+        return _e("Marca arriba y abajo de la infografía.",
+                  "Un dato por bloque, de lo más relevante a lo menos.",
+                  evita="Saturarla de texto; respeta el ancho de 1100 px si la desarrollas tú.")
+    if n == "Agrupador de contenidos":
+        return _e("Con el nombre del agrupador, que ancla la marca a una temática.",
+                  "Elige una temática continua y relevante para tu público; el nombre debe ser claro y durable.",
+                  evita="Cambiar de tema a mitad de campaña: se pierde la asociación.")
+    return _e("Anuncia el live con anticipación y menciona la marca al inicio y cuando lleguen nuevos espectadores.",
+              "Un tema con valor para la audiencia, no solo un anuncio de la marca.",
+              evita="Lanzar el live sin haber enviado la solicitud de crossposting a tiempo.")
+
+
 def construir():
     perfiles_meta = [{"id": i, "label": l, "grupo": g} for i, l, g in PERFILES]
     emisoras = []
@@ -508,16 +673,21 @@ def construir():
     formatos = _radio()
     for fmt in formatos:
         fmt.pop("tipo_id", None)
+        fmt["estrategia"] = _estrategia_radio(fmt)
+    digital = _digital()
+    for fd in digital:
+        fd["estrategia"] = _estrategia_digital(fd)
     return {
         "meta": {
             "titulo": "Guía de formatos Prisa Media",
+            "nota_estrategia": "Las recomendaciones estratégicas son pautas generales de planificación de medios (no hacen parte de las especificaciones técnicas). Ajústalas con tu ejecutivo.",
             "fuentes": ["FORMATOS PRISA MEDIA – Grupo Nutresa (especificaciones de radio y digital)",
                         "AUDIENCIAS PRISA MEDIA (mapa de afinidad TGI R2 2024; perfiles TGI Choices 2026)"],
         },
         "bandasEdad": BANDAS_EDAD, "nse": NSE, "atajos": ATAJOS,
         "perfiles": perfiles_meta, "emisoras": emisoras, "metricas": [
             {"id": i, "linea1": a, "linea2": b} for i, a, b in METRICAS_ROTULOS],
-        "franjas": FRANJAS, "radio": formatos, "digital": _digital(),
+        "franjas": FRANJAS, "radio": formatos, "digital": digital,
     }
 
 

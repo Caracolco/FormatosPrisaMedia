@@ -122,6 +122,7 @@ def em_color_rules(ws, rng, first_cell):
 def txt_comp(f): return "\n".join("• " + c for c in f["componentes"])
 def txt_spec(f): return "\n".join(f"• {s['t']}: {s['d']}" for s in f["specs"])
 def franja_texto(f): return f["franjaTexto"] or ""
+def txt_estr(f): return "\n".join(f"• {x['t']}: {x['d']}" for x in f.get("estrategia", []))
 FRJ = {fam: {x["id"]: x for x in lst} for fam, lst in D["franjas"].items()}
 
 radio = sorted(D["radio"], key=lambda f: 0)  # ya viene ordenado por familia/tipo
@@ -138,13 +139,13 @@ radio = sorted(D["radio"], key=lambda f: (fam_order.index(f["familia"]), tipos_o
 # ---- Datos_Radio
 wr = wb.active; wr.title = "Datos_Radio"
 hdr = ["Clave tipo", "Clave formato", "Familia", "Tipo de formato", "Formato", "Duración", "# de palabras", "Palabras máx.",
-       "Descripción", "Qué incluye / estructura", "Nota de franja", "Especificaciones", "Recomendación", "Formato protegido", "Franjas (n)"]
+       "Descripción", "Qué incluye / estructura", "Nota de franja", "Especificaciones", "Uso recomendado", "Formato protegido", "Franjas (n)", "Recomendación estratégica"]
 wr.append(hdr)
 for f in radio:
     pal = f["palabras"] if f["palabras"] else "N/A"
     wr.append([f"{f['familia']}|{f['tipo']}", f"{f['familia']}|{f['tipo']}|{f['nombre']}", f["familia"], f["tipo"], f["nombre"], f["duracion"],
                pal, f["maxPalabras"] or "", f["descripcion"] or "", txt_comp(f), franja_texto(f), txt_spec(f), f["consejo"] or "",
-               "Sí" if f["protegido"] else "No", len(f["franjas"])])
+               "Sí" if f["protegido"] else "No", len(f["franjas"]), txt_estr(f)])
 NR = len(radio) + 1
 
 # ---- Datos_Franjas  (una fila por formato × franja)
@@ -212,8 +213,10 @@ for i, f in enumerate(dig_sorted, 2):
     ls.cell(i, 15, "\n".join(f"{k}. {n}" for k, n in enumerate(f["pasos"], 1)))
     ls.cell(i, 16, "\n".join(f"{l['t']}: {l['u']}" for l in f["enlaces"]))
     ls.cell(i, 17, len(f["piezas"]))
+    ls.cell(i, 36, txt_estr(f))
 NL = len(dig_sorted) + 1
 ls["S1"] = "Hábito o interés"
+ls.cell(1, 36, "Recomendación estratégica")
 ls.cell(2, 19, "(ninguno)")
 for i, p in enumerate(D["perfiles"], 3): ls.cell(i, 19, p["label"])
 NP = len(D["perfiles"]) + 2
@@ -240,7 +243,7 @@ for sh in (wr, wf, dd, da, ls):
     for c in sh[1]:
         c.font = font(11, True, "FFFFFF"); c.fill = fill(INK); c.alignment = Alignment(wrap_text=True, vertical="center")
     sh.freeze_panes = "A2"
-for sh, ws_ in ((wr, [24, 40, 10, 18, 34, 28, 11, 11, 50, 60, 50, 60, 40, 11, 9]), (wf, [40, 30, 50, 60]), (dd, [34, 26, 30, 36, 26, 16, 18, 22, 36]),
+for sh, ws_ in ((wr, [24, 40, 10, 18, 34, 28, 11, 11, 50, 60, 50, 60, 40, 11, 9, 80]), (wf, [40, 30, 50, 60]), (dd, [34, 26, 30, 36, 26, 16, 18, 22, 36]),
                 (da, [14, 16, 16, 28] + [9] * 10 + [12] * 6 + [12] * 30), (ls, [18, 10, 3, 10, 22, 3, 30, 3, 28, 36, 42, 26, 36, 50, 40, 40, 9, 3, 30, 3, 28] + [11] * 5 + [3, 28] + [11] * 5)):
     for i, w in enumerate(ws_, 1): sh.column_dimensions[L(i)].width = w
 for row in wr.iter_rows(min_row=2):
@@ -284,11 +287,12 @@ rows = [
     ("Franja de pauta", f'=IF($K$10=0,"",IF($K$11>0,$C$8&": "&INDEX(Datos_Franjas!$C$2:$C${NF},$K$11),IF($K$12=1,INDEX(Datos_Franjas!$B$2:$B${NF},MATCH($K$8,Datos_Franjas!$A$2:$A${NF},0))&": "&INDEX(Datos_Franjas!$C$2:$C${NF},MATCH($K$8,Datos_Franjas!$A$2:$A${NF},0)),"Elige una franja en el paso 4 ("&$K$12&" opciones)."))&IF({R("K")}="","",CHAR(10)&{R("K")}))', height_for([franja_texto(f) for f in radio], 90, 40), False),
     ("Qué incluye", f'=IF($K$10=0,"",IF({R("J")}="",{R("I")},{R("J")}))', height_for([txt_comp(f) or (f["descripcion"] or "") for f in radio], 90, 30), False),
     ("Especificaciones", f'=IF($K$10=0,"",IF({R("L")}="","—",{R("L")}))', height_for([txt_spec(f) for f in radio], 90, 30), False),
-    ("Recomendación", f'=IF($K$10=0,"",IF({R("M")}="","—",{R("M")}))', 38, False),
+    ("Uso recomendado", f'=IF($K$10=0,"",IF({R("M")}="","—",{R("M")}))', 30, False),
+    ("Recomendación estratégica", f'=IF($K$10=0,"",{R("P")})', height_for([txt_estr(f) for f in radio], 90, 60), False),
 ]
 r0 = 11
 for i, (lab, fm, h, big) in enumerate(rows):
-    out_row(rs, r0 + i, lab, fm, h=h, big=big, soft=(ACC_SOFT if lab == "Recomendación" else None))
+    out_row(rs, r0 + i, lab, fm, h=h, big=big, soft=(ACC_SOFT if lab == "Recomendación estratégica" else None))
 rr = r0 + len(rows) + 1
 band(rs, rr, "VERIFICA TU TEXTO (menciones leídas y formatos con palabras)", 2, 8)
 label(rs, rr + 1, "Pega aquí tu texto")
@@ -343,10 +347,11 @@ for k in range(1, maxp + 1):
 rn = hr + maxp + 2
 out_row(ds, rn, "Ten en cuenta", f'=IF($K$6=0,"",IF({LD("N")}="","—",{LD("N")}))', h=height_for(["\n".join("• " + n for n in f["notas"]) for f in D["digital"]], 92, 24))
 out_row(ds, rn + 1, "Pasos", f'=IF($K$6=0,"",IF({LD("O")}="","—",{LD("O")}))', h=height_for(["\n".join(f["pasos"]) for f in D["digital"]], 88, 24))
+out_row(ds, rn + 3, "Recomendación estratégica", f'=IF($K$6=0,"",{LD("AJ")})', h=height_for([txt_estr(f) for f in D["digital"]], 90, 60), soft=ACC_SOFT)
 out_row(ds, rn + 2, "Fanpages", f'=IF($K$6=0,"",IF({LD("P")}="","—",{LD("P")}))', h=height_for(["\n".join(l["u"] for l in f["enlaces"]) for f in D["digital"]], 92, 24))
 for r in range(hr + 1, hr + maxp + 1):
     ds.conditional_formatting.add(f"B{r}:G{r}", FormulaRule(formula=[f'AND($K$7>0,{r-hr}<=$K$8)'], fill=fill(SURF)))
-ds.cell(rn + 4, 2, "Fuente: especificaciones de formatos digitales Prisa Media.").font = font(9, c=INK3, i=True)
+ds.cell(rn + 5, 2, "Fuente: especificaciones de formatos digitales Prisa Media. Las recomendaciones estratégicas son pautas generales de planificación (ajústalas con tu ejecutivo).").font = font(9, c=INK3, i=True)
 
 # ================================================================= RECOMENDAR EMISORA (opcional)
 au = wb.create_sheet("Recomendar", 0)
@@ -429,7 +434,7 @@ for j, h in enumerate(["#", "Emisora", "Tipo de formato", "Formato", "Franja de 
 mp.row_dimensions[6].height = 28
 NRAD = 8
 ejemplos = [("Caracol Radio", "Leídos", 'Mención leída de 30"', "La Luciérnaga"), ("Tropicana", "Remotos", "Remoto de 2 horas", "Programación musical")]
-h_row = height_for([txt_comp(f) + "\n" + txt_spec(f) for f in radio], 66, 40, 180)
+h_row = height_for([txt_comp(f) + "\n" + txt_spec(f) + "\n" + txt_estr(f) for f in radio], 66, 40, 260)
 INBOX = Border(left=Side(style="medium", color=INK), right=Side(style="medium", color=INK), top=Side(style="medium", color=INK), bottom=Side(style="medium", color=INK))
 for k in range(NRAD):
     r = 7 + k
@@ -447,7 +452,7 @@ for k in range(NRAD):
     dv_list(mp, f"F{r}", f'=OFFSET(Datos_Franjas!$B$2,MATCH($M{r},Datos_Franjas!$A$2:$A${NF},0)-1,0,COUNTIF(Datos_Franjas!$A$2:$A${NF},$M{r}),1)', "Franja de pauta")
     I_ = lambda col: f'INDEX(Datos_Radio!${col}$2:${col}${NR},$K{r})'
     resumen = f'=IF($K{r}=0,"",{I_("F")}&IF(ISNUMBER({I_("G")})," · "&{I_("G")}&" palabras","")&IF($L{r}=0,"",CHAR(10)&INDEX(Datos_Franjas!$C$2:$C${NF},$L{r})))'
-    detalle = f'=IF($K{r}=0,"",IF({I_("J")}="",{I_("I")},{I_("J")})&IF({I_("L")}="","",CHAR(10)&{I_("L")}))'
+    detalle = f'=IF($K{r}=0,"",IF({I_("J")}="",{I_("I")},{I_("J")})&IF({I_("L")}="","",CHAR(10)&{I_("L")})&IF({I_("P")}="","",CHAR(10)&"RECOMENDACIÓN ESTRATÉGICA"&CHAR(10)&{I_("P")}))'
     for j, f_ in enumerate([resumen, detalle]):
         c = mp.cell(r, 7 + j, f_); c.font = font(10 if j else 11); c.alignment = WRAP; c.border = BOX; c.fill = fill(SURF)
     mp.row_dimensions[r].height = h_row if k < 2 else 44
@@ -468,12 +473,13 @@ for f in D["digital"]:
     lines = [f"• {p['pieza']}: {p['medida']}" + (f" → {p['expande']}" if p["expande"] else "") + (f" · {p['peso']}" if p["peso"] else "") + f" · {p['archivo']}" + (f" · {p['obs']}" if p["obs"] else "") for p in f["piezas"]]
     if f["texto"]: lines.insert(0, f"Texto: {f['texto']}")
     lines += ["• " + n for n in f["notas"]] + [f"{k}. {n}" for k, n in enumerate(f["pasos"], 1)]
+    if f.get("estrategia"): lines += ["RECOMENDACIÓN ESTRATÉGICA", txt_estr(f)]
     piezas_txt[(f["categoria"], f["nombre"])] = "\n".join(lines)
 ls.cell(1, 18, "Resumen de piezas")
 for i, f in enumerate(dig_sorted, 2): ls.cell(i, 18, piezas_txt[(f["categoria"], f["nombre"])]).alignment = Alignment(wrap_text=True, vertical="top")
 ls.column_dimensions["R"].width = 60
 dej = [("Brand Day", "Brand Day Caracol Radio")]
-hd_row = height_for(piezas_txt.values(), 66, 44, 200)
+hd_row = height_for(piezas_txt.values(), 66, 44, 260)
 for k in range(NDIG):
     r = rd + 2 + k
     c = mp.cell(r, 2, k + 1); c.font = font(11, True, INK3); c.alignment = CEN; c.border = BOX; c.fill = fill(SURF)

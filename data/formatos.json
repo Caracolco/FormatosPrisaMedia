@@ -1,6 +1,7 @@
 {
  "meta": {
   "titulo": "Guía de formatos Prisa Media",
+  "nota_estrategia": "Las recomendaciones estratégicas son pautas generales de planificación de medios (no hacen parte de las especificaciones técnicas). Ajústalas con tu ejecutivo.",
   "fuentes": [
    "FORMATOS PRISA MEDIA – Grupo Nutresa (especificaciones de radio y digital)",
    "AUDIENCIAS PRISA MEDIA (mapa de afinidad TGI R2 2024; perfiles TGI Choices 2026)"
@@ -870,7 +871,21 @@
     "morning",
     "musical"
    ],
-   "id": "musical-grabados-1"
+   "id": "musical-grabados-1",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Nombra la marca al inicio y repítela al cierre: en 5 segundos la marca es el mensaje."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Una sola idea (marca + beneficio o frase de posicionamiento). Úsala para mantener la recordación, no para explicar."
+    },
+    {
+     "t": "Evita",
+     "d": "Precios, direcciones o teléfonos: no alcanzan a retenerse."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -898,7 +913,21 @@
     "morning",
     "musical"
    ],
-   "id": "musical-grabados-2"
+   "id": "musical-grabados-2",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Al inicio (primeros 2 segundos) y al cierre: dos menciones en total."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Un beneficio y, si cabe, un llamado muy corto. Ideal para jingle o frase de posicionamiento."
+    },
+    {
+     "t": "Evita",
+     "d": "Meter dos ideas en una sola pieza."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -926,7 +955,25 @@
     "morning",
     "musical"
    ],
-   "id": "musical-grabados-3"
+   "id": "musical-grabados-3",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Al inicio, para ganar atención, y al cierre, para fijar el recuerdo."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Una idea central con su beneficio."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Uno simple y fácil de recordar, por ejemplo «búscalo en…»."
+    },
+    {
+     "t": "Evita",
+     "d": "Datos largos como URL o teléfonos."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -954,7 +1001,25 @@
     "morning",
     "musical"
    ],
-   "id": "musical-grabados-4"
+   "id": "musical-grabados-4",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Al inicio, como gancho, y al final junto al llamado a la acción."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Beneficio principal, una razón para creerlo y cierre con la marca."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Al final, junto a la marca."
+    },
+    {
+     "t": "Evita",
+     "d": "Saturar con más de un beneficio."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -982,7 +1047,25 @@
     "morning",
     "musical"
    ],
-   "id": "musical-grabados-5"
+   "id": "musical-grabados-5",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Al inicio (primeros 3 a 5 segundos) y al cierre. Si la pieza es narrativa, una mención intermedia refuerza el recuerdo."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Gancho, desarrollo de un solo beneficio y cierre. Es la duración con más espacio para contar una historia o un lanzamiento."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Claro y único, en el cierre."
+    },
+    {
+     "t": "Evita",
+     "d": "Dejar la marca solo al final: si el oyente se distrae, no la recibe."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -1010,7 +1093,25 @@
     "morning",
     "musical"
    ],
-   "id": "musical-grabados-6"
+   "id": "musical-grabados-6",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Al inicio, a la mitad y al cierre (tres menciones)."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Permite apoyarse en un ejemplo o testimonio. Mantén una sola promesa central."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "En el cierre."
+    },
+    {
+     "t": "Evita",
+     "d": "Alargar el texto sin ritmo: genera fatiga. Rota 2 o 3 versiones durante la campaña."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -1038,7 +1139,25 @@
     "morning",
     "musical"
    ],
-   "id": "musical-grabados-7"
+   "id": "musical-grabados-7",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Al inicio, a la mitad y al cierre (tres menciones)."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Permite apoyarse en un ejemplo o testimonio. Mantén una sola promesa central."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "En el cierre."
+    },
+    {
+     "t": "Evita",
+     "d": "Alargar el texto sin ritmo: genera fatiga. Rota 2 o 3 versiones durante la campaña."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -1066,7 +1185,25 @@
     "morning",
     "musical"
    ],
-   "id": "musical-grabados-8"
+   "id": "musical-grabados-8",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Al inicio, a la mitad y al cierre (tres menciones)."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Permite apoyarse en un ejemplo o testimonio. Mantén una sola promesa central."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "En el cierre."
+    },
+    {
+     "t": "Evita",
+     "d": "Alargar el texto sin ritmo: genera fatiga. Rota 2 o 3 versiones durante la campaña."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -1094,7 +1231,25 @@
     "morning",
     "musical"
    ],
-   "id": "musical-grabados-9"
+   "id": "musical-grabados-9",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Al inicio, una vez durante el desarrollo y en el cierre."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Estructura de gancho, historia o diálogo y cierre. Recomendado para lanzamientos, servicios o productos que requieren explicación."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "En el cierre, con la marca."
+    },
+    {
+     "t": "Evita",
+     "d": "Repetir la misma versión muchas veces: alterna versiones para evitar el desgaste."
+    }
+   ]
   },
   {
    "palabras": 17,
@@ -1126,7 +1281,25 @@
     "morning",
     "musical"
    ],
-   "id": "musical-leidos-10"
+   "id": "musical-leidos-10",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Que el locutor la diga en la primera frase y la repita al cierre."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Un solo dato clave en lenguaje conversacional: el locutor pone la voz y tú pones la idea."
+    },
+    {
+     "t": "Brief al locutor",
+     "d": "Comparte la pronunciación de la marca y las 2 o 3 ideas que no pueden faltar."
+    },
+    {
+     "t": "Evita",
+     "d": "Redactar como aviso publicitario: se nota que es un texto leído."
+    }
+   ]
   },
   {
    "palabras": 32,
@@ -1158,7 +1331,25 @@
     "morning",
     "musical"
    ],
-   "id": "musical-leidos-11"
+   "id": "musical-leidos-11",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Que el locutor la diga en la primera frase y la repita al cierre."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Un solo dato clave en lenguaje conversacional: el locutor pone la voz y tú pones la idea."
+    },
+    {
+     "t": "Brief al locutor",
+     "d": "Comparte la pronunciación de la marca y las 2 o 3 ideas que no pueden faltar."
+    },
+    {
+     "t": "Evita",
+     "d": "Redactar como aviso publicitario: se nota que es un texto leído."
+    }
+   ]
   },
   {
    "palabras": 46,
@@ -1190,7 +1381,25 @@
     "morning",
     "musical"
    ],
-   "id": "musical-leidos-12"
+   "id": "musical-leidos-12",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Que el locutor la diga en la primera frase y la repita al cierre."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Un solo dato clave en lenguaje conversacional: el locutor pone la voz y tú pones la idea."
+    },
+    {
+     "t": "Brief al locutor",
+     "d": "Comparte la pronunciación de la marca y las 2 o 3 ideas que no pueden faltar."
+    },
+    {
+     "t": "Evita",
+     "d": "Redactar como aviso publicitario: se nota que es un texto leído."
+    }
+   ]
   },
   {
    "palabras": 64,
@@ -1222,7 +1431,29 @@
     "morning",
     "musical"
    ],
-   "id": "musical-leidos-13"
+   "id": "musical-leidos-13",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Al inicio y al cierre. En 30\" puedes añadir una mención intermedia."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Beneficio, razón para creer y llamado a la acción; escribe como se habla, con frases cortas."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Una sola acción, en el cierre."
+    },
+    {
+     "t": "Brief al locutor",
+     "d": "Comparte la pronunciación de la marca y las 2 o 3 ideas que no pueden faltar."
+    },
+    {
+     "t": "Evita",
+     "d": "Pasarte del número de palabras: el locutor acelera y pierde claridad."
+    }
+   ]
   },
   {
    "palabras": 95,
@@ -1254,7 +1485,29 @@
     "morning",
     "musical"
    ],
-   "id": "musical-leidos-14"
+   "id": "musical-leidos-14",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Al inicio y al cierre. En 30\" puedes añadir una mención intermedia."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Beneficio, razón para creer y llamado a la acción; escribe como se habla, con frases cortas."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Una sola acción, en el cierre."
+    },
+    {
+     "t": "Brief al locutor",
+     "d": "Comparte la pronunciación de la marca y las 2 o 3 ideas que no pueden faltar."
+    },
+    {
+     "t": "Evita",
+     "d": "Pasarte del número de palabras: el locutor acelera y pierde claridad."
+    }
+   ]
   },
   {
    "palabras": 115,
@@ -1286,7 +1539,25 @@
     "morning",
     "musical"
    ],
-   "id": "musical-leidos-15"
+   "id": "musical-leidos-15",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Al inicio, a la mitad y al cierre."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Cuenta una situación cotidiana o un caso: el locutor aporta credibilidad personal."
+    },
+    {
+     "t": "Brief al locutor",
+     "d": "Comparte la pronunciación de la marca y las 2 o 3 ideas que no pueden faltar."
+    },
+    {
+     "t": "Evita",
+     "d": "Listas de datos o precios: se olvidan al escucharlos."
+    }
+   ]
   },
   {
    "palabras": 180,
@@ -1318,7 +1589,25 @@
     "morning",
     "musical"
    ],
-   "id": "musical-leidos-16"
+   "id": "musical-leidos-16",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Al inicio, a la mitad y al cierre."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Cuenta una situación cotidiana o un caso: el locutor aporta credibilidad personal."
+    },
+    {
+     "t": "Brief al locutor",
+     "d": "Comparte la pronunciación de la marca y las 2 o 3 ideas que no pueden faltar."
+    },
+    {
+     "t": "Evita",
+     "d": "Listas de datos o precios: se olvidan al escucharlos."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -1345,7 +1634,25 @@
    "franjas": [
     "morning"
    ],
-   "id": "musical-secciones-17"
+   "id": "musical-secciones-17",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "En la presentación de la franja (apertura) y en el cierre."
+    },
+    {
+     "t": "Mensaje",
+     "d": "El tema debe interesar al oyente por sí solo (consejo, dato útil, tendencia) y la marca aparece como quien lo hace posible."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Resérvalo para el cierre de 30\", no para el desarrollo."
+    },
+    {
+     "t": "Evita",
+     "d": "Convertir la sección en un anuncio largo: pierde credibilidad con la mesa de locutores."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -1375,7 +1682,25 @@
    "franjaHorarios": {
     "musical": "Lunes a domingo, de 10:00 a. m. a 9:00 p. m."
    },
-   "id": "musical-individual-18"
+   "id": "musical-individual-18",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "El locutor la nombra al inicio y la repite al cierre."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Conversacional y específico para ese horario; sirve para posicionamiento, ofertas o recordatorios."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Uno solo, simple y al final."
+    },
+    {
+     "t": "Evita",
+     "d": "Un texto sin ritmo: entra entre canción y canción y debe sonar con la energía de la emisora."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -1413,7 +1738,25 @@
    "franjaHorarios": {
     "musical": "Lunes a domingo, desde las 10:00 a. m. (reserva de 2 horas)"
    },
-   "id": "musical-remotos-19"
+   "id": "musical-remotos-19",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "En la primera frase de cada salida y en las promociones, siempre junto al lugar de la activación."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Antes: convoca con lugar, hora y beneficio (las 10 promociones, desde dos días antes). Durante: salidas que inviten a pasar por el punto."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "«Ven hoy a…» con un incentivo claro: dinámica, premio o descuento."
+    },
+    {
+     "t": "Evita",
+     "d": "Superar 300 a 360 palabras por salida o llegar sin una dinámica para el público presente."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -1450,7 +1793,21 @@
     "noche-fantastica",
     "caracol-fds"
    ],
-   "id": "hablada-grabados-20"
+   "id": "hablada-grabados-20",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Nombra la marca al inicio y repítela al cierre: en 5 segundos la marca es el mensaje."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Una sola idea (marca + beneficio o frase de posicionamiento). Úsala para mantener la recordación, no para explicar."
+    },
+    {
+     "t": "Evita",
+     "d": "Precios, direcciones o teléfonos: no alcanzan a retenerse."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -1487,7 +1844,21 @@
     "noche-fantastica",
     "caracol-fds"
    ],
-   "id": "hablada-grabados-21"
+   "id": "hablada-grabados-21",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Al inicio (primeros 2 segundos) y al cierre: dos menciones en total."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Un beneficio y, si cabe, un llamado muy corto. Ideal para jingle o frase de posicionamiento."
+    },
+    {
+     "t": "Evita",
+     "d": "Meter dos ideas en una sola pieza."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -1524,7 +1895,25 @@
     "noche-fantastica",
     "caracol-fds"
    ],
-   "id": "hablada-grabados-22"
+   "id": "hablada-grabados-22",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Al inicio, para ganar atención, y al cierre, para fijar el recuerdo."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Una idea central con su beneficio."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Uno simple y fácil de recordar, por ejemplo «búscalo en…»."
+    },
+    {
+     "t": "Evita",
+     "d": "Datos largos como URL o teléfonos."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -1561,7 +1950,25 @@
     "noche-fantastica",
     "caracol-fds"
    ],
-   "id": "hablada-grabados-23"
+   "id": "hablada-grabados-23",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Al inicio, como gancho, y al final junto al llamado a la acción."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Beneficio principal, una razón para creerlo y cierre con la marca."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Al final, junto a la marca."
+    },
+    {
+     "t": "Evita",
+     "d": "Saturar con más de un beneficio."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -1598,7 +2005,25 @@
     "noche-fantastica",
     "caracol-fds"
    ],
-   "id": "hablada-grabados-24"
+   "id": "hablada-grabados-24",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Al inicio (primeros 3 a 5 segundos) y al cierre. Si la pieza es narrativa, una mención intermedia refuerza el recuerdo."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Gancho, desarrollo de un solo beneficio y cierre. Es la duración con más espacio para contar una historia o un lanzamiento."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Claro y único, en el cierre."
+    },
+    {
+     "t": "Evita",
+     "d": "Dejar la marca solo al final: si el oyente se distrae, no la recibe."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -1635,7 +2060,25 @@
     "noche-fantastica",
     "caracol-fds"
    ],
-   "id": "hablada-grabados-25"
+   "id": "hablada-grabados-25",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Al inicio, a la mitad y al cierre (tres menciones)."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Permite apoyarse en un ejemplo o testimonio. Mantén una sola promesa central."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "En el cierre."
+    },
+    {
+     "t": "Evita",
+     "d": "Alargar el texto sin ritmo: genera fatiga. Rota 2 o 3 versiones durante la campaña."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -1672,7 +2115,25 @@
     "noche-fantastica",
     "caracol-fds"
    ],
-   "id": "hablada-grabados-26"
+   "id": "hablada-grabados-26",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Al inicio, a la mitad y al cierre (tres menciones)."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Permite apoyarse en un ejemplo o testimonio. Mantén una sola promesa central."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "En el cierre."
+    },
+    {
+     "t": "Evita",
+     "d": "Alargar el texto sin ritmo: genera fatiga. Rota 2 o 3 versiones durante la campaña."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -1709,7 +2170,25 @@
     "noche-fantastica",
     "caracol-fds"
    ],
-   "id": "hablada-grabados-27"
+   "id": "hablada-grabados-27",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Al inicio, a la mitad y al cierre (tres menciones)."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Permite apoyarse en un ejemplo o testimonio. Mantén una sola promesa central."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "En el cierre."
+    },
+    {
+     "t": "Evita",
+     "d": "Alargar el texto sin ritmo: genera fatiga. Rota 2 o 3 versiones durante la campaña."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -1746,7 +2225,25 @@
     "noche-fantastica",
     "caracol-fds"
    ],
-   "id": "hablada-grabados-28"
+   "id": "hablada-grabados-28",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Al inicio, una vez durante el desarrollo y en el cierre."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Estructura de gancho, historia o diálogo y cierre. Recomendado para lanzamientos, servicios o productos que requieren explicación."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "En el cierre, con la marca."
+    },
+    {
+     "t": "Evita",
+     "d": "Repetir la misma versión muchas veces: alterna versiones para evitar el desgaste."
+    }
+   ]
   },
   {
    "palabras": 17,
@@ -1791,7 +2288,25 @@
     "noche-fantastica",
     "caracol-fds"
    ],
-   "id": "hablada-leidos-29"
+   "id": "hablada-leidos-29",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Que el locutor la diga en la primera frase y la repita al cierre."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Un solo dato clave en lenguaje conversacional: el locutor pone la voz y tú pones la idea."
+    },
+    {
+     "t": "Brief al locutor",
+     "d": "Comparte la pronunciación de la marca y las 2 o 3 ideas que no pueden faltar."
+    },
+    {
+     "t": "Evita",
+     "d": "Redactar como aviso publicitario: se nota que es un texto leído."
+    }
+   ]
   },
   {
    "palabras": 32,
@@ -1836,7 +2351,25 @@
     "noche-fantastica",
     "caracol-fds"
    ],
-   "id": "hablada-leidos-30"
+   "id": "hablada-leidos-30",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Que el locutor la diga en la primera frase y la repita al cierre."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Un solo dato clave en lenguaje conversacional: el locutor pone la voz y tú pones la idea."
+    },
+    {
+     "t": "Brief al locutor",
+     "d": "Comparte la pronunciación de la marca y las 2 o 3 ideas que no pueden faltar."
+    },
+    {
+     "t": "Evita",
+     "d": "Redactar como aviso publicitario: se nota que es un texto leído."
+    }
+   ]
   },
   {
    "palabras": 46,
@@ -1881,7 +2414,25 @@
     "noche-fantastica",
     "caracol-fds"
    ],
-   "id": "hablada-leidos-31"
+   "id": "hablada-leidos-31",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Que el locutor la diga en la primera frase y la repita al cierre."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Un solo dato clave en lenguaje conversacional: el locutor pone la voz y tú pones la idea."
+    },
+    {
+     "t": "Brief al locutor",
+     "d": "Comparte la pronunciación de la marca y las 2 o 3 ideas que no pueden faltar."
+    },
+    {
+     "t": "Evita",
+     "d": "Redactar como aviso publicitario: se nota que es un texto leído."
+    }
+   ]
   },
   {
    "palabras": 64,
@@ -1926,7 +2477,29 @@
     "noche-fantastica",
     "caracol-fds"
    ],
-   "id": "hablada-leidos-32"
+   "id": "hablada-leidos-32",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Al inicio y al cierre. En 30\" puedes añadir una mención intermedia."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Beneficio, razón para creer y llamado a la acción; escribe como se habla, con frases cortas."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Una sola acción, en el cierre."
+    },
+    {
+     "t": "Brief al locutor",
+     "d": "Comparte la pronunciación de la marca y las 2 o 3 ideas que no pueden faltar."
+    },
+    {
+     "t": "Evita",
+     "d": "Pasarte del número de palabras: el locutor acelera y pierde claridad."
+    }
+   ]
   },
   {
    "palabras": 95,
@@ -1971,7 +2544,29 @@
     "noche-fantastica",
     "caracol-fds"
    ],
-   "id": "hablada-leidos-33"
+   "id": "hablada-leidos-33",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Al inicio y al cierre. En 30\" puedes añadir una mención intermedia."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Beneficio, razón para creer y llamado a la acción; escribe como se habla, con frases cortas."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Una sola acción, en el cierre."
+    },
+    {
+     "t": "Brief al locutor",
+     "d": "Comparte la pronunciación de la marca y las 2 o 3 ideas que no pueden faltar."
+    },
+    {
+     "t": "Evita",
+     "d": "Pasarte del número de palabras: el locutor acelera y pierde claridad."
+    }
+   ]
   },
   {
    "palabras": 115,
@@ -2016,7 +2611,25 @@
     "noche-fantastica",
     "caracol-fds"
    ],
-   "id": "hablada-leidos-34"
+   "id": "hablada-leidos-34",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Al inicio, a la mitad y al cierre."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Cuenta una situación cotidiana o un caso: el locutor aporta credibilidad personal."
+    },
+    {
+     "t": "Brief al locutor",
+     "d": "Comparte la pronunciación de la marca y las 2 o 3 ideas que no pueden faltar."
+    },
+    {
+     "t": "Evita",
+     "d": "Listas de datos o precios: se olvidan al escucharlos."
+    }
+   ]
   },
   {
    "palabras": 180,
@@ -2061,7 +2674,25 @@
     "noche-fantastica",
     "caracol-fds"
    ],
-   "id": "hablada-leidos-35"
+   "id": "hablada-leidos-35",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Al inicio, a la mitad y al cierre."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Cuenta una situación cotidiana o un caso: el locutor aporta credibilidad personal."
+    },
+    {
+     "t": "Brief al locutor",
+     "d": "Comparte la pronunciación de la marca y las 2 o 3 ideas que no pueden faltar."
+    },
+    {
+     "t": "Evita",
+     "d": "Listas de datos o precios: se olvidan al escucharlos."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -2109,7 +2740,29 @@
     "noche-fantastica",
     "caracol-fds"
    ],
-   "id": "hablada-secciones-36"
+   "id": "hablada-secciones-36",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "En la presentación grabada y de nuevo en la cuña de cierre."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Elige un tema afín al concepto de campaña. El contenido editorial es de la emisora: tú aportas el ángulo, no el texto."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "En la cuña de cierre de 30\"."
+    },
+    {
+     "t": "Más integración",
+     "d": "La Luciérnaga y A Vivir Que Son Dos Días ofrecen más posibilidades de participación de marca."
+    },
+    {
+     "t": "Evita",
+     "d": "Intentar intervenir el contenido editorial: no es posible y afectaría la credibilidad."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -2133,7 +2786,25 @@
    "franjas": [
     "6am-w"
    ],
-   "id": "hablada-patrocinios-37"
+   "id": "hablada-patrocinios-37",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "En la presentación y en la despedida diaria: la marca abre y cierra el programa. Asocia el nombre al programa, no solo a un producto."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Elige un programa afín a tu público (puedes apoyarte en Recomendar emisora) y una idea que se pueda ir contando durante el periodo."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "En la cuña o el momento diario de la marca, no en la presentación."
+    },
+    {
+     "t": "Evita",
+     "d": "Repetir la misma cuña todos los días: cambia el mensaje o su orden a lo largo de la semana."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -2159,7 +2830,25 @@
     "polemica",
     "as-mundial"
    ],
-   "id": "hablada-patrocinios-38"
+   "id": "hablada-patrocinios-38",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "En la presentación y en la despedida diaria: la marca abre y cierra el programa. Asocia el nombre al programa, no solo a un producto."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Elige un programa afín a tu público (puedes apoyarte en Recomendar emisora) y una idea que se pueda ir contando durante el periodo."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "En la cuña o el momento diario de la marca, no en la presentación."
+    },
+    {
+     "t": "Evita",
+     "d": "Repetir la misma cuña todos los días: cambia el mensaje o su orden a lo largo de la semana."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -2182,7 +2871,25 @@
    "franjas": [
     "dos-puntos"
    ],
-   "id": "hablada-patrocinios-39"
+   "id": "hablada-patrocinios-39",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "En la presentación y en la despedida diaria: la marca abre y cierra el programa. Asocia el nombre al programa, no solo a un producto."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Elige un programa afín a tu público (puedes apoyarte en Recomendar emisora) y una idea que se pueda ir contando durante el periodo."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "En la cuña o el momento diario de la marca, no en la presentación."
+    },
+    {
+     "t": "Evita",
+     "d": "Repetir la misma cuña todos los días: cambia el mensaje o su orden a lo largo de la semana."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -2205,7 +2912,25 @@
    "franjas": [
     "luciernaga"
    ],
-   "id": "hablada-patrocinios-40"
+   "id": "hablada-patrocinios-40",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "En la presentación y en la despedida diaria: la marca abre y cierra el programa. Asocia el nombre al programa, no solo a un producto."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Elige un programa afín a tu público (puedes apoyarte en Recomendar emisora) y una idea que se pueda ir contando durante el periodo."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "En la cuña o el momento diario de la marca, no en la presentación."
+    },
+    {
+     "t": "Evita",
+     "d": "Repetir la misma cuña todos los días: cambia el mensaje o su orden a lo largo de la semana."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -2230,7 +2955,25 @@
     "planeta-caracol",
     "noticieros-fds"
    ],
-   "id": "hablada-patrocinios-41"
+   "id": "hablada-patrocinios-41",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "En la presentación y en la despedida diaria: la marca abre y cierra el programa. Asocia el nombre al programa, no solo a un producto."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Elige un programa afín a tu público (puedes apoyarte en Recomendar emisora) y una idea que se pueda ir contando durante el periodo."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "En la cuña o el momento diario de la marca, no en la presentación."
+    },
+    {
+     "t": "Evita",
+     "d": "Repetir la misma cuña todos los días: cambia el mensaje o su orden a lo largo de la semana."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -2253,7 +2996,25 @@
    "franjas": [
     "a-vivir"
    ],
-   "id": "hablada-patrocinios-42"
+   "id": "hablada-patrocinios-42",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "En la presentación y en la despedida diaria: la marca abre y cierra el programa. Asocia el nombre al programa, no solo a un producto."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Elige un programa afín a tu público (puedes apoyarte en Recomendar emisora) y una idea que se pueda ir contando durante el periodo."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "En la cuña o el momento diario de la marca, no en la presentación."
+    },
+    {
+     "t": "Evita",
+     "d": "Repetir la misma cuña todos los días: cambia el mensaje o su orden a lo largo de la semana."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -2275,7 +3036,25 @@
    "franjas": [
     "noche-fantastica"
    ],
-   "id": "hablada-patrocinios-43"
+   "id": "hablada-patrocinios-43",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "En la presentación y en la despedida diaria: la marca abre y cierra el programa. Asocia el nombre al programa, no solo a un producto."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Elige un programa afín a tu público (puedes apoyarte en Recomendar emisora) y una idea que se pueda ir contando durante el periodo."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "En la cuña o el momento diario de la marca, no en la presentación."
+    },
+    {
+     "t": "Evita",
+     "d": "Repetir la misma cuña todos los días: cambia el mensaje o su orden a lo largo de la semana."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -2299,7 +3078,25 @@
    "franjas": [
     "6am-w"
    ],
-   "id": "hablada-vitrinas-44"
+   "id": "hablada-vitrinas-44",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "El talento la menciona al comenzar cada salida y al despedirla."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Aprovecha el contacto con la gente: demostración, entrevista a un vocero, historias reales de clientes."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Convoca a la activación en las promociones previas: lugar, hora y beneficio."
+    },
+    {
+     "t": "Evita",
+     "d": "Salidas sin tema nuevo: prepara puntos de conversación distintos para cada una."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -2322,7 +3119,25 @@
    "franjas": [
     "6am-w"
    ],
-   "id": "hablada-vitrinas-45"
+   "id": "hablada-vitrinas-45",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "El talento la menciona al comenzar cada salida y al despedirla."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Aprovecha el contacto con la gente: demostración, entrevista a un vocero, historias reales de clientes."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Convoca a la activación en las promociones previas: lugar, hora y beneficio."
+    },
+    {
+     "t": "Evita",
+     "d": "Salidas sin tema nuevo: prepara puntos de conversación distintos para cada una."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -2345,7 +3160,25 @@
    "franjas": [
     "dos-puntos"
    ],
-   "id": "hablada-vitrinas-46"
+   "id": "hablada-vitrinas-46",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "El talento la menciona al comenzar cada salida y al despedirla."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Aprovecha el contacto con la gente: demostración, entrevista a un vocero, historias reales de clientes."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Convoca a la activación en las promociones previas: lugar, hora y beneficio."
+    },
+    {
+     "t": "Evita",
+     "d": "Salidas sin tema nuevo: prepara puntos de conversación distintos para cada una."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -2367,7 +3200,25 @@
    "franjas": [
     "luciernaga"
    ],
-   "id": "hablada-vitrinas-47"
+   "id": "hablada-vitrinas-47",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "El talento la menciona al comenzar cada salida y al despedirla."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Aprovecha el contacto con la gente: demostración, entrevista a un vocero, historias reales de clientes."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Convoca a la activación en las promociones previas: lugar, hora y beneficio."
+    },
+    {
+     "t": "Evita",
+     "d": "Salidas sin tema nuevo: prepara puntos de conversación distintos para cada una."
+    }
+   ]
   },
   {
    "palabras": null,
@@ -2389,7 +3240,25 @@
    "franjas": [
     "caracol-fds"
    ],
-   "id": "hablada-vitrinas-48"
+   "id": "hablada-vitrinas-48",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "El talento la menciona al comenzar cada salida y al despedirla."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Aprovecha el contacto con la gente: demostración, entrevista a un vocero, historias reales de clientes."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Convoca a la activación en las promociones previas: lugar, hora y beneficio."
+    },
+    {
+     "t": "Evita",
+     "d": "Salidas sin tema nuevo: prepara puntos de conversación distintos para cada una."
+    }
+   ]
   }
  ],
  "digital": [
@@ -2412,7 +3281,25 @@
    "aplica": "Todas las emisoras",
    "enlaces": [],
    "pasos": [],
-   "texto": null
+   "texto": null,
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Logo visible desde el primer segundo y en el último cuadro de la animación."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Formato versátil: sirve para marca y para respuesta. Imagen sencilla y un botón claro."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Un botón o frase con verbo claro (Conoce, Descubre, Compra)."
+    },
+    {
+     "t": "Evita",
+     "d": "Texto pequeño o varias ideas. Cuida el peso máximo optimizando las imágenes."
+    }
+   ]
   },
   {
    "id": "d2",
@@ -2433,7 +3320,25 @@
    "aplica": "Todas las emisoras",
    "enlaces": [],
    "pasos": [],
-   "texto": null
+   "texto": null,
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Logo visible desde el primer segundo y en el último cuadro de la animación."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Formato vertical: da espacio para producto y beneficio. Muy bueno para lanzamientos."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Un botón o frase con verbo claro (Conoce, Descubre, Compra)."
+    },
+    {
+     "t": "Evita",
+     "d": "Texto pequeño o varias ideas. Cuida el peso máximo optimizando las imágenes."
+    }
+   ]
   },
   {
    "id": "d3",
@@ -2454,7 +3359,25 @@
    "aplica": "Todas las emisoras",
    "enlaces": [],
    "pasos": [],
-   "texto": null
+   "texto": null,
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Logo visible desde el primer segundo y en el último cuadro de la animación."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Formato horizontal: ideal para mensajes cortos (3 a 5 palabras) con el logo siempre a la vista."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Un botón o frase con verbo claro (Conoce, Descubre, Compra)."
+    },
+    {
+     "t": "Evita",
+     "d": "Texto pequeño o varias ideas. Cuida el peso máximo optimizando las imágenes."
+    }
+   ]
   },
   {
    "id": "d4",
@@ -2475,7 +3398,25 @@
    "aplica": "Todas las emisoras",
    "enlaces": [],
    "pasos": [],
-   "texto": null
+   "texto": null,
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Logo visible desde el primer segundo y en el último cuadro de la animación."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Formato horizontal: ideal para mensajes cortos (3 a 5 palabras) con el logo siempre a la vista."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Un botón o frase con verbo claro (Conoce, Descubre, Compra)."
+    },
+    {
+     "t": "Evita",
+     "d": "Texto pequeño o varias ideas. Cuida el peso máximo optimizando las imágenes."
+    }
+   ]
   },
   {
    "id": "d5",
@@ -2496,7 +3437,25 @@
    "aplica": "Todas las emisoras",
    "enlaces": [],
    "pasos": [],
-   "texto": null
+   "texto": null,
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Logo visible desde el primer segundo y en el último cuadro de la animación."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Formato horizontal: ideal para mensajes cortos (3 a 5 palabras) con el logo siempre a la vista."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Un botón o frase con verbo claro (Conoce, Descubre, Compra)."
+    },
+    {
+     "t": "Evita",
+     "d": "Texto pequeño o varias ideas. Cuida el peso máximo optimizando las imágenes."
+    }
+   ]
   },
   {
    "id": "d6",
@@ -2527,7 +3486,25 @@
    "aplica": "Todas las emisoras",
    "enlaces": [],
    "pasos": [],
-   "texto": null
+   "texto": null,
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Logo visible desde el primer segundo y en el último cuadro de la animación."
+    },
+    {
+     "t": "Mensaje",
+     "d": "La pieza inicial debe funcionar sola; usa la versión expandida para el detalle o la promoción."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Un botón o frase con verbo claro (Conoce, Descubre, Compra)."
+    },
+    {
+     "t": "Evita",
+     "d": "Texto pequeño o varias ideas. Cuida el peso máximo optimizando las imágenes."
+    }
+   ]
   },
   {
    "id": "d7",
@@ -2560,7 +3537,25 @@
    "aplica": "Caracol Radio",
    "enlaces": [],
    "pasos": [],
-   "texto": null
+   "texto": null,
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Logo visible desde el primer segundo y en el último cuadro de la animación."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Presencia dominante en páginas internas: usa un solo concepto creativo en las tres piezas."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Un botón o frase con verbo claro (Conoce, Descubre, Compra)."
+    },
+    {
+     "t": "Evita",
+     "d": "Texto pequeño o varias ideas. Cuida el peso máximo optimizando las imágenes."
+    }
+   ]
   },
   {
    "id": "d8",
@@ -2609,7 +3604,25 @@
    "aplica": "Caracol Radio",
    "enlaces": [],
    "pasos": [],
-   "texto": null
+   "texto": null,
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Domina el portal ese día: mismo logo y mismo concepto en todas las piezas (desktop y mobile)."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Una sola oferta o noticia; úsalo para lanzamientos o fechas clave."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Sincronízalo con pauta de radio el mismo día para reforzar el mensaje."
+    },
+    {
+     "t": "Evita",
+     "d": "Diseños distintos entre piezas. Revisa el demo para que no se corten elementos del skin."
+    }
+   ]
   },
   {
    "id": "d9",
@@ -2674,7 +3687,25 @@
    "aplica": "W Radio y Radioacktiva",
    "enlaces": [],
    "pasos": [],
-   "texto": null
+   "texto": null,
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Domina el portal ese día: mismo logo y mismo concepto en todas las piezas (desktop y mobile)."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Una sola oferta o noticia; úsalo para lanzamientos o fechas clave."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Sincronízalo con pauta de radio el mismo día para reforzar el mensaje."
+    },
+    {
+     "t": "Evita",
+     "d": "Diseños distintos entre piezas. Revisa el demo para que no se corten elementos del skin."
+    }
+   ]
   },
   {
    "id": "d10",
@@ -2725,7 +3756,25 @@
    "aplica": "Tropicana, Bésame, Oxígeno y Los40",
    "enlaces": [],
    "pasos": [],
-   "texto": null
+   "texto": null,
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Domina el portal ese día: mismo logo y mismo concepto en todas las piezas (desktop y mobile)."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Una sola oferta o noticia; úsalo para lanzamientos o fechas clave."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Sincronízalo con pauta de radio el mismo día para reforzar el mensaje."
+    },
+    {
+     "t": "Evita",
+     "d": "Diseños distintos entre piezas. Revisa el demo para que no se corten elementos del skin."
+    }
+   ]
   },
   {
    "id": "d11",
@@ -2762,7 +3811,25 @@
    "aplica": "Todas las emisoras",
    "enlaces": [],
    "pasos": [],
-   "texto": null
+   "texto": null,
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Dila en los primeros 3 segundos (la «pata» de inicio) y de nuevo al cierre."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Cercano y directo: el oyente de streaming está atento y normalmente con audífonos. En 15\" una idea; en 30\", una mini historia."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Uno solo, simple y fácil de recordar."
+    },
+    {
+     "t": "Evita",
+     "d": "Copiar la cuña de radio sin adaptarla: el contexto es más íntimo."
+    }
+   ]
   },
   {
    "id": "d12",
@@ -2799,7 +3866,25 @@
    "aplica": "Todas las emisoras",
    "enlaces": [],
    "pasos": [],
-   "texto": null
+   "texto": null,
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Logo y gancho en los primeros 5 segundos; refuérzalos al final."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Cuenta la idea de forma visual y agrega subtítulos: muchos usuarios ven video sin sonido. 15\" para recordación, 30\" para contar una historia."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Cierra con logo y llamado visibles."
+    },
+    {
+     "t": "Evita",
+     "d": "Dejar el mensaje clave para el final."
+    }
+   ]
   },
   {
    "id": "d13",
@@ -2820,7 +3905,25 @@
    "aplica": "Todas las emisoras",
    "enlaces": [],
    "pasos": [],
-   "texto": null
+   "texto": null,
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Logo grande y legible desde el primer momento."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Pantalla pequeña: máximo 5 palabras y una imagen simple."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Un botón visible y fácil de tocar."
+    },
+    {
+     "t": "Evita",
+     "d": "Texto largo o detalles finos que no se leen en el celular."
+    }
+   ]
   },
   {
    "id": "d14",
@@ -2841,7 +3944,25 @@
    "aplica": "Todas las emisoras",
    "enlaces": [],
    "pasos": [],
-   "texto": null
+   "texto": null,
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Logo grande y legible desde el primer momento."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Pantalla pequeña: máximo 5 palabras y una imagen simple."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Un botón visible y fácil de tocar."
+    },
+    {
+     "t": "Evita",
+     "d": "Texto largo o detalles finos que no se leen en el celular."
+    }
+   ]
   },
   {
    "id": "d15",
@@ -2862,7 +3983,25 @@
    "aplica": "Todas las emisoras",
    "enlaces": [],
    "pasos": [],
-   "texto": null
+   "texto": null,
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Logo grande y legible desde el primer momento."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Pantalla pequeña: máximo 5 palabras y una imagen simple."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Un botón visible y fácil de tocar."
+    },
+    {
+     "t": "Evita",
+     "d": "Texto largo o detalles finos que no se leen en el celular."
+    }
+   ]
   },
   {
    "id": "d16",
@@ -2883,7 +4022,25 @@
    "aplica": "Todas las emisoras",
    "enlaces": [],
    "pasos": [],
-   "texto": null
+   "texto": null,
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Logo grande y legible desde el primer momento."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Pantalla pequeña: máximo 5 palabras y una imagen simple."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Un botón visible y fácil de tocar."
+    },
+    {
+     "t": "Evita",
+     "d": "Texto largo o detalles finos que no se leen en el celular."
+    }
+   ]
   },
   {
    "id": "d17",
@@ -2931,7 +4088,25 @@
    "aplica": "Todas las emisoras",
    "enlaces": [],
    "pasos": [],
-   "texto": "240 caracteres con espacios. Debe incluir el hashtag #Aliados y la @ oficial del cliente."
+   "texto": "240 caracteres con espacios. Debe incluir el hashtag #Aliados y la @ oficial del cliente.",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Nómbrala en la primera línea del texto, que es la que más se ve."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Texto breve con un solo mensaje, hashtag obligatorio y la @ del cliente. En video, lo importante en los primeros 3 segundos y con subtítulos; en historias, formato vertical."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "No se permite URL al portal del anunciante: invita a comentar, compartir o seguir la @."
+    },
+    {
+     "t": "Evita",
+     "d": "Publicar más de una vez al día: la regla es 1 publicación por marca."
+    }
+   ]
   },
   {
    "id": "d18",
@@ -2963,7 +4138,25 @@
    "aplica": "Todas las emisoras",
    "enlaces": [],
    "pasos": [],
-   "texto": "140 caracteres con espacios. Debe incluir el hashtag #AliadosW o #AliadosCaracol."
+   "texto": "140 caracteres con espacios. Debe incluir el hashtag #AliadosW o #AliadosCaracol.",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Nómbrala en la primera frase; en 140 caracteres no hay espacio para esperar."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Frase corta con gancho, el hashtag obligatorio y la @ del cliente."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "No se permite URL al portal del anunciante: invita a interactuar o a seguir la @."
+    },
+    {
+     "t": "Evita",
+     "d": "Publicar más de una vez al día: la regla es 1 publicación por marca."
+    }
+   ]
   },
   {
    "id": "d19",
@@ -3019,7 +4212,25 @@
    "aplica": "Todas las emisoras",
    "enlaces": [],
    "pasos": [],
-   "texto": "240 caracteres con espacios. Debe incluir el hashtag #AliadosW o #AliadosCaracol."
+   "texto": "240 caracteres con espacios. Debe incluir el hashtag #AliadosW o #AliadosCaracol.",
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Nómbrala en la primera línea del texto, que es la que más se ve."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Texto breve con un solo mensaje, hashtag obligatorio y la @ del cliente. En video, lo importante en los primeros 3 segundos y con subtítulos; en historias, formato vertical."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "No se permite URL al portal del anunciante: invita a comentar, compartir o seguir la @."
+    },
+    {
+     "t": "Evita",
+     "d": "Publicar más de una vez al día: la regla es 1 publicación por marca."
+    }
+   ]
   },
   {
    "id": "d20",
@@ -3052,7 +4263,25 @@
    "aplica": "Todas las emisoras",
    "enlaces": [],
    "pasos": [],
-   "texto": null
+   "texto": null,
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "En el título o el primer párrafo, como quien hace posible el contenido."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Aporta valor primero: un tema que interese a la audiencia y en el que tu marca sea parte de la solución, no un aviso."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Al final del contenido, no al principio."
+    },
+    {
+     "t": "Evita",
+     "d": "Imágenes con texto: los cortes automáticos de la plataforma pueden dejarlas cortadas."
+    }
+   ]
   },
   {
    "id": "d21",
@@ -3069,7 +4298,25 @@
    "aplica": "Todas las emisoras",
    "enlaces": [],
    "pasos": [],
-   "texto": null
+   "texto": null,
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Al inicio y al cierre del video, con el logo en vectores."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Guion corto y texto grande y legible: se ve sin audio."
+    },
+    {
+     "t": "Llamado a la acción",
+     "d": "Una sola acción, al final."
+    },
+    {
+     "t": "Evita",
+     "d": "Frases largas en pantalla o demasiados mensajes."
+    }
+   ]
   },
   {
    "id": "d22",
@@ -3087,7 +4334,21 @@
    "aplica": "Todas las emisoras",
    "enlaces": [],
    "pasos": [],
-   "texto": null
+   "texto": null,
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Marca arriba y abajo de la infografía."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Un dato por bloque, de lo más relevante a lo menos."
+    },
+    {
+     "t": "Evita",
+     "d": "Saturarla de texto; respeta el ancho de 1100 px si la desarrollas tú."
+    }
+   ]
   },
   {
    "id": "d23",
@@ -3127,7 +4388,21 @@
     }
    ],
    "pasos": [],
-   "texto": null
+   "texto": null,
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Con el nombre del agrupador, que ancla la marca a una temática."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Elige una temática continua y relevante para tu público; el nombre debe ser claro y durable."
+    },
+    {
+     "t": "Evita",
+     "d": "Cambiar de tema a mitad de campaña: se pierde la asociación."
+    }
+   ]
   },
   {
    "id": "d24",
@@ -3143,7 +4418,21 @@
     "Compartir el link de la invitación con Brand Estudio.",
     "Al lanzar su live, el cliente debe seleccionar en configuraciones «retransmitir en nuestro Fan Page» para que salga automáticamente."
    ],
-   "texto": null
+   "texto": null,
+   "estrategia": [
+    {
+     "t": "Mención de la marca",
+     "d": "Anuncia el live con anticipación y menciona la marca al inicio y cuando lleguen nuevos espectadores."
+    },
+    {
+     "t": "Mensaje",
+     "d": "Un tema con valor para la audiencia, no solo un anuncio de la marca."
+    },
+    {
+     "t": "Evita",
+     "d": "Lanzar el live sin haber enviado la solicitud de crossposting a tiempo."
+    }
+   ]
   }
  ]
 }

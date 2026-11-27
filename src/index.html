@@ -160,6 +160,16 @@ h3{font-size:1.15rem;line-height:1.25;font-weight:650;letter-spacing:-.01em}
 .spec dt{font-weight:600;font-size:14.5px}
 .spec dd{color:var(--ink-2);text-wrap:pretty}
 @media(max-width:560px){.spec div{grid-template-columns:1fr}}
+.strat{background:var(--surface-2);border:1px solid var(--line);border-radius:14px;padding:18px 20px;display:grid;gap:12px}
+.strat h4{display:flex;gap:8px;align-items:center;font-size:15px;font-weight:700;color:var(--ink);margin:0}
+.strat h4 svg{width:20px;height:20px;color:var(--accent)}
+.strat dl{display:grid;gap:10px}
+.strat dl div{display:grid;grid-template-columns:minmax(120px,.3fr) 1fr;gap:4px 18px}
+.strat dt{font-weight:650;font-size:14.5px}
+.strat dt.ev{color:var(--danger)}
+.strat dd{color:var(--ink-2);text-wrap:pretty}
+.strat .nota{font-size:13px;color:var(--ink-3)}
+@media(max-width:560px){.strat dl div{grid-template-columns:1fr}}
 .callout{display:flex;gap:10px;background:var(--accent-soft);color:#07482C;border-radius:12px;padding:12px 14px;font-size:15px}
 .callout.w{background:var(--warn-soft);color:#5E3700}
 .callout svg{width:20px;height:20px;flex:none;margin-top:1px}
@@ -344,6 +354,7 @@ const I = {
   print: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 9V3h10v6M7 17H5a1 1 0 0 1-1-1v-5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a1 1 0 0 1-1 1h-2M7 14h10v7H7z"/></svg>',
   copy: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg>',
   info: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>',
+  bulb: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg>',
   screen: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>',
 };
 
@@ -372,6 +383,10 @@ function chipLabel(f) {
   if (f.tipo === "Grabados") return { t: f.duracion, s: f.nombre.startsWith("Cuña hasta") ? "hasta" : "" };
   if (f.tipo === "Leídos") return { t: f.duracion, s: `${f.palabras} palabras` };
   return { t: f.nombre, s: "" };
+}
+function estrat(list) {
+  if (!list || !list.length) return "";
+  return `<div class="strat"><h4>${I.bulb} Recomendación estratégica</h4><dl>${list.map(x => `<div><dt${x.t === "Evita" ? ' class="ev"' : ""}>${esc(x.t)}</dt><dd>${esc(x.d)}</dd></div>`).join("")}</dl><p class="nota">${esc(D.meta.nota_estrategia)}</p></div>`;
 }
 function words(t) { return (t.trim().match(/\S+/g) || []).length; }
 function toast(msg) { const t = $("#toast"); t.textContent = msg; t.classList.add("on"); clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.remove("on"), 2400); }
@@ -500,7 +515,7 @@ function fichaRadio(fmt, emId, frId, o = {}) {
   const added = inPlan({ k: "r", e: emId, f: fmt.id, fr: fr ? fr.id : null });
   const act = o.compact ? "" : `<div class="f-act"><button class="btn ${added ? "ghost" : "ok"}" data-a="plan" data-k="r" data-e="${emId}" data-f="${fmt.id}" data-fr="${fr ? fr.id : ""}" ${falta ? "disabled" : ""}>${added ? I.check + " En mi plan · quitar" : I.plus + " Agregar a mi plan"}</button>${falta ? `<span class="hint">Elige una franja de pauta para agregarlo.</span>` : ""}</div>`;
   const head = o.noHead ? "" : `<div class="f-top"><div><span class="f-em"><i ${sw(e)}><img src="${logo(e.logoBlanco)}" alt=""></i>${esc(e.nombre)} · ${esc(fmt.tipo)}</span><h3 class="t">${esc(fmt.nombre)}</h3></div>${fmt.protegido ? `<span class="tag prot">Formato protegido</span>` : ""}</div>`;
-  return `${head}<dl class="facts">${facts.join("")}</dl>${cons}${comp}${desc}${frSec}${specs}${cnt}${act}`;
+  return `${head}<dl class="facts">${facts.join("")}</dl>${cons}${comp}${desc}${frSec}${specs}${estrat(fmt.estrategia)}${cnt}${act}`;
 }
 
 /* ---------- radio ---------- */
@@ -553,7 +568,7 @@ function fichaDigital(f, o = {}) {
   const act = o.compact ? "" : `<div class="f-act"><button class="btn ${added ? "ghost" : "ok"}" data-a="plan" data-k="d" data-f="${f.id}">${added ? I.check + " En mi plan · quitar" : I.plus + " Agregar a mi plan"}</button></div>`;
   const head = o.noHead ? "" : `<div class="f-top"><div><span class="f-em">${esc(f.categoria)}</span><h3 class="t">${esc(f.nombre)}</h3></div><span class="tag">${f.piezas.length ? f.piezas.length + (f.piezas.length === 1 ? " pieza" : " piezas") : "Contenido"}</span></div>`;
   const apl = f.emisoras.length ? `<div class="callout">${I.info}<span>Aplica para: <b>${esc(f.aplica)}</b></span></div>` : "";
-  return `${head}${apl}${texto}${tabla}${notas}${pasos}${lk}${act}`;
+  return `${head}${apl}${texto}${tabla}${notas}${pasos}${lk}${estrat(f.estrategia)}${act}`;
 }
 function vDigital() {
   const G = S.dig, cats = [...new Set(D.digital.map(f => f.categoria))];
@@ -582,11 +597,13 @@ function planTexto() {
       if (f.franjaTexto) L.push(`   ${f.franjaTexto}`);
       f.componentes.forEach(c => L.push(`   - ${c}`));
       f.specs.forEach(s => L.push(`   ${s.t}: ${s.d}`));
+      (f.estrategia || []).forEach(s => L.push(`   [Estrategia] ${s.t}: ${s.d}`));
     } else {
       const f = DIG[it.f]; L.push(`${i + 1}. DIGITAL · ${f.categoria} · ${f.nombre}`);
       f.piezas.forEach(p => L.push(`   - ${p.pieza}: ${p.medida}${p.expande ? " → " + p.expande : ""}${p.peso ? " · " + p.peso : ""} · ${p.archivo}${p.obs ? " · " + p.obs : ""}`));
       if (f.texto) L.push(`   Texto: ${f.texto}`);
       f.notas.forEach(n => L.push(`   - ${n}`)); f.pasos.forEach((n, j) => L.push(`   ${j + 1}) ${n}`));
+      (f.estrategia || []).forEach(s => L.push(`   [Estrategia] ${s.t}: ${s.d}`));
     }
     L.push("");
   });
