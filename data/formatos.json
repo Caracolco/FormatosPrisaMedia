@@ -875,15 +875,19 @@
    "estrategia": [
     {
      "t": "Mención de la marca",
-     "d": "Dila en los primeros 2 segundos y, si cabe, repítela al cierre. En 5 segundos la marca es el mensaje: apóyate en un sonido o jingle distintivo en lugar de más palabras."
+     "d": "Una sola vez, al cierre. En 5 segundos la marca es el mensaje: queda como lo último que escucha el oyente, apoyada en un sonido o jingle distintivo."
     },
     {
      "t": "Mensaje",
      "d": "Una sola idea (marca + beneficio o frase de posicionamiento). Úsala para mantener la recordación, no para explicar."
     },
     {
-     "t": "Por qué no solo al final",
-     "d": "En audio no hay logo que ver: si la marca llega solo al final y el oyente se distrae, no la recibe. Los estudios de la industria recomiendan nombrarla en los primeros segundos y reforzarla al cierre. Revelarla tarde funciona mejor en TV o video que en radio."
+     "t": "Una sola mención",
+     "d": "En piezas de menos de 30 segundos no hay tiempo para repetir la marca sin sacrificar el mensaje: desarrolla la idea y cierra con el nombre, idealmente con un sonido o jingle de marca."
+    },
+    {
+     "t": "Marca nueva",
+     "d": "Si la marca es nueva o poco conocida, considera nombrarla también al inicio: los estudios de la industria recomiendan mencionarla pronto."
     },
     {
      "t": "Evita",
@@ -921,15 +925,19 @@
    "estrategia": [
     {
      "t": "Mención de la marca",
-     "d": "Al inicio (primeros 2 segundos) y al cierre: dos menciones en total, con un sonido o jingle de marca que ayude a reconocerla."
+     "d": "Una sola vez, al cierre: la pieza desarrolla la idea y termina nombrando la marca."
     },
     {
      "t": "Mensaje",
      "d": "Un beneficio y, si cabe, un llamado muy corto. Ideal para jingle o frase de posicionamiento."
     },
     {
-     "t": "Por qué no solo al final",
-     "d": "En audio no hay logo que ver: si la marca llega solo al final y el oyente se distrae, no la recibe. Los estudios de la industria recomiendan nombrarla en los primeros segundos y reforzarla al cierre. Revelarla tarde funciona mejor en TV o video que en radio."
+     "t": "Una sola mención",
+     "d": "En piezas de menos de 30 segundos no hay tiempo para repetir la marca sin sacrificar el mensaje: desarrolla la idea y cierra con el nombre, idealmente con un sonido o jingle de marca."
+    },
+    {
+     "t": "Marca nueva",
+     "d": "Si la marca es nueva o poco conocida, considera nombrarla también al inicio: los estudios de la industria recomiendan mencionarla pronto."
     },
     {
      "t": "Evita",
@@ -967,7 +975,7 @@
    "estrategia": [
     {
      "t": "Mención de la marca",
-     "d": "Al inicio, para ganar atención, y al cierre, para fijar el recuerdo."
+     "d": "Una sola vez, al cierre, junto al llamado a la acción."
     },
     {
      "t": "Mensaje",
@@ -978,8 +986,12 @@
      "d": "Uno simple y fácil de recordar, por ejemplo «búscalo en…»."
     },
     {
-     "t": "Por qué no solo al final",
-     "d": "En audio no hay logo que ver: si la marca llega solo al final y el oyente se distrae, no la recibe. Los estudios de la industria recomiendan nombrarla en los primeros segundos y reforzarla al cierre. Revelarla tarde funciona mejor en TV o video que en radio."
+     "t": "Una sola mención",
+     "d": "En piezas de menos de 30 segundos no hay tiempo para repetir la marca sin sacrificar el mensaje: desarrolla la idea y cierra con el nombre, idealmente con un sonido o jingle de marca."
+    },
+    {
+     "t": "Marca nueva",
+     "d": "Si la marca es nueva o poco conocida, considera nombrarla también al inicio: los estudios de la industria recomiendan mencionarla pronto."
     },
     {
      "t": "Evita",
@@ -1017,7 +1029,7 @@
    "estrategia": [
     {
      "t": "Mención de la marca",
-     "d": "Al inicio, como gancho, y al final junto al llamado a la acción."
+     "d": "Una sola vez, al cierre, junto al llamado a la acción."
     },
     {
      "t": "Mensaje",
@@ -1028,8 +1040,12 @@
      "d": "Al final, junto a la marca."
     },
     {
-     "t": "Por qué no solo al final",
-     "d": "En audio no hay logo que ver: si la marca llega solo al final y el oyente se distrae, no la recibe. Los estudios de la industria recomiendan nombrarla en los primeros segundos y reforzarla al cierre. Revelarla tarde funciona mejor en TV o video que en radio."
+     "t": "Una sola mención",
+     "d": "En piezas de menos de 30 segundos no hay tiempo para repetir la marca sin sacrificar el mensaje: desarrolla la idea y cierra con el nombre, idealmente con un sonido o jingle de marca."
+    },
+    {
+     "t": "Marca nueva",
+     "d": "Si la marca es nueva o poco conocida, considera nombrarla también al inicio: los estudios de la industria recomiendan mencionarla pronto."
     },
     {
      "t": "Evita",
@@ -1301,11 +1317,15 @@
    "estrategia": [
     {
      "t": "Mención de la marca",
-     "d": "Que el locutor la diga en la primera frase y la repita al cierre."
+     "d": "Una sola vez, al cierre: que el locutor desarrolle la idea y termine nombrando la marca."
     },
     {
      "t": "Mensaje",
      "d": "Un solo dato clave en lenguaje conversacional: el locutor pone la voz y tú pones la idea."
+    },
+    {
+     "t": "Una sola mención",
+     "d": "En piezas de menos de 30 segundos no hay tiempo para repetir la marca sin sacrificar el mensaje: desarrolla la idea y cierra con el nombre, idealmente con un sonido o jingle de marca."
     },
     {
      "t": "Brief al locutor",
@@ -1351,11 +1371,15 @@
    "estrategia": [
     {
      "t": "Mención de la marca",
-     "d": "Que el locutor la diga en la primera frase y la repita al cierre."
+     "d": "Una sola vez, al cierre: que el locutor desarrolle la idea y termine nombrando la marca."
     },
     {
      "t": "Mensaje",
      "d": "Un solo dato clave en lenguaje conversacional: el locutor pone la voz y tú pones la idea."
+    },
+    {
+     "t": "Una sola mención",
+     "d": "En piezas de menos de 30 segundos no hay tiempo para repetir la marca sin sacrificar el mensaje: desarrolla la idea y cierra con el nombre, idealmente con un sonido o jingle de marca."
     },
     {
      "t": "Brief al locutor",
@@ -1401,11 +1425,15 @@
    "estrategia": [
     {
      "t": "Mención de la marca",
-     "d": "Que el locutor la diga en la primera frase y la repita al cierre."
+     "d": "Una sola vez, al cierre: que el locutor desarrolle la idea y termine nombrando la marca."
     },
     {
      "t": "Mensaje",
      "d": "Un solo dato clave en lenguaje conversacional: el locutor pone la voz y tú pones la idea."
+    },
+    {
+     "t": "Una sola mención",
+     "d": "En piezas de menos de 30 segundos no hay tiempo para repetir la marca sin sacrificar el mensaje: desarrolla la idea y cierra con el nombre, idealmente con un sonido o jingle de marca."
     },
     {
      "t": "Brief al locutor",
@@ -1451,15 +1479,15 @@
    "estrategia": [
     {
      "t": "Mención de la marca",
-     "d": "Al inicio y al cierre. En 30\" puedes añadir una mención intermedia."
+     "d": "Una sola vez, al cierre: que el locutor desarrolle la idea y termine nombrando la marca."
     },
     {
      "t": "Mensaje",
-     "d": "Beneficio, razón para creer y llamado a la acción; escribe como se habla, con frases cortas."
+     "d": "Un solo dato clave en lenguaje conversacional: el locutor pone la voz y tú pones la idea."
     },
     {
-     "t": "Llamado a la acción",
-     "d": "Una sola acción, en el cierre."
+     "t": "Una sola mención",
+     "d": "En piezas de menos de 30 segundos no hay tiempo para repetir la marca sin sacrificar el mensaje: desarrolla la idea y cierra con el nombre, idealmente con un sonido o jingle de marca."
     },
     {
      "t": "Brief al locutor",
@@ -1467,7 +1495,7 @@
     },
     {
      "t": "Evita",
-     "d": "Pasarte del número de palabras: el locutor acelera y pierde claridad."
+     "d": "Redactar como aviso publicitario: se nota que es un texto leído."
     }
    ]
   },
@@ -1505,7 +1533,7 @@
    "estrategia": [
     {
      "t": "Mención de la marca",
-     "d": "Al inicio y al cierre. En 30\" puedes añadir una mención intermedia."
+     "d": "Al inicio y al cierre; en 30\" puedes añadir una mención intermedia."
     },
     {
      "t": "Mensaje",
@@ -1813,15 +1841,19 @@
    "estrategia": [
     {
      "t": "Mención de la marca",
-     "d": "Dila en los primeros 2 segundos y, si cabe, repítela al cierre. En 5 segundos la marca es el mensaje: apóyate en un sonido o jingle distintivo en lugar de más palabras."
+     "d": "Una sola vez, al cierre. En 5 segundos la marca es el mensaje: queda como lo último que escucha el oyente, apoyada en un sonido o jingle distintivo."
     },
     {
      "t": "Mensaje",
      "d": "Una sola idea (marca + beneficio o frase de posicionamiento). Úsala para mantener la recordación, no para explicar."
     },
     {
-     "t": "Por qué no solo al final",
-     "d": "En audio no hay logo que ver: si la marca llega solo al final y el oyente se distrae, no la recibe. Los estudios de la industria recomiendan nombrarla en los primeros segundos y reforzarla al cierre. Revelarla tarde funciona mejor en TV o video que en radio."
+     "t": "Una sola mención",
+     "d": "En piezas de menos de 30 segundos no hay tiempo para repetir la marca sin sacrificar el mensaje: desarrolla la idea y cierra con el nombre, idealmente con un sonido o jingle de marca."
+    },
+    {
+     "t": "Marca nueva",
+     "d": "Si la marca es nueva o poco conocida, considera nombrarla también al inicio: los estudios de la industria recomiendan mencionarla pronto."
     },
     {
      "t": "Evita",
@@ -1868,15 +1900,19 @@
    "estrategia": [
     {
      "t": "Mención de la marca",
-     "d": "Al inicio (primeros 2 segundos) y al cierre: dos menciones en total, con un sonido o jingle de marca que ayude a reconocerla."
+     "d": "Una sola vez, al cierre: la pieza desarrolla la idea y termina nombrando la marca."
     },
     {
      "t": "Mensaje",
      "d": "Un beneficio y, si cabe, un llamado muy corto. Ideal para jingle o frase de posicionamiento."
     },
     {
-     "t": "Por qué no solo al final",
-     "d": "En audio no hay logo que ver: si la marca llega solo al final y el oyente se distrae, no la recibe. Los estudios de la industria recomiendan nombrarla en los primeros segundos y reforzarla al cierre. Revelarla tarde funciona mejor en TV o video que en radio."
+     "t": "Una sola mención",
+     "d": "En piezas de menos de 30 segundos no hay tiempo para repetir la marca sin sacrificar el mensaje: desarrolla la idea y cierra con el nombre, idealmente con un sonido o jingle de marca."
+    },
+    {
+     "t": "Marca nueva",
+     "d": "Si la marca es nueva o poco conocida, considera nombrarla también al inicio: los estudios de la industria recomiendan mencionarla pronto."
     },
     {
      "t": "Evita",
@@ -1923,7 +1959,7 @@
    "estrategia": [
     {
      "t": "Mención de la marca",
-     "d": "Al inicio, para ganar atención, y al cierre, para fijar el recuerdo."
+     "d": "Una sola vez, al cierre, junto al llamado a la acción."
     },
     {
      "t": "Mensaje",
@@ -1934,8 +1970,12 @@
      "d": "Uno simple y fácil de recordar, por ejemplo «búscalo en…»."
     },
     {
-     "t": "Por qué no solo al final",
-     "d": "En audio no hay logo que ver: si la marca llega solo al final y el oyente se distrae, no la recibe. Los estudios de la industria recomiendan nombrarla en los primeros segundos y reforzarla al cierre. Revelarla tarde funciona mejor en TV o video que en radio."
+     "t": "Una sola mención",
+     "d": "En piezas de menos de 30 segundos no hay tiempo para repetir la marca sin sacrificar el mensaje: desarrolla la idea y cierra con el nombre, idealmente con un sonido o jingle de marca."
+    },
+    {
+     "t": "Marca nueva",
+     "d": "Si la marca es nueva o poco conocida, considera nombrarla también al inicio: los estudios de la industria recomiendan mencionarla pronto."
     },
     {
      "t": "Evita",
@@ -1982,7 +2022,7 @@
    "estrategia": [
     {
      "t": "Mención de la marca",
-     "d": "Al inicio, como gancho, y al final junto al llamado a la acción."
+     "d": "Una sola vez, al cierre, junto al llamado a la acción."
     },
     {
      "t": "Mensaje",
@@ -1993,8 +2033,12 @@
      "d": "Al final, junto a la marca."
     },
     {
-     "t": "Por qué no solo al final",
-     "d": "En audio no hay logo que ver: si la marca llega solo al final y el oyente se distrae, no la recibe. Los estudios de la industria recomiendan nombrarla en los primeros segundos y reforzarla al cierre. Revelarla tarde funciona mejor en TV o video que en radio."
+     "t": "Una sola mención",
+     "d": "En piezas de menos de 30 segundos no hay tiempo para repetir la marca sin sacrificar el mensaje: desarrolla la idea y cierra con el nombre, idealmente con un sonido o jingle de marca."
+    },
+    {
+     "t": "Marca nueva",
+     "d": "Si la marca es nueva o poco conocida, considera nombrarla también al inicio: los estudios de la industria recomiendan mencionarla pronto."
     },
     {
      "t": "Evita",
@@ -2324,11 +2368,15 @@
    "estrategia": [
     {
      "t": "Mención de la marca",
-     "d": "Que el locutor la diga en la primera frase y la repita al cierre."
+     "d": "Una sola vez, al cierre: que el locutor desarrolle la idea y termine nombrando la marca."
     },
     {
      "t": "Mensaje",
      "d": "Un solo dato clave en lenguaje conversacional: el locutor pone la voz y tú pones la idea."
+    },
+    {
+     "t": "Una sola mención",
+     "d": "En piezas de menos de 30 segundos no hay tiempo para repetir la marca sin sacrificar el mensaje: desarrolla la idea y cierra con el nombre, idealmente con un sonido o jingle de marca."
     },
     {
      "t": "Brief al locutor",
@@ -2387,11 +2435,15 @@
    "estrategia": [
     {
      "t": "Mención de la marca",
-     "d": "Que el locutor la diga en la primera frase y la repita al cierre."
+     "d": "Una sola vez, al cierre: que el locutor desarrolle la idea y termine nombrando la marca."
     },
     {
      "t": "Mensaje",
      "d": "Un solo dato clave en lenguaje conversacional: el locutor pone la voz y tú pones la idea."
+    },
+    {
+     "t": "Una sola mención",
+     "d": "En piezas de menos de 30 segundos no hay tiempo para repetir la marca sin sacrificar el mensaje: desarrolla la idea y cierra con el nombre, idealmente con un sonido o jingle de marca."
     },
     {
      "t": "Brief al locutor",
@@ -2450,11 +2502,15 @@
    "estrategia": [
     {
      "t": "Mención de la marca",
-     "d": "Que el locutor la diga en la primera frase y la repita al cierre."
+     "d": "Una sola vez, al cierre: que el locutor desarrolle la idea y termine nombrando la marca."
     },
     {
      "t": "Mensaje",
      "d": "Un solo dato clave en lenguaje conversacional: el locutor pone la voz y tú pones la idea."
+    },
+    {
+     "t": "Una sola mención",
+     "d": "En piezas de menos de 30 segundos no hay tiempo para repetir la marca sin sacrificar el mensaje: desarrolla la idea y cierra con el nombre, idealmente con un sonido o jingle de marca."
     },
     {
      "t": "Brief al locutor",
@@ -2513,15 +2569,15 @@
    "estrategia": [
     {
      "t": "Mención de la marca",
-     "d": "Al inicio y al cierre. En 30\" puedes añadir una mención intermedia."
+     "d": "Una sola vez, al cierre: que el locutor desarrolle la idea y termine nombrando la marca."
     },
     {
      "t": "Mensaje",
-     "d": "Beneficio, razón para creer y llamado a la acción; escribe como se habla, con frases cortas."
+     "d": "Un solo dato clave en lenguaje conversacional: el locutor pone la voz y tú pones la idea."
     },
     {
-     "t": "Llamado a la acción",
-     "d": "Una sola acción, en el cierre."
+     "t": "Una sola mención",
+     "d": "En piezas de menos de 30 segundos no hay tiempo para repetir la marca sin sacrificar el mensaje: desarrolla la idea y cierra con el nombre, idealmente con un sonido o jingle de marca."
     },
     {
      "t": "Brief al locutor",
@@ -2529,7 +2585,7 @@
     },
     {
      "t": "Evita",
-     "d": "Pasarte del número de palabras: el locutor acelera y pierde claridad."
+     "d": "Redactar como aviso publicitario: se nota que es un texto leído."
     }
    ]
   },
@@ -2580,7 +2636,7 @@
    "estrategia": [
     {
      "t": "Mención de la marca",
-     "d": "Al inicio y al cierre. En 30\" puedes añadir una mención intermedia."
+     "d": "Al inicio y al cierre; en 30\" puedes añadir una mención intermedia."
     },
     {
      "t": "Mensaje",
@@ -3847,7 +3903,7 @@
    "estrategia": [
     {
      "t": "Mención de la marca",
-     "d": "Dila en los primeros 3 segundos (la «pata» de inicio) y de nuevo al cierre."
+     "d": "En 15\" y 20\": una sola vez, al cierre. En 30\": al inicio (después de la «pata» de inicio) y al cierre."
     },
     {
      "t": "Mensaje",

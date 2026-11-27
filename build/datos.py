@@ -503,7 +503,8 @@ def _digital():
 # No vienen del archivo de especificaciones: son pautas generales de buenas
 # prácticas ATL/digital. Cada ítem es {t: rótulo, d: texto}. Ajustar con el equipo comercial.
 # --------------------------------------------------------------------------
-POR = ("Por qué no solo al final", "En audio no hay logo que ver: si la marca llega solo al final y el oyente se distrae, no la recibe. Los estudios de la industria recomiendan nombrarla en los primeros segundos y reforzarla al cierre. Revelarla tarde funciona mejor en TV o video que en radio.")
+POR = [("Una sola mención", "En piezas de menos de 30 segundos no hay tiempo para repetir la marca sin sacrificar el mensaje: desarrolla la idea y cierra con el nombre, idealmente con un sonido o jingle de marca."),
+       ("Marca nueva", "Si la marca es nueva o poco conocida, considera nombrarla también al inicio: los estudios de la industria recomiendan mencionarla pronto.")]
 
 
 def _e(marca=None, mensaje=None, cta=None, evita=None, extra=None):
@@ -511,22 +512,23 @@ def _e(marca=None, mensaje=None, cta=None, evita=None, extra=None):
     if marca: out.append({"t": "Mención de la marca", "d": marca})
     if mensaje: out.append({"t": "Mensaje", "d": mensaje})
     if cta: out.append({"t": "Llamado a la acción", "d": cta})
-    if extra: out.append({"t": extra[0], "d": extra[1]})
+    if extra:
+        for x in ([extra] if isinstance(extra[0], str) else extra): out.append({"t": x[0], "d": x[1]})
     if evita: out.append({"t": "Evita", "d": evita})
     return out
 
 
 _CUNA = {
-    '5"': _e("Dila en los primeros 2 segundos y, si cabe, repítela al cierre. En 5 segundos la marca es el mensaje: apóyate en un sonido o jingle distintivo en lugar de más palabras.",
+    '5"': _e("Una sola vez, al cierre. En 5 segundos la marca es el mensaje: queda como lo último que escucha el oyente, apoyada en un sonido o jingle distintivo.",
              "Una sola idea (marca + beneficio o frase de posicionamiento). Úsala para mantener la recordación, no para explicar.",
              evita="Precios, direcciones o teléfonos: no alcanzan a retenerse.", extra=POR),
-    '10"': _e("Al inicio (primeros 2 segundos) y al cierre: dos menciones en total, con un sonido o jingle de marca que ayude a reconocerla.",
+    '10"': _e("Una sola vez, al cierre: la pieza desarrolla la idea y termina nombrando la marca.",
               "Un beneficio y, si cabe, un llamado muy corto. Ideal para jingle o frase de posicionamiento.",
               evita="Meter dos ideas en una sola pieza.", extra=POR),
-    '15"': _e("Al inicio, para ganar atención, y al cierre, para fijar el recuerdo.",
+    '15"': _e("Una sola vez, al cierre, junto al llamado a la acción.",
               "Una idea central con su beneficio.", "Uno simple y fácil de recordar, por ejemplo «búscalo en…».",
               "Datos largos como URL o teléfonos.", extra=POR),
-    '20"': _e("Al inicio, como gancho, y al final junto al llamado a la acción.",
+    '20"': _e("Una sola vez, al cierre, junto al llamado a la acción.",
               "Beneficio principal, una razón para creerlo y cierre con la marca.", "Al final, junto a la marca.",
               "Saturar con más de un beneficio.", extra=POR),
     '30"': _e("Al inicio (primeros 3 a 5 segundos) y al cierre. Si la pieza es narrativa, una mención intermedia refuerza el recuerdo.",
@@ -542,11 +544,11 @@ _CUNA = {
 _CUNA['40"'] = _CUNA['45"'] = _CUNA['35"']
 
 _LEIDA = {
-    "corta": _e("Que el locutor la diga en la primera frase y la repita al cierre.",
+    "corta": _e("Una sola vez, al cierre: que el locutor desarrolle la idea y termine nombrando la marca.",
                 "Un solo dato clave en lenguaje conversacional: el locutor pone la voz y tú pones la idea.",
                 evita="Redactar como aviso publicitario: se nota que es un texto leído.",
-                extra=("Brief al locutor", "Comparte la pronunciación de la marca y las 2 o 3 ideas que no pueden faltar.")),
-    "media": _e("Al inicio y al cierre. En 30\" puedes añadir una mención intermedia.",
+                extra=[POR[0], ("Brief al locutor", "Comparte la pronunciación de la marca y las 2 o 3 ideas que no pueden faltar.")]),
+    "media": _e("Al inicio y al cierre; en 30\" puedes añadir una mención intermedia.",
                 "Beneficio, razón para creer y llamado a la acción; escribe como se habla, con frases cortas.",
                 "Una sola acción, en el cierre.", "Pasarte del número de palabras: el locutor acelera y pierde claridad.",
                 extra=("Brief al locutor", "Comparte la pronunciación de la marca y las 2 o 3 ideas que no pueden faltar.")),
@@ -562,7 +564,7 @@ def _estrategia_radio(f):
     if t == "Grabados":
         return _CUNA[f["duracion"]]
     if t == "Leídos":
-        return _LEIDA["corta" if f["duracion"] in ('5"', '10"', '15"') else "media" if f["duracion"] in ('20"', '30"') else "larga"]
+        return _LEIDA["corta" if f["duracion"] in ('5"', '10"', '15"', '20"') else "media" if f["duracion"] == '30"' else "larga"]
     if t == "Secciones" and f["familia"] == "musical":
         return _e("En la presentación de la franja (apertura) y en el cierre.",
                   "El tema debe interesar al oyente por sí solo (consejo, dato útil, tendencia) y la marca aparece como quien lo hace posible.",
@@ -620,7 +622,7 @@ def _estrategia_digital(f):
                   "Diseños distintos entre piezas. Revisa el demo para que no se corten elementos del skin.")
     if c == "Audio y video en streaming":
         if "audio" in n:
-            return _e("Dila en los primeros 3 segundos (la «pata» de inicio) y de nuevo al cierre.",
+            return _e("En 15\" y 20\": una sola vez, al cierre. En 30\": al inicio (después de la «pata» de inicio) y al cierre.",
                       "Cercano y directo: el oyente de streaming está atento y normalmente con audífonos. En 15\" una idea; en 30\", una mini historia.",
                       "Uno solo, simple y fácil de recordar.",
                       "Copiar la cuña de radio sin adaptarla: el contexto es más íntimo.")
