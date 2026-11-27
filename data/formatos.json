@@ -1,7 +1,7 @@
 {
  "meta": {
   "titulo": "Guía de formatos Prisa Media",
-  "nota_estrategia": "Las recomendaciones estratégicas son pautas generales de planificación de medios (no hacen parte de las especificaciones técnicas). Ajústalas con tu ejecutivo.",
+  "nota_estrategia": "Pautas generales de planificación de medios basadas en estudios y guías de la industria (Nielsen, Spotify, Westwood One, Radiocentre, Google). No hacen parte de las especificaciones técnicas: valídalas con tu ejecutivo.",
   "fuentes": [
    "FORMATOS PRISA MEDIA – Grupo Nutresa (especificaciones de radio y digital)",
    "AUDIENCIAS PRISA MEDIA (mapa de afinidad TGI R2 2024; perfiles TGI Choices 2026)"
@@ -875,11 +875,15 @@
    "estrategia": [
     {
      "t": "Mención de la marca",
-     "d": "Nombra la marca al inicio y repítela al cierre: en 5 segundos la marca es el mensaje."
+     "d": "Dila en los primeros 2 segundos y, si cabe, repítela al cierre. En 5 segundos la marca es el mensaje: apóyate en un sonido o jingle distintivo en lugar de más palabras."
     },
     {
      "t": "Mensaje",
      "d": "Una sola idea (marca + beneficio o frase de posicionamiento). Úsala para mantener la recordación, no para explicar."
+    },
+    {
+     "t": "Por qué no solo al final",
+     "d": "En audio no hay logo que ver: si la marca llega solo al final y el oyente se distrae, no la recibe. Los estudios de la industria recomiendan nombrarla en los primeros segundos y reforzarla al cierre. Revelarla tarde funciona mejor en TV o video que en radio."
     },
     {
      "t": "Evita",
@@ -917,11 +921,15 @@
    "estrategia": [
     {
      "t": "Mención de la marca",
-     "d": "Al inicio (primeros 2 segundos) y al cierre: dos menciones en total."
+     "d": "Al inicio (primeros 2 segundos) y al cierre: dos menciones en total, con un sonido o jingle de marca que ayude a reconocerla."
     },
     {
      "t": "Mensaje",
      "d": "Un beneficio y, si cabe, un llamado muy corto. Ideal para jingle o frase de posicionamiento."
+    },
+    {
+     "t": "Por qué no solo al final",
+     "d": "En audio no hay logo que ver: si la marca llega solo al final y el oyente se distrae, no la recibe. Los estudios de la industria recomiendan nombrarla en los primeros segundos y reforzarla al cierre. Revelarla tarde funciona mejor en TV o video que en radio."
     },
     {
      "t": "Evita",
@@ -970,6 +978,10 @@
      "d": "Uno simple y fácil de recordar, por ejemplo «búscalo en…»."
     },
     {
+     "t": "Por qué no solo al final",
+     "d": "En audio no hay logo que ver: si la marca llega solo al final y el oyente se distrae, no la recibe. Los estudios de la industria recomiendan nombrarla en los primeros segundos y reforzarla al cierre. Revelarla tarde funciona mejor en TV o video que en radio."
+    },
+    {
      "t": "Evita",
      "d": "Datos largos como URL o teléfonos."
     }
@@ -1014,6 +1026,10 @@
     {
      "t": "Llamado a la acción",
      "d": "Al final, junto a la marca."
+    },
+    {
+     "t": "Por qué no solo al final",
+     "d": "En audio no hay logo que ver: si la marca llega solo al final y el oyente se distrae, no la recibe. Los estudios de la industria recomiendan nombrarla en los primeros segundos y reforzarla al cierre. Revelarla tarde funciona mejor en TV o video que en radio."
     },
     {
      "t": "Evita",
@@ -1797,11 +1813,15 @@
    "estrategia": [
     {
      "t": "Mención de la marca",
-     "d": "Nombra la marca al inicio y repítela al cierre: en 5 segundos la marca es el mensaje."
+     "d": "Dila en los primeros 2 segundos y, si cabe, repítela al cierre. En 5 segundos la marca es el mensaje: apóyate en un sonido o jingle distintivo en lugar de más palabras."
     },
     {
      "t": "Mensaje",
      "d": "Una sola idea (marca + beneficio o frase de posicionamiento). Úsala para mantener la recordación, no para explicar."
+    },
+    {
+     "t": "Por qué no solo al final",
+     "d": "En audio no hay logo que ver: si la marca llega solo al final y el oyente se distrae, no la recibe. Los estudios de la industria recomiendan nombrarla en los primeros segundos y reforzarla al cierre. Revelarla tarde funciona mejor en TV o video que en radio."
     },
     {
      "t": "Evita",
@@ -1848,11 +1868,15 @@
    "estrategia": [
     {
      "t": "Mención de la marca",
-     "d": "Al inicio (primeros 2 segundos) y al cierre: dos menciones en total."
+     "d": "Al inicio (primeros 2 segundos) y al cierre: dos menciones en total, con un sonido o jingle de marca que ayude a reconocerla."
     },
     {
      "t": "Mensaje",
      "d": "Un beneficio y, si cabe, un llamado muy corto. Ideal para jingle o frase de posicionamiento."
+    },
+    {
+     "t": "Por qué no solo al final",
+     "d": "En audio no hay logo que ver: si la marca llega solo al final y el oyente se distrae, no la recibe. Los estudios de la industria recomiendan nombrarla en los primeros segundos y reforzarla al cierre. Revelarla tarde funciona mejor en TV o video que en radio."
     },
     {
      "t": "Evita",
@@ -1910,6 +1934,10 @@
      "d": "Uno simple y fácil de recordar, por ejemplo «búscalo en…»."
     },
     {
+     "t": "Por qué no solo al final",
+     "d": "En audio no hay logo que ver: si la marca llega solo al final y el oyente se distrae, no la recibe. Los estudios de la industria recomiendan nombrarla en los primeros segundos y reforzarla al cierre. Revelarla tarde funciona mejor en TV o video que en radio."
+    },
+    {
      "t": "Evita",
      "d": "Datos largos como URL o teléfonos."
     }
@@ -1963,6 +1991,10 @@
     {
      "t": "Llamado a la acción",
      "d": "Al final, junto a la marca."
+    },
+    {
+     "t": "Por qué no solo al final",
+     "d": "En audio no hay logo que ver: si la marca llega solo al final y el oyente se distrae, no la recibe. Los estudios de la industria recomiendan nombrarla en los primeros segundos y reforzarla al cierre. Revelarla tarde funciona mejor en TV o video que en radio."
     },
     {
      "t": "Evita",
@@ -3870,7 +3902,7 @@
    "estrategia": [
     {
      "t": "Mención de la marca",
-     "d": "Logo y gancho en los primeros 5 segundos; refuérzalos al final."
+     "d": "Si tu objetivo es recordación, logo y marca en los primeros 5 segundos y refuerzo al final. Si es notoriedad o consideración, puede entrar un poco después priorizando la conexión con el espectador."
     },
     {
      "t": "Mensaje",

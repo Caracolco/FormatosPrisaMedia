@@ -503,6 +503,9 @@ def _digital():
 # No vienen del archivo de especificaciones: son pautas generales de buenas
 # prácticas ATL/digital. Cada ítem es {t: rótulo, d: texto}. Ajustar con el equipo comercial.
 # --------------------------------------------------------------------------
+POR = ("Por qué no solo al final", "En audio no hay logo que ver: si la marca llega solo al final y el oyente se distrae, no la recibe. Los estudios de la industria recomiendan nombrarla en los primeros segundos y reforzarla al cierre. Revelarla tarde funciona mejor en TV o video que en radio.")
+
+
 def _e(marca=None, mensaje=None, cta=None, evita=None, extra=None):
     out = []
     if marca: out.append({"t": "Mención de la marca", "d": marca})
@@ -514,18 +517,18 @@ def _e(marca=None, mensaje=None, cta=None, evita=None, extra=None):
 
 
 _CUNA = {
-    '5"': _e("Nombra la marca al inicio y repítela al cierre: en 5 segundos la marca es el mensaje.",
+    '5"': _e("Dila en los primeros 2 segundos y, si cabe, repítela al cierre. En 5 segundos la marca es el mensaje: apóyate en un sonido o jingle distintivo en lugar de más palabras.",
              "Una sola idea (marca + beneficio o frase de posicionamiento). Úsala para mantener la recordación, no para explicar.",
-             evita="Precios, direcciones o teléfonos: no alcanzan a retenerse."),
-    '10"': _e("Al inicio (primeros 2 segundos) y al cierre: dos menciones en total.",
+             evita="Precios, direcciones o teléfonos: no alcanzan a retenerse.", extra=POR),
+    '10"': _e("Al inicio (primeros 2 segundos) y al cierre: dos menciones en total, con un sonido o jingle de marca que ayude a reconocerla.",
               "Un beneficio y, si cabe, un llamado muy corto. Ideal para jingle o frase de posicionamiento.",
-              evita="Meter dos ideas en una sola pieza."),
+              evita="Meter dos ideas en una sola pieza.", extra=POR),
     '15"': _e("Al inicio, para ganar atención, y al cierre, para fijar el recuerdo.",
               "Una idea central con su beneficio.", "Uno simple y fácil de recordar, por ejemplo «búscalo en…».",
-              "Datos largos como URL o teléfonos."),
+              "Datos largos como URL o teléfonos.", extra=POR),
     '20"': _e("Al inicio, como gancho, y al final junto al llamado a la acción.",
               "Beneficio principal, una razón para creerlo y cierre con la marca.", "Al final, junto a la marca.",
-              "Saturar con más de un beneficio."),
+              "Saturar con más de un beneficio.", extra=POR),
     '30"': _e("Al inicio (primeros 3 a 5 segundos) y al cierre. Si la pieza es narrativa, una mención intermedia refuerza el recuerdo.",
               "Gancho, desarrollo de un solo beneficio y cierre. Es la duración con más espacio para contar una historia o un lanzamiento.",
               "Claro y único, en el cierre.", "Dejar la marca solo al final: si el oyente se distrae, no la recibe."),
@@ -621,7 +624,7 @@ def _estrategia_digital(f):
                       "Cercano y directo: el oyente de streaming está atento y normalmente con audífonos. En 15\" una idea; en 30\", una mini historia.",
                       "Uno solo, simple y fácil de recordar.",
                       "Copiar la cuña de radio sin adaptarla: el contexto es más íntimo.")
-        return _e("Logo y gancho en los primeros 5 segundos; refuérzalos al final.",
+        return _e("Si tu objetivo es recordación, logo y marca en los primeros 5 segundos y refuerzo al final. Si es notoriedad o consideración, puede entrar un poco después priorizando la conexión con el espectador.",
                   "Cuenta la idea de forma visual y agrega subtítulos: muchos usuarios ven video sin sonido. 15\" para recordación, 30\" para contar una historia.",
                   "Cierra con logo y llamado visibles.",
                   "Dejar el mensaje clave para el final.")
@@ -680,7 +683,7 @@ def construir():
     return {
         "meta": {
             "titulo": "Guía de formatos Prisa Media",
-            "nota_estrategia": "Las recomendaciones estratégicas son pautas generales de planificación de medios (no hacen parte de las especificaciones técnicas). Ajústalas con tu ejecutivo.",
+            "nota_estrategia": "Pautas generales de planificación de medios basadas en estudios y guías de la industria (Nielsen, Spotify, Westwood One, Radiocentre, Google). No hacen parte de las especificaciones técnicas: valídalas con tu ejecutivo.",
             "fuentes": ["FORMATOS PRISA MEDIA – Grupo Nutresa (especificaciones de radio y digital)",
                         "AUDIENCIAS PRISA MEDIA (mapa de afinidad TGI R2 2024; perfiles TGI Choices 2026)"],
         },
